@@ -265,6 +265,7 @@ GEM
       i18n (~> 0.6.4)
     multi_json (1.10.1)
     multipart-post (2.0.0)
+    mysql2 (0.3.16)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
@@ -532,6 +533,7 @@ DEPENDENCIES
   mail_form
   mixpanel-ruby
   moip!
+  mysql2
   newrelic_rpm (= 3.6.5.130)
   omniauth
   omniauth-facebook (= 1.4.0)

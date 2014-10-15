@@ -16,7 +16,7 @@ en:
   site:
     title: "The biggest crowdfunding community at Truman State University"
     meta_title:  "%{title} · %{company_name}"
-    description: "O Catarse é uma ferramenta diferente – e colaborativa – para tirar o seu projeto do papel!"
+    description: "Realize good projects"
     keywords: "catarse, crowdfunding, project, community, open source"
   login:
     forgot_password:
