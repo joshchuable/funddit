@@ -223,7 +223,7 @@ en:
     reward_must_be_from_project: "must be from the same project"
     should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum contributions"
     value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
-    project_should_be_online: "You cannot contributions a project that is not online"
+    project_should_be_online: "You cannot contribution to a project that is not online"
   contribution_plural: contributions
   project_plural: projects
   project_singular: project
@@ -237,16 +237,16 @@ en:
     modal:
       title: "Do you want to confirm your refund request?"
       text: "Check out how our refund process works:"
-      link: "See how the refund works"
+      link: "See how refunds works"
       reject_btn: "I want to keep my credits"
-      accept_btn: "I want to request the refund"
+      accept_btn: "I want to request a refund"
     index:
       contribution_date: "Contribution date"
       current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
       important_html: "If you ask for a refund, the value of your payment will be deducted from your credits."
       project: Project
       refund_expiration_date_html: "Deadline to request refund (<a target='__blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
-      refunded: "Refund request successfully done. Our team will contact you within two business days."
+      refunded: "Refund request has been submitted successfully. Our team will contact you within two business days."
       insufficient_credits: "You don't have enough credits to request this refund."
       refunds_title: "Payments that can be refunded"
       request_refund: "Request refund"
@@ -276,27 +276,27 @@ en:
       quick_explore: "Quick search"
       recent: Recent
       recommended: Recommended
-      subtitle: "Explore the projects, find the ones that touch you, and make them happen!"
+      subtitle: "Explore local projects, find the ones you like, and make them happen!"
       successful: Successful
       title: "Discover amazing projects"
-    title: "Explore the projects"
+    title: "Explore projects"
     project:
-      empty: "Hey, we didn't find any project with the text you searched. Wanna try some new words? =D"
+      empty: "Sorry, we didn't find any projects matching your search. Please try different key words."
   formtastic:
     hints:
       contribution:
         credits: "You have <strong>%{credits}</strong> in credits and can contribution with up to this amount without needing to make a new payment."
-        value: "You choose the amount ;) starting with R$10, any amount is great."
+        value: "You choose the amount ;) starting with $1, any amount is great."
       project:
-        video_url_edit: 'Paste here the URL of your Vimeo/Youtube video.'
-        about: "Tell us about what inspired you to come up with this project . Be objective end charming, present your readers with something that moves them while being very transparent over the expectations on your project!"
-        more_links: "Which channels will be used to spread the word about your project? List here your facebook/twitter/blog/site/ and what ever more links you have to help you"
-        category: "Before you format your project explore other (successful) projects to inspire yourself!"
-        expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: if you put a lot of time, people will lose interest along the way; if put too little, you may not reach the minimum in time."
-        goal: "Values in reais (R$)"
-        first_contributions: "To reach your financial goal it’s indispensable to engage the people who are close to you and the project. So if you can list here who will be your first 20 contributions that would be a great sign ;) "
-        headline: "Summarize your project in 140 characters. This sentence will be the first contact people will have with your project, before even seeing the video. Be creative, clear and direct :)"
+        video_url_edit: 'Please paste here the URL of your Vimeo/Youtube video.'
+        about: "Tell us about what inspired you to start this project or event. Be fun end charming, present your readers with something that moves them while being realistic about the expectations of your project!"
+        more_links: "Which channels will you use to spread the word about your project? List your facebook/twitter/blog/site/ links to help you"
+        category: "Before you format your project explore other (successful) projects!"
+        expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: If you run it for a long time, people might lose interest along the way; If you don't run it long enough, you may not reach the minimum in time."
+        online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: If you run it for a long time, people might lose interest along the way; If you don't run it long enough, you may not reach the minimum in time."
+        goal: "Values in Dollards ($)"
+        first_contributions: "To reach your financial goal it is indispensable to engage people who are close to you and the project. It would would be great if you can already come up with a list of potential contributors."
+        headline: "Summarize your project in 140 characters. This sentence will be the first impressiong people will have with your project, before even seeing the video or description. Be creative, clear and concise :)"
         name: "Be as objective as you can. Leave explanations for the About section."
         uploaded_image: "Upload a 512x400 image(.jpg)."
         video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. We recommend Vimeo because it looks better and doesn't have ads. This way, your project will look better too! <strong>Produce your video the best you can and make a video specifically for your campaign</strong>. If there is a single thing that differentiates the projects that reach the goal from the others is the video. Observe ;)"
