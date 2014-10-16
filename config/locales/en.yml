@@ -36,7 +36,7 @@ en:
     reward_description: 'Reward description'
     confirmed_at: 'Payment confirmed at'
     value: 'Contribution value'
-    service_fee: 'Catarse fee'
+    service_fee: 'Service fee'
     user_name: 'Contribution name'
     user_email: 'Catarse user profile e-mail'
     payer_email: 'Payment gateway user e-mail'
@@ -139,6 +139,10 @@ en:
       title: "Asas Channel"
   shared:
     accept_terms_html: "I have read and accepted the %{link}."
+    feedback:
+        placeholders:
+            text: What do you love about us?
+            email: What is your email?
   activerecord:
     errors:
       models:
