@@ -100,7 +100,7 @@ Catarse::Application.routes.draw do
 
 
   # Channels
-  constraints subdomain: /^(?!www|secure|test|local)(\w+)/ do
+  #constraints subdomain: /^(?!www|secure|test|local)(\w+)/ do
   constraints SubdomainConstraint do
     namespace :channels, path: '' do
 

@@ -42,7 +42,7 @@ module Catarse
       :mixpanel_observer, '::CatarseMonkeymail::MonkeyProjectObserver',
     ]
 
-    rake assets:precompile
+   # rake assets:precompile
 
     # Enable the asset pipeline
     config.assets.enabled = true
