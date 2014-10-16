@@ -41,35 +41,35 @@ puts 'Seeding the database...'
  end
 
 {
-  company_name: 'Catarse',
+  company_name: 'Funddit',
   company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
-  host: 'catarse.me',
-  base_url: "http://catarse.me",
+  host: 'funddit.me',
+  base_url: "http://funddit.me",
 
-  email_contact: 'contato@catarse.me',
-  email_payments: 'financeiro@catarse.me',
-  email_projects: 'projetos@catarse.me',
-  email_system: 'system@catarse.me',
-  email_no_reply: 'no-reply@catarse.me',
+  email_contact: 'info@funddit.me',
+  email_payments: 'info@funddit.me',
+  email_projects: 'info@funddit.me',
+  email_system: 'info@funddit.me',
+  email_no_reply: 'no-reply@funddit.me',
   facebook_url: "http://facebook.com/catarse.me",
-  facebook_app_id: '173747042661491',
-  twitter_url: 'http://twitter.com/catarse',
-  twitter_username: "catarse",
+  facebook_app_id: '302938209911869',
+  twitter_url: 'http://twitter.com/funddi',
+  twitter_username: "funddit",
   mailchimp_url: "http://catarse.us5.list-manage.com/subscribe/post?u=ebfcd0d16dbb0001a0bea3639&amp;id=149c39709e",
-  catarse_fee: '0.13',
-  support_forum: 'http://suporte.catarse.me/',
-  base_domain: 'catarse.me',
+  catarse_fee: '0.05',
+  support_forum: 'http://support.funddit.me/',
+  base_domain: 'funddit.me',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
-  faq_url: 'http://suporte.catarse.me/',
-  feedback_url: 'http://suporte.catarse.me/forums/103171-catarse-ideias-gerais',
-  terms_url: 'http://suporte.catarse.me/knowledgebase/articles/161100-termos-de-uso',
-  privacy_url: 'http://suporte.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade',
+  faq_url: 'http://support.funddit.me/',
+  feedback_url: 'http://support.funddit.me/',
+  terms_url: 'http://support.funddit.me/knowledgebase/articles/161100-termos-de-uso',
+  privacy_url: 'http://support.catarse.me/knowledgebase/articles/161103-pol%C3%ADtica-de-privacidade',
   about_channel_url: 'http://blog.catarse.me/conheca-os-canais-do-catarse/',
   instagram_url: 'http://instagram.com/catarse_',
-  blog_url: "http://blog.catarse.me",
+  blog_url: "http://blog.funddit.me",
   github_url: 'http://github.com/catarse',
-  contato_url: 'http://suporte.catarse.me/'
+  contato_url: 'http://support.funddit.me/'
 }.each do |name, value|
    conf = CatarseSettings.find_or_initialize_by(name: name)
    conf.update_attributes({
@@ -85,8 +85,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = 'your_facebook_app_key'
-  o.secret = 'your_facebook_app_secret'
+  o.key = '302938209911869'
+  o.secret = 'ca01ab4e160f9e3f38f822dc1ed33f91'
   o.path = 'facebook'
 end
 

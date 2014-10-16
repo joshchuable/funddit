@@ -8,6 +8,7 @@ if defined?(Bundler)
   # Bundler.require(:default, :assets, Rails.env)
 end
 
+
 module Catarse
   class Application < Rails::Application
     config.to_prepare do
@@ -40,6 +41,8 @@ module Catarse
       :project_post_observer, :project_observer, :channel_post_observer,
       :mixpanel_observer, '::CatarseMonkeymail::MonkeyProjectObserver',
     ]
+
+    rake assets:precompile
 
     # Enable the asset pipeline
     config.assets.enabled = true
