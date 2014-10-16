@@ -1,4 +1,22 @@
 en:
+  pages:
+    start:
+      start:
+        content:"Start creating your project now! You may get started with uploading pictures or a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
+        title: "Start your project"
+        link: "Learn about how to get started"
+      people:
+        title: "Mobilize stakeholders"
+        content: "The best way to fund your project is by mobilizing your own network. Successful projects usually have at least 50% of the supporters come from your network of contacts. At the same time, Funddit allows you to expand your network by promoting your project to people with similar interests and aspirations. History has shown that many people support projects for many reasons, including the relationship to the organizer or offered rewards. However, the main reason why people fun projects is because they can identify themselves with your proposal."
+        link: "See successful projects"
+      work:
+        title: "Be committed before, during, and after funding"
+        content: "Look up projects similar to yours. Map, analyze, and prepare to expand your network and campus outreach to find people interested in realizing your idea. To maximize funding, you should map out every day of the campaign and promote it campus-wide to gain more supporters. Explain why you are needing funds, describe how exactly you will use them, communicate updates with all your supporters, execute, and deliver promised rewards within the deadline."
+        link: "Find out how people use Funddit"
+      time:
+        title: "All or nothing"
+        content: "You can choose a time period between one and 60 days to reach your fundraising goal based on an All or Nothing system. When a project reaches the funding goal, Funddit receives 6.5% of that value. If the project does not achieve minimum funding, we do not charge anything and will refund the money to your supporters."
+        link: "How to run a successful Funddit campaign"
   not_found:
     title: "Sorry, we couldn't find this address :("
     text: "You may have mistyped the address or the page may have moved."
@@ -16,12 +34,12 @@ en:
   site:
     title: "The biggest crowdfunding community at Truman State University"
     meta_title:  "%{title} · %{company_name}"
-    description: "Realize good projects"
-    keywords: "catarse, crowdfunding, project, community, open source"
+    description: "Funddit is a crowdfunding platform for colleges allowing organizations and individuals to fundraise projects."
+    keywords: "fundraise, crowdfunding, project, community, event, college, funding"
   login:
     forgot_password:
       welcome: 'Reset password'
-      label: 'Fill your email to reset your password'
+      label: 'Fill in your email to reset your password'
       submit: 'Reset'
     registrations:
       welcome: 'Sign up'
@@ -36,13 +54,14 @@ en:
     reward_description: 'Reward description'
     confirmed_at: 'Payment confirmed at'
     value: 'Contribution value'
-    service_fee: 'Service fee'
-    user_name: 'Contribution name'
-    user_email: 'Catarse user profile e-mail'
+
+    service_fee: 'Funddit fee'
+    user_name: "Contributior's name"
+    user_email: 'Funddit user profile e-mail'
     payer_email: 'Payment gateway user e-mail'
     payment_method: 'Payment method'
     address_street: 'Street'
-    address_complement: 'Complement'
+    address_complement: 'Address line #2'
     address_number: 'Number'
     address_neighbourhood: 'Neighbourhood'
     address_city: 'City'
@@ -70,11 +89,11 @@ en:
     goal:
       subtitle: "total of %{total}"
   project_by: "project by"
-  tell_about_this_contribution: "Tell the world about your support!"
-  share_my_contributions: "See the projects that I support in Catarse!"
+  tell_about_this_contribution: "Tell the world about your contributions!"
+  share_my_contributions: "Show the projects I support on Funddit!"
   tell_about_this_project: "Tell the world about your project!"
-  share_my_projects: "See my projects in Catarse!"
-  count_contributed_projects: "contributed %{total} projects"
+  share_my_projects: "Show my projects on Funddit!"
+  count_contributed_projects: "contributed to %{total} projects"
   rewards:
     index:
       dont_want: "I don't want any reward"
@@ -103,14 +122,14 @@ en:
       near: "Near me"
       expiring: "Expiring"
       recents: "Recent"
-      submit: "Fund your project"
-      discover: "Discover projects"
+      submit: "Start a project"
+      discover: "Explore"
     texts:
       copyleft: "Made with love."
   main:
     banner: "Discover the research"
     links:
-      channels: "Discover Asas Channel"
+      channels: "Discover the Funddit Channel"
       recommended: "Discover recommended projects"
       expiring: "Discover expiring projects"
       recents: "Discover recent projects"
@@ -120,7 +139,7 @@ en:
       blog: blog
       facebook: "have you liked our facebook page yet?"
       newsletter: "subscribe to our news"
-      faq: "have any doubt?"
+      faq: "any problems?"
       schedule: calendar
     placeholders:
       email: "Enter your email"
@@ -136,7 +155,7 @@ en:
     recents:
       title: Recent
     channels:
-      title: "Asas Channel"
+      title: "Funddit Channel"
   shared:
     accept_terms_html: "I have read and accepted the %{link}."
     feedback:
@@ -165,22 +184,22 @@ en:
         user_id: "User ID"
         video_url: "Video URL"
         permalink: 'Project URL'
-        traffic_sources: "How did you hear about Catarse?"
-        more_links: 'Where can we find more about you and your project?'
+        traffic_sources: "How did you hear about Funddit?"
+        more_links: 'Where can we find out more about you and your project?'
       reward:
         description: Description
         maximum_contributions: "Maximum contributions"
         minimum_value: "Minimum value"
       user:
         address_city: City
-        address_complement: Complement
+        address_complement: "Address line #2"
         address_neighbourhood: Neighbourhood
         address_number: Number
         address_state: State
         address_street: Street
         address_zip_code: "Zip code"
         cpf: 'CPF / CNPJ '
-        cpf_hint_title: 'Nota Fiscal será emitida para esse documento'
+        cpf_hint_title: 'CPF Hint Title'
         cpf_hint: '(?)'
         state_inscription: 'State Inscription'
         moip_login: 'MoIP Login'
@@ -193,7 +212,7 @@ en:
         password: Password
         password_confirmation: "Password Confirmation"
         phone_number: "Mobile phone number"
-        newsletter: 'I want receive news about Catarse'
+        newsletter: 'I would like to receive news about Funddit'
     models:
       contribution: Contribution
       category: Category
