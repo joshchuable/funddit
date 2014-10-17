@@ -17,6 +17,7 @@ en:
         title: "All or nothing"
         content: "You can choose a time period between one and 60 days to reach your fundraising goal based on an All or Nothing system. When a project reaches the funding goal, Funddit receives 6.5% of that value. If the project does not achieve minimum funding, we do not charge anything and will refund the money to your supporters."
         link: "How to run a successful Funddit campaign"
+      page-title:"Crowdsourced college events - Funddit"
   not_found:
     title: "Sorry, we couldn't find this address :("
     text: "You may have mistyped the address or the page may have moved."
@@ -78,6 +79,11 @@ en:
   newsletter_error_header: "Woops! There was an error."
   newsletter_error_body: "Your email could not be added to our newsletter list, please try again later!"
   newsletter_subscribe: "subscribe"
+  projects:
+    index:
+      sidebar:
+        placeholders:
+          email: "Email"
   views:
     pagination:
       next: next
@@ -102,7 +108,7 @@ en:
       about: "About us"
       social: "Social networks"
       sitemap: "Browse"
-      newsletter: "Subscribe to our news"
+      newsletter: "Subscribe to our newsletter"
       contact: "Keep in touch"
     links:
       about: "Who we are"
@@ -348,6 +354,7 @@ en:
       submit: Start a project
       profile: "My profile"
       account: "My account"
+      search: "Search"
     user:
       logout: Logout
       my_credits: "My credit"
@@ -394,9 +401,9 @@ en:
       expired: expired
       failed: "not funded"
       successful: funded
-      waiting_confirmation: waiting 
-      waiting_funds: waiting 
-      not_reached_goal: waiting 
+      waiting_confirmation: waiting
+      waiting_funds: waiting
+      not_reached_goal: waiting
       reached_goal: funded
       draft: "draft"
   projects:
