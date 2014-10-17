@@ -79,41 +79,6 @@ en:
   newsletter_error_header: "Woops! There was an error."
   newsletter_error_body: "Your email could not be added to our newsletter list, please try again later!"
   newsletter_subscribe: "subscribe"
-  projects:
-    index:
-      sidebar:
-        placeholders:
-          email: "Email"
-    new:
-      form:
-        blocks:
-          first:
-            title: "Basic Information"
-            description: "You are creating a project draft. The information completed in this first block can not be changed after your project goes live."
-          second:
-            title: "Project Story"
-            description: "You may edit this information anytime, even after this form is submitted."
-        submit: "Get funded"
-        labels:
-          name: "Name our project"
-          permalink: "Project URL"
-          category: "Choose a category"
-          goal: "Funding goal"
-          online_days: "Funding period"
-          video_url: "Video URL"
-          about: "Project Description"
-          headline: "Tagline"
-          traffic_sources: "How did you find Funddit?"
-        hints:
-          name: "Use your imagination. Salience and simplicity are key."
-          permalink: "Choose where your campaign will live. This should be easy for potential funders to memorize."
-          category: "This makes it easy for people to find your project."
-          goal: "This should be the minimum amount needed to make your project happen. This maximizes your chances of meeting your funding goal. Also keep in mind that Funddit applies a 5% fee, and our payment engine, WePay, will take an additional 3%."
-          online_days: "Most successful projects have short funding periods of under 30 days."
-          video_url: "The most successful campaigns have eyecatching, high quality videos explaining your project. This video should be uploaded onto Vimeo or YouTube. If you don't already have a video, you might consider making one during your funding period."
-          about: "Why should someone fund you? What are your goals? What makes you the right person for this project? How do you plan to deliver? What are your biggest challenges?"
-          headline: "Insert something short and catchy below."
-        info: "days"
   views:
     pagination:
       next: next
@@ -440,6 +405,40 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    index:
+      sidebar:
+        placeholders:
+          email: "Email"
+    new:
+      form:
+        blocks:
+          first:
+            title: "Basic Information"
+            description: "You are creating a project draft. The information completed in this first block can not be changed after your project goes live."
+          second:
+            title: "Project Story"
+            description: "You may edit this information anytime, even after this form is submitted."
+        submit: "Get funded"
+        labels:
+          name: "Name our project"
+          permalink: "Project URL"
+          category: "Choose a category"
+          goal: "Funding goal"
+          online_days: "Funding period"
+          video_url: "Video URL"
+          about: "Project Description"
+          headline: "Tagline"
+          traffic_sources: "How did you find Funddit?"
+        hints:
+          name: "Use your imagination. Salience and simplicity are key."
+          permalink: "Choose where your campaign will live. This should be easy for potential funders to memorize."
+          category: "This makes it easy for people to find your project."
+          goal: "This should be the minimum amount needed to make your project happen. This maximizes your chances of meeting your funding goal. Also keep in mind that Funddit applies a 5% fee, and our payment engine, WePay, will take an additional 3%."
+          online_days: "Most successful projects have short funding periods of under 30 days."
+          video_url: "The most successful campaigns have eyecatching, high quality videos explaining your project. This video should be uploaded onto Vimeo or YouTube. If you don't already have a video, you might consider making one during your funding period."
+          about: "Why should someone fund you? What are your goals? What makes you the right person for this project? How do you plan to deliver? What are your biggest challenges?"
+          headline: "Insert something short and catchy below."
+        info: "days"
     no_projects: "%{name} hasn't started any project on Funddit yet. We hope inspiration will come one of these days!"
     no_projects_current_user_html: "You haven't submitted any project to Funddit yet. Let the inspiration flow and %{link} to start!"
     title: "%{name}'s projects"
@@ -737,7 +736,7 @@ en:
       success: "You're uccessfully logged in. Welcome, %{name}!"
     destroy:
       success: "You're uccessfully logged out. See you soon!"
-    failure: 
+    failure:
       error: "There was an error while loggin in. Please try again."
 
 
@@ -795,32 +794,32 @@ en:
       title: "Who We Are?"
       subtitle: "Meet the lovely gang that makes this whole thing happen <3"
       introduction: "Information is coming"
-      name_one: 
-      title_one: 
-      text_one: 
-      name_two: 
-      title_two: 
-      text_two: 
-      name_three: 
-      title_three: 
-      text_three: 
-      name_four: 
-      title_four: 
-      text_four: 
-      name_five: 
-      text_five: 
-      name_six: 
-      title_six: 
-      text_six: 
+      name_one:
+      title_one:
+      text_one:
+      name_two:
+      title_two:
+      text_two:
+      name_three:
+      title_three:
+      text_three:
+      name_four:
+      title_four:
+      text_four:
+      name_five:
+      text_five:
+      name_six:
+      title_six:
+      text_six:
       name_seven:
-      title_seven: 
-      text_seven: 
-      name_eight: 
-      title_eight: 
-      text_eight: 
-      name_nine: 
-      title_nine: 
-      text_nine: 
+      title_seven:
+      text_seven:
+      name_eight:
+      title_eight:
+      text_eight:
+      name_nine:
+      title_nine:
+      text_nine:
     faq:
       title: "Frequently asked questions"
     guidelines_start:
