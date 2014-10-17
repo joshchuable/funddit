@@ -374,19 +374,19 @@ en:
   project:
     start:
       email_subject: "Your project has been received by Funddit"
-      email_text: "Thanks for submitting your project to Funddit :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 3 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep an eye on your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- contribute it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
+      email_text: "Thanks for submitting your project to Funddit :)<br><br>We know that you expect a quick reply but, to be quite frank, we may take up to 3 days to respond. This is because we have a small team working on several projects. Note that the reply can come sooner, so keep an eye on your inbox.<br><br>Meanwhile it is worth to get to know other projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- contribute to them! This is the way to show support for the crowdfunding culture at your college and to keep the Funddit ecosystem growing.<br><br>Besides that, you might get some inspiration for your own project...<br><br> You will hear from us soon!"
       notification_text: "Your project has been received by Funddit"
     finish:
       successful:
         email_subject: "Hooray! The %{project_name} was successful on Funddit!"
-        email_text: "The project %{project_link}, that you have contributed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_contributions} wonderful contributions, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Catarse's team takes 3 days to send to the project creator the list with all information of the contributions. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Catarse, access our FAQ: <a href='http://www.catarse.me/faq' style='color: #008800';>www.catarse.me/faq</a> or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
+        email_text: "The project %{project_link}, to which you had contributed, was successfully funded! Let's celebrate! o/<br><br>The project has, including yours, %{project_total_contributions} contributors, raised %{project_pledged}, and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Funddit takes 3 days to send to the project creator the list with all information of the contributions. So in a few days, the project creator will be in touch with you to thank you and address the rewards delivery.<br><br> In the meantime, you could share this project with your fiends!r><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you would like to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any trouble, please visit our FAQ."
         facebook_text: "Hooray! The project '%{name}', to which I contributed, was successful on Funddit!"
         notification_text: "Hooray! The project %{link} that you contributed to was successful! Spread the word!"
         reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
         twitter_text: "Hooray! The project '%{name}', to which I contributed, was successful on @Funddit! %{short_url}"
       unsuccessful:
         email_subject: "The project %{project_name} wasn't funded on Funddit."
-        email_text: 'Unfortunately the project %{project_link}, that you have to contributed, did not reached its goal and was not funded at Funddit.<br><br> You have received <strong>%{value}</strong> in credits to contribute other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:contato@catarse.me" style="color: #008800;">contato@catarse.me</a>.<br>'
+        email_text: 'Unfortunately the project %{project_link}, that you have to contributed, did not reached its goal and was not funded at Funddit.<br><br> You have received <strong>%{value}</strong> in credits to contribute other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any trouble, please access our FAQ.'
         notification_text: "You received %{value} in credits to contribute other projects. If you prefer, you can request a refund %{link}."
         unsuccessful_text: "The project %{link} that you contributed to wasn't funded. Hopefully next time!"
     video_regex_validation: "only Vimeo URLs are allowed"
@@ -405,18 +405,18 @@ en:
     title: "%{name}'s projects"
     title_current_user: "My projects"
     show:
-      rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
-      waiting: "This project is waiting for approval and soon we'll know if it will go online on Catarse ;)"
-      waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
+      rejected: "This project does not fit our selection criteria.</a>"
+      waiting: "This project is waiting for approval. We will let you know soon if it will go online on Funddit."
+      waiting_owner: "To edit the project info, click on 'Edit project' tab. You can edit rewards in the reward column."
       about_title: "About this project"
-      no_rewards_warning_title: 'Create here your rewards'
-      no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't kid around with that!"
+      no_rewards_warning_title: 'Create your rewards here'
+      no_rewards_warning: "Don't go nuts! Think about how you're going to deliver them and include those costs in your budget. People are putting their trust in you, don't mess around with that!"
       reports:
-        no_contributions: "This project don't have any contribution yet."
+        no_contributions: "This project doesn't have any contributors yet."
         link_reports: 'Download report of '
         all_contributions: 'all contributions'
-        all_contributions_without_reward: "all contributions that don't select any reward"
-        link_reward: 'Download the report of contributions that selected the reward'
+        all_contributions_without_reward: "all contributors that didn' select any reward"
+        link_reward: 'Download the report of contributors that selected the reward'
       menu:
         about: About
         contributions: Contributions
@@ -427,7 +427,7 @@ en:
         add_reward: 'Add Rewards'
       share:
         embed: embed
-        embed_title: "Embed this project on your site"
+        embed_title: "Embed this project on your website"
         link: Link
         link_title: "Share the link"
         take_a_look: "Check out the project"
@@ -439,7 +439,7 @@ en:
           not_reached_goal: "This project will only be funded if at least %{goal} is contributed until %{date}"
           failed: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
           successful: "This project was successful and was funded on %{date}"
-          waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
+          waiting_funds: "Waiting for confirmation of payments to determine if this project will be funded."
           draft: "This project is in draft mode and is not open to contributions yet."
         reached_of: "Reached of"
     contributions:
