@@ -486,11 +486,11 @@ en:
       contribution:
         anonymous_contribution: "Anonymous contribution"
         anonymous_description: "Opted to remain incognito"
-        no_reward: "This contribution has not picked a reward"
+        no_reward: "This contributors has not picked a reward"
       review:
-        error: "Ooops. There was an error while registering your back. Please try again."
+        error: "Ooops. There was an error while registering. Please try again."
       show:
-        error: "Ooops. You can only access this page after contributing a project."
+        error: "Ooops. You can only access this page after contributing to a project."
         moip_message: "Your transaction is “Authorized” and you Moip code is “%{code}″.<br>If you have any questions about this transaction, contact Moip directly."
         header_subtitle: "Without you maybe this project wouldn't stand a chance. Welcome to the team!"
         header_title: "Thank you! :D"
@@ -499,8 +499,8 @@ en:
         text_title_html: "You are now part of the group that does everything to make %{link} happen."
         title: "Thank you"
       checkout:
-        no_credits: "You don't have enough credits to contributee this project."
-        success: "Your contribution was successfully made. Thanks a lot!"
+        no_credits: "You don't have enough credits to contribute to this project."
+        success: "Your contribution was successful. Thanks a lot!"
       new:
         cannot_contribute: "It's not possible to contribute to this project right now. Please, contribute to other projects."
         header:
@@ -533,30 +533,30 @@ en:
         you_are_about_html: "You are about to become part of the group that does everything to make %{link} happen."
         pay_with: "Pay With"
     create:
-      success: "Your project was successfully created! We'll soon contact you. Thanks a lot!"
+      success: "Your project was successfully created! We'll contact you soon. Thanks a lot!"
     update:
       success: "Updated"
     form:
-      permalink_hint: 'Simplify the URL of your project. Think that your sponsor need to remember the address to share your project.'
-      add_reward: "Add reward"
-      important_html: "Please notice that Catarse will charge 13% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
+      permalink_hint: 'Simplify the URL of your project. Keep in mind that your sponsors need to remember the address to share your project.'
+      add_reward: "Add rewards"
+      important_html: "Please notice that Funddit will charge 6.5% if your project is successful. Add this values to your budget in order to execute your project with no surprises."
       project_warning:
         content_html: "Want to have your project selected? Don't forget to read %{link}."
         help_link: "our guide"
-      rewards_description: "We believe that the best way to inspire people to contriubte a project is offering excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
+      rewards_description: "We believe that the best way to inspire people to contriubte a project is by offering excellent – and creative – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
       rewards_title: Rewards
       submit: "Save draft"
     index_header:
-      subtitle: "Fund projects collaboratively and become part of something bigger. Promote a collective catharsis! You're the missing part in this story."
-      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/>Promote a collective catharsis! You're the missing part in this story."
+      subtitle: "Fund projects collaboratively and become part of something bigger. You're the missing part in this story."
+      subtitle_html: "Fund projects collaboratively and become part of something bigger.<br/> You're the missing part in this story."
       title: "Make the projects you believe in happen"
     recommended_header:
       suggest_for_you: "suggested for you"
       highlight_project: "featured project"
       guidelines: "How it Works"
-      guidelines_subtitle: "Getting to know Catarse"
+      guidelines_subtitle: "Getting to know Funddit"
     pending:
-      can_finish: "Can finish?"
+      can_finish: "Able to finish?"
       finished: Finished?
       home_page: "Home page?"
       id: Id
@@ -594,7 +594,7 @@ en:
       contributed: contributed
       reached: reached
     project_contributions:
-      empty: "Nobody contributed this project so far. How about being the first one?"
+      empty: "Be the first one to contribute to this project!"
       confirmed: "Confirmed"
       pending: "Pending"
     project_header:
@@ -602,64 +602,63 @@ en:
       without_city: "A project in"
       with_city: "A project in %{category_name}, in %{city}, by %{author}"
     project_updates:
-      empty: "This project didn't have updates yet. But wait and see =D"
+      empty: "This project didn't have updates yet. Please check again later."
       submit: "Send update"
       comment: "Update text"
-      exclusive: "Visible for contributions only"
+      exclusive: "Visible for contributitors only"
       title: "Title of the update"
       destroy: "Remove update"
       destroy_confirmation: "Do you want to remove the update?"
-      warning: 'Remembering that every new post goes directly to the email of his supporters. Therefore, review your text well before sending it.'
+      warning: 'Remember that each new post will be emailed directly to your supporters. Therefore, review your text before sending it.'
     rewards:
       reward_title: "For %{minimum} or more"
       reward_deliver_time: "Estimated delivery: %{estimate}"
       contributions_to_confirm:
-        one:  "1 contribution in time to confirm."
-        other: "%{count} contributions in time to confirm."
+        one:  "1 contribution  to confirm."
+        other: "%{count} contributions to confirm."
       title: "Contribute and receive..."
     send_mail:
-      success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
+      success: "Your project was successfully submitted! We'll soon contact you. Thanks a lot!"
     new:
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your contributions. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
+      legend_html: "After filling out the form below, you will receive a project page in Draft mode. In this draft you can add the rewards for your contributors. You may also share the page to get feedbacke before going live. The information submitted below is not definitive, but remember the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i> Funddit can evaluate the focus, the feasibility and consistency of your project during the Draft.</i>"
       permalink_important: 'Try not to use underline, hyphen etc.'
-      permalink_hint: 'Go simple. Your contributions should be able to remember the URL to your project ;)'
+      permalink_hint: 'Keep it simple. Your contributions should be able to remember the URL to your project ;)'
       name_important: "Do not exceed  50 characters"
       online_days_important: "60 days is the maximum"
-      about_important: "Don't make it too long! Indicate links so people can know more about your work"
-      important_html: 'Keep in mind the 13% fee charged by Catarse in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount.'
+      about_important: "Don't make it too long! Include links so people can know more about your work."
+      important_html: 'Keep in mind the 6.5% fee charged by Funddit when you reach your financial goal. Just divide your final budget by 0.935 to find the discounted amount.'
       send_project: "I want to submit my project."
-      video_important: "The video must be hosted by Vimeo or Youtube. Paste here the URL!"
-      more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
+      video_important: "The video must be hosted by Vimeo or Youtube. Paste the URL here!"
+      more_links_important: "It's very important to use social media to spread the word about your project and engage your network into making it a success"
       first_contributions_important: "These people are fundamental to the success of your project."
       traffic_sources_important: "Yay! We reached  the final question."
-      headline_important: "It's a summary of  your project . 140 characters tops!:D"
+      headline_important: "It's a summary of your project . 140 characters tops!:D"
       tags_important: "Check other projects in your category  <a href='%{href}' target='_blank'>here!</a>!."
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Fund your project"
+      title: "Start a project"
       about: "Describe your project and how much do you need"
       category: "Project category"
       how_much_you_need: "How much do you want to raise?"
-      about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and punctual, but don't forget to give the readers something that moves them. After all, it's your creation and they need to see your passion taking place!"
-      contact: "Leave us your email address so we can contact you"
-      links: "Where can we find more about you and your project?"
-      links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. Doesn't have to be something formal or fancy, just a few useful links."
-      video: "Your project already have a video?"
+      about_hint: "Tell us a little about what you want to do, how much you need and what for. Be brief and concise and catch readers' attention. After all, it's your creation and they need to feel your passion!"
+      contact: "Please tell us your email so we can contact you"
+      links: "Where can we find out more about you and your project?"
+      links_hint: "Leave us as many links as you have, so we can get to know your work and your project better. It doesn't have to be something formal or fancy, just a few useful links."
+      video: "Does your project already have a video?"
       video_hint: "A Vimeo / Youtube link"
-      twitter: "Have twitter account?"
-      facebook: "Have facebook account?"
-      blog: "Have a blog about the project?"
-      know_us_via: "How did you meet Catarse?"
+      twitter: "Do you have a twitter account?"
+      facebook: "Do you have a facebook account?"
+      blog: "Do you have a blog?"
+      know_us_via: "How did you find out about Funddit?"
       how_works: "How to mobilize contributions to raise $ needed for enforcement?"
       project_warning:
-        content_html: "Want to have your project selected? Don't forget to read %{link}."
+        content_html: "Do you want to select your budget? Don't forget to read %{link}."
         help_link: "our guide"
-      rewards: "What rewards do you want to offer?"
-      rewards_hint: "We believe that the best way to inspire people to contribute a project is offering excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
+      rewards: "What rewards do you want to offer: "We believe that the best way to inspire people is to offer excellent – and creative! – rewards. Everybody loves limited editions, unique things and joyful experiences (parties, candies, balloon travelling!). Spend some time devising creative rewards and people will be interested."
       submit: "Save draft"
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
-      title: "Submit your project"
+      title: "Start a project"
     twitter:
-      take_a_look: "Check out the project %{name} on @catarse"
+      take_a_look: "Check out %{name} on @Funddit"
     video_embed:
       a_project_by_html: "A project by %{link} on"
   projects_mailer:
@@ -671,7 +670,7 @@ en:
     subscribed: "+ %{count} followers"
     header:
       submit: "Send project"
-      how_works: "How works"
+      how_works: "How it works"
       what_is_channel: "What is a channel?"
       contact: "Contact"
       profile: "My profile"
@@ -725,7 +724,7 @@ en:
   remaining_plural: left
   remaining_singular: left
   remove: remove
-  require_admin: "You must be admin to perform this action."
+  require_admin: "You must be an admin to perform this action."
   require_login: "You must be logged in to perform this action."
   require_permission: "You don't have permission to perform this action."
   reward:
@@ -735,106 +734,105 @@ en:
     sold_out: "Sold out"
   sessions:
     auth:
-      success: "Successfully logged in. Welcome, %{name}!"
+      success: "You're uccessfully logged in. Welcome, %{name}!"
     destroy:
-      success: "Successfully logged out. See you!"
-    failure:
+      success: "You're uccessfully logged out. See you soon!"
+    failure: 
       error: "There was an error while loggin in. Please try again."
 
 
   static:
     guidelines_contributions:
       title: "I want to contribute a project!"
-      subtitle: "Understand step by step how to contribute a project on Catarse."
-      introduction: "Catarse is an excellent way to engage in a cause you believe in"
-      legend_html: "We believe that being part of a project is the kind of thing that sometimes we do not really know why, but it does a darn good."
+      subtitle: "Learn step by step how to contribute a project on Funddit."
+      introduction: "Funddit is an excellent way to engage in a cause you believe in"
+      legend_html: "We believe that being part of a project is the kind of thing that, sometimes without even knowing, makes you feels darn good."
       title_one: "Explore the Project"
-      step_one: "The first step is to understand the project. Watch the video, read the description, browse the links. If you are certain that this project can not remain only on paper, go one step forward!"
-      title_two: "Decide with how much you’ll contribute it"
-      step_two: "A good way to decide how much to contribute with it’s  to look  through which rewards  are offered in exchange for your contributing. And also your bank statement."
-      title_three: "Finalize your contributing"
-      step_three: "Fill in your information and review it! Then, decide what form of payment best meets your needs."
+      step_one: "The first step is to understand the project. Watch the video, read the description, browse the links. If you are certain that this project cannot remain only on paper, proceed to the next step!"
+      title_two: "Decide how much you’ll contribute"
+      step_two: "A good way to decide how much to contribute is to look at different types of rewards that are offered in exchange for your contributing."
+      title_three: "Finalize your contribution"
+      step_three: "Submit your contact and payment information and review it!"
       title_four: "Spread the word!"
-      step_four: "Now you're in the same boat as the project creator. Spread the word on your networks and stay tuned on the updates."
-      title_requirements: "Remember: in Catarse it’s “all or nothing”"
-      successful_title: "If the project meet or exceed its financial target ..."
+      step_four: "Now you're in the same boat as the project creator. Spread the word in your networks and stay tuned for updates."
+      title_requirements: "Remember: Funddit is based on “all or nothing”"
+      successful_title: "If the project meets or exceeds its financial target ..."
       successful: "The project is considered successful! The creator gets the money and contacts all supporters."
       not_success_title: "If the project does not meet the target ..."
-      not_success: "You get the full amount of support in the form of loans (to support another project). If that does not please you, you can request your money back, according to the rules of the <a href='%{terms}' target='_blank'>terms of use</a>."
+      not_success: "You get the full amount of support in the form of credits (to support another project). If that does not please you, you can request your money to be refunded."
       title_not_funded: "If the project does not achieve the goal, how do I use my credits?"
-      not_funded: "You will receive credits  on Catarse. The moment you choose to contribute another project, on the screen to select the reward, there will have a field to use your credits."
+      not_funded: "You will receive credits on Funddit. The moment you choose to contribute to another project, there will be field allowing to use credits when choosing your reward."
       more_questions: "I'm dying to support a project, is there anything else I need to know?"
       title_contribution: "How do I know that my support was successful?"
-      contribution: "You will receive a confirmation email. And stay tuned on the contributionS tab at the page of the project you contributed."
+      contribution: "You will receive a confirmation email. And keep watching the contributions tab on your profile."
       title_rewards: "If the project is funded, how do I get my rewards?"
-      rewards: "It is the duty of the project creator to contact you and arrange how to deliver  the chosen reward. If not, you need to send an email to him/her to claim it! If you get no answer … contact us so we can give them an earful = D"
+      rewards: "It is the duty of the project creator to contact you and arrange the delivery of the chosen reward. If not, you need to send an email to him/her to claim it! If you don't receive an answer, contact us so we can give them an earful = D"
       title_credits: "If the project does not achieve the goal, how do I use my credits?"
       credits: "You will receive credits  on Catarse. The moment you choose to contribute another project, on the screen to select the reward, there will have a field to use your credits."
-      title_money: "What if I don't want to use the credits?"
-      money: "No problem! You just need to enter in your profile (My credits) and request a chargeback. If you paid with debit or billet, you’ll need to open an account at MOIP. If you used a credit card the value will be back on your next bill."
-      other_contributions: "I WANT MORE! CAN I HELP  IN OTHER WAYS?"
-      intro: "Get to know different ways to help projects you believe in"
-      other_one: "Bring two other friends to contribute with the same amount you did"
-      other_two: "Spread the word to every one. Tell them how great is the project you contributed on Catarse."
-      other_three: "Do you have a friend who’s a Journalist? Try to have him/her to post something about it on his/her blog."
-      other_four: "Make a contributing video to broadcast your believe in the project .Like these guys did:https://vimeo.com/46233018"
-      other_five: "Send an e-mail to the project creator asking how can  you help even more."
+      title_money: "What if I don't want to use my credits?"
+      money: "No problem! You just need to log on to your profile (My credits) and request a chargeback. Based on your initial payment method, your contribution will be refunded."
+      other_contributions: "I WANT MORE! CAN I HELP IN OTHER WAYS?"
+      intro: "Learn about different ways to help projects you believe in"
+      other_one: "Bring in two other friends to contribute the same amount you did"
+      other_two: "Spread the word to everyone. Tell them how great the project is. Encourage them join Funddit."
+      other_three: "Do you have a friend who’s a journalist? Try to have him/her post something about it on his/her blog."
+      other_four: "Make a video to broadcast your believe in the project."
+      other_five: "Send an e-mail to the project creator asking how can you help even more."
       submit: "VERY COOL!"
       send_project: "I want to submit my project "
       explore_curious: "I’M ON BOARD!"
-      explore_projects: "I want to contribute a project"
+      explore_projects: "I want to contribute to a project"
     guidelines:
       title: "How it works"
-      subtitle: "Get to know Catarse better."
-      introduction_html: "Catarse is a space of exchange among individuals who together <br >enable the realization of creative projects."
-      legend_html: "We believe that connecting people that share value with respect to a cause; an idea; a project,  is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours, after all, catharsis happens daily from the meeting of people in search of new ways to give life to more initiatives from society itself. We understand this to be an alternative to government resources, the sponsoring companies and bank loans = D"
-      submit: "SUBMITTING A PROJECT"
-      send_project: "Understand how to submit your project"
-      explore_curious: "CONTRIBUTING A PROJECT"
-      explore_projects: "Understand how to contribute a project"
+      subtitle: "Get to know Funddit better."
+      introduction_html: "Funddit is a crowdfunding space for colleges connecting project creators with sponsors to realize projects."
+      legend_html: "We believe that connecting people who share values with respect to a cause; an idea; a project, is one of the best ways to make them come true. <br><br> Be very welcome! This is your space as much as it is ours!"
+      submit: "STARTING A PROJECT"
+      send_project: "Understand how to start your project"
+      explore_curious: "CONTRIBUTING TO A PROJECT"
+      explore_projects: "Understand how to contribute to a project"
     about:
       title: "Who We Are?"
       subtitle: "Meet the lovely gang that makes this whole thing happen <3"
-      introduction: "Who are they? What do they feed of? How are they networked? You’ll see all of it now on “Who are we?”."
-      name_one: "Luis Otávio Ribeiro"
-      title_one: "Fisher of Killer Projects"
-      text_one: "Uberabense. Laziness enthusiast , is addicted to maintaining creative structures running and promoting encounters between people."
-      name_two: "Diego Reeberg"
-      title_two: "Philosopher who lives in a Barrel"
-      text_two: "Apprentice of poet, musician, tango dancer and addict to Calvino and Saramago, likes to dig beautiful things and talented people in the dusty corners of the internet."
-      name_three: "Luciana Masini"
-      title_three: "Apprentice of Making it happen"
-      text_three: "Color and contrast enthusiast, poet and artist by nature, curious about culture, curator by accident."
-      name_four: "Renato Garcia"
-      title_four: "Catarse’s Silvio Santos (a brasilian host and entrepreneur)"
-      text_four: "Collectivist. Believes in collaboration one by one, with no authority,  for a fairer world. Football and skateboarding fanatic. All this accompanied by a good samba or nacinal rap soundtrack."
-      name_five: "Rodrigo Maia"
-      title_five: "Information Remixer"
-      text_five: "Pragmatist who loves improvisation, has a deep voice and artistic outbursts. Fascinated by people and all forms of moving images."
-      name_six: "Diogo Biazus"
-      title_six: "Database Archbishop"
-      text_six: "Data Architect. Likes self-explanatory, self-referential and self-cleaning structures."
-      name_seven: "Evelise Luz"
-      title_seven: "Footer Designer"
-      text_seven: "Completely crazy, likes venturing into books, singing in the shower and loves exploring fig jam jars."
-      name_eight: "Adriano Benin"
-      title_eight: "Programmer"
-      text_eight: "When not programming he likes designing circuits and risking the piano."
-      name_nine: "Antônio Roberto"
-      title_nine: "Fireman"
-      text_nine: "A fellow crazy about development who lives in Tonland"
+      introduction: "Information is coming"
+      name_one: 
+      title_one: 
+      text_one: 
+      name_two: 
+      title_two: 
+      text_two: 
+      name_three: 
+      title_three: 
+      text_three: 
+      name_four: 
+      title_four: 
+      text_four: 
+      name_five: 
+      text_five: 
+      name_six: 
+      title_six: 
+      text_six: 
+      name_seven:
+      title_seven: 
+      text_seven: 
+      name_eight: 
+      title_eight: 
+      text_eight: 
+      name_nine: 
+      title_nine: 
+      text_nine: 
     faq:
       title: "Frequently asked questions"
     guidelines_start:
-      accept: "I have read and understand how catarse works."
-      explore_curious: "Just looking around!"
+      accept: "I have read and understand how Funddit works."
+      explore_curious: "Just look around!"
       explore_projects: "I want to explore the projects."
       submit: "Next step!"
       send_project: "I want to submit my project."
-      subtitle: "Understand, step-by-step, how to finance your project through Catarse."
-      title: "How Catarse works?"
-      introduction: "Catarse is a different - and collaborative - way to make your projects become reality."
-      legend_html: "Use this guide to decide if Catarse is the right tool for the job."
+      subtitle: "Understand, step-by-step, how to finance your project through Funddit."
+      title: "How Funddit works?"
+      introduction: "Funddit is a different - and collaborative - way to make your projects become reality."
+      legend_html: "Use this guide to decide if Funddit is the right tool for the job."
       title_one: "Submit your project"
       step_one: "Projects are actions! And we receive them with open arms whether they are small, big, funny, serious, traditional, innovative... We love projects that require little money and have a big impact in their communities."
       title_two: "Review"
@@ -843,22 +841,22 @@ en:
       step_three: "When your project is ready, it's time to go live and plan your campaign. During this period, you will need to engage as many people as possible to reach your goal."
       title_four: "It's all-or-nothing"
       step_four: "If your project doesn't reach its goal before time runs out, all contributions will receive their pledged amount in credits and later, if they want, can ask for a refund."
-      title_requirements: "Requirements to submit your project to Catarse"
+      title_requirements: "Requirements to submit your project to Funddit"
       creative: "Creative and Finite"
       collective: "Collective Benefits"
       nonprofit: "Non-financial rewards"
       donation: "No philanthropic or “fund my life” projects"
       video: "Make a video"
-      more_questions: "Ok, but tell me more about this Catarse..."
+      more_questions: "Ok, but tell me more about this Funddit..."
       title_magic: "Our magic formula"
-      magic: "We believe that providing a meeting place for people that share common values is the best way to turn projects into reality. Use Catarse as a channel to direct your network towards a COMMON objective."
+      magic: "We believe that providing a meeting place for people that share common values is the best way to turn projects into reality. Use Funddit as a channel to direct your network towards a COMMON objective."
       title_money: "Where does the money to finance projects come from?"
-      money: "At least 50% will come from your own network of contacts. In this manner, Catarse is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
+      money: "At least 50% will come from your own network of contacts. In this manner, Funddit is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
       title_work: "Does it take a lot of work?"
       work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Catarse."
-      title_costs: "How much does it cost to use Catarse?"
-      costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Catarse will apply a 13% fee, this value includes both the Catarse fee and the payment gateway fee."
-      why: "Why Catarse?"
+      title_costs: "How much does it cost to use Funddit?"
+      costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Funddit will apply a 13% fee, this value includes both the Catarse fee and the payment gateway fee."
+      why: "Why Funddit?"
       intro: "First of all, it's good that you know why we believe that this new way to finance projects is phenomenal:"
       why_one: "By creating a very strong bond with your network, this kind of campaign open doors to new projects, partnerships and other unexpected connections."
       why_two: "If the projects are well connected, they can spread, quickly, to a lot of people, expanding your network and strengthening the base of people around your project."
@@ -896,9 +894,9 @@ en:
   terms: "terms of use"
   user:
     contributions_text:
-      many: "Contributed this and other %{total} projects"
-      one: "Contributed only this project until now"
-      two: "Contributed this and 1 other project"
+      many: "Contributed to this and other %{total} projects"
+      one: "Contributed only to this project until now"
+      two: "Contributed to this and one other project"
     no_name: Unnamed
     google_account: "Google Account"
   users:
@@ -906,15 +904,15 @@ en:
       confirmed: "Confirmed"
       refunded: "Refunded"
       requested_refund: "Refund requested"
-      waiting_confirmation: "Waiting confirmation"
+      waiting_confirmation: "Waiting for confirmation"
     set_email:
-      site_title: 'Define your email address'
-      title: 'Define your email address'
+      site_title: 'Enter your email address'
+      title: 'Enter your email address'
       submit: 'Save my email and proceed'
     show:
       attention: Attention
       tabs:
-        contributed_projects: "Contributed projects"
+        contributed_projects: "Contributions"
         created_projects: "Created projects"
         comments: Comments
         credits: Credits
@@ -926,14 +924,14 @@ en:
         twitter: "Profile on twitter"
     contributions:
       anonymous: "Anonymous contribution."
-      no_contributions: "%{name} haven't contributed any project yet. But we know it's just a matter of time! :D"
-      no_contributions_current_user_html: "You haven't contributed any project yet. What about <a href=\"/\">starting now</a>?"
+      no_contributions: "%{name} hasn't contributed to any project yet. But we know it's just a matter of time! :D"
+      no_contributions_current_user_html: "You haven't contributed to any project yet. What about <a href=\"/\">starting now</a>?"
       no_reward: "You didn't pick a reward"
-      title: "Projects %{name} has contributed"
-      title_current_user: "Projects I've contributed"
+      title: "Projects %{name} has contributed to"
+      title_current_user: "Projects I've contributed to"
       your_reward: "Your reward"
     unsubscribes:
-      title: "Choose from which projects you want to receive update notifications:"
+      title: "Choose projects about which you want to receive updates:"
       updates: "I want to receive project updates"
     current_user_fields:
       bio_limit: 'only 140 characters'
@@ -945,24 +943,24 @@ en:
       other_link: "another internet page"
       change_password: "Change my password"
       current_password_hint: "<i>We need your current password to confirm your changes.</i>"
-      email_hint: "Your email will only be used for communications from Catarse and from the projects you contributed to. It won't be visible in your profile. When you contribute a project, we will give your email to the project owner so he can provide your rewards."
-      email_tooltip: "Click here to fill your email..."
+      email_hint: "Your email will only be used for communications from Funddit and from the projects you contributed to. It won't be visible in your profile. When you contribute to a project, we will forward your email to the project creator so he can contact you for your reward."
+      email_tooltip: "Click here to submit your email..."
       gravatar_hint_html: "Want to change your picture? Use %{link} with your email. It's as simple as uploading an image and works for other sites as well ;)"
       local_avatar: "My avatar"
       submit_text: "Choose your picture"
       submit: "Submit"
       my_data: "My profile"
-      newsletter: "I want to receive news from Catarse via email"
+      newsletter: "I want to receive news from Funddit via email"
       password_hint: "<i>Leave blank if you don't want to change it.</i>"
     header:
-      bio_tooltip: "Click here to write about you..."
-      name_tooltip: "Click here to fill your name..."
+      bio_tooltip: "Click here to write about yourself..."
+      name_tooltip: "Click here to enter your name..."
 
   notifications:
     contributions:
       to_contribution:
-        subject: "Thank you! Your contribution for %{project} has been confirmed!"
+        subject: "Thank you! Your contribution to %{project} has been confirmed!"
         text: "Success! <br />Your contribution has just been confirmed.<br /><br />Check: %{contribution_name}<br />%{contribution_value}<br />%{reward}<br /><br />%{project_name}"
     updates:
-      subject: "If the league! Update of %{project_name} by %{project_owner}: %{update_title}"
-      text: "%{update_title}<br />%{update_text}<br />Comments? Send it on in the project page: <a href='%{project_link}'>%{project_name}</a>."
+      subject: " Update of %{project_name} by %{project_owner}: %{update_title}"
+      text: "%{update_title}<br />%{update_text}<br />Comments? Send it to project page: <a href='%{project_link}'>%{project_name}</a>."
