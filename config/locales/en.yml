@@ -2,7 +2,7 @@ en:
   pages:
     start:
       start:
-        content: "Start creating your project now! You may get started with uploading pictures or a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
+        content: "Start creating your project now! You may get started with uploading a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
         title: "Start your project"
         link: "Learn about how to get started"
       people:
@@ -24,7 +24,7 @@ en:
   controllers:
     updates:
       create:
-        notice: 'Update was successfully created!'
+        notice: 'Update was successful'
   failure_title: 'Please, fix the errors bellow:'
   uservoice_gadget:
     user:
@@ -36,7 +36,7 @@ en:
     title: "The biggest crowdfunding community at Truman State University"
     meta_title:  "%{title} · %{company_name}"
     description: "Funddit is a crowdfunding platform for colleges allowing organizations and individuals to fundraise projects."
-    keywords: "fundraise, crowdfunding, project, community, event, college, funding"
+    keywords: "fundraise, crowdfunding, project, community, event, college, funding, University"
   login:
     forgot_password:
       welcome: 'Reset password'
@@ -222,7 +222,7 @@ en:
   contribution:
     display_confirmed_at: "%{time_ago} ago"
     reward_must_be_from_project: "must be from the same project"
-    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum contributions"
+    should_not_contribute_if_maximum_contributions_been_reached: "has reached its maximum funding"
     value_must_be_at_least_rewards_value: "must be at least %{minimum_value} for the selected reward"
     project_should_be_online: "You cannot contribution to a project that is not online"
   contribution_plural: contributions
@@ -302,14 +302,14 @@ en:
         uploaded_image: "Upload a 512x400 image(.jpg)."
         video_url: "Paste the URL from a <a href=\"http://vimeo.com\" target=\"_blank\">Vimeo</a> video. "
       reward:
-        description: "Describe your reward in a way that catches people's attention to contribute the project. Don't be shy!"
+        description: "Describe your reward in a way that catches people's attention to contribute the project. Don't be shy! You can also include images and photos by linking them in [img] [/img] tags."
         maximum_contributions: "If your reward is limited, tell us about the maximum number of contributions."
         minimum_value: "This is the minimum contribution to receive this reward."
-        days_to_delivery: "Total of days to deliver the reward."
+        days_to_delivery: "Number of days required to deliver the reward."
     labels:
       contribution:
         anonymous: "I want my contribution to be anonymous."
-        credits: "I want to use my credits on this contribute."
+        credits: "I want to use my credits for this contribution."
         reward: "Select your reward"
         value: "How much do you want to contribute?"
       comment:
@@ -317,10 +317,10 @@ en:
       project:
         more_links: "List links of related projects *"
         traffic_sources: "How did you find out about Funddit?"
-        headline: "Punch Line"
+        headline: "Title"
         category: 'Category'
-        first_contributions: "List your first contributurors *"
-        about: "About your project. How will you spend this money?"
+        first_contributions: "List your first contributors *"
+        about: "About your project. What exactly do you need funding for?"
         expires_at: "What's the deadline to reach your goal?"
         goal: "How much do you intend to raise? (use numbers only)"
         name: "Project's Name"
