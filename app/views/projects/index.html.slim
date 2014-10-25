@@ -37,19 +37,6 @@
         .projects
           == render @recent
 
-    aside.main-sidebar
-      section.main-sidebar-division
-        h3.title= t('.sidebar.titles.blog')
-        ul
-          - (Blog.fetch_last_posts rescue [])[0..2].each do |post|
-            li.post
-              h2
-                = link_to post.url, target: '__blank', class: 'post-title' do
-                  = truncate(post.title, length: 80)
-              p.post-author= "#{t('.box.by')} #{post.author} #{t('.box.when')} #{l(post.published.to_date)}"
-              = link_to post.url, target: '__blank', class: 'post-resume' do
-                = truncate(post.summary, length: 130).html_safe
-
       section.main-sidebar-division
         h3.title= t('.sidebar.titles.newsletter')
         = render 'layouts/newsletter'
