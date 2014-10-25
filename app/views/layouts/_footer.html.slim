@@ -8,14 +8,11 @@ footer.footer
             li= link_to t('.links.twitter'), "#{CatarseSettings[:twitter_url]}", target: '_blank'
             li= link_to t('.links.facebook'), "#{CatarseSettings[:facebook_url]}", target: '_blank'
             li= link_to t('.links.instagram'), "#{CatarseSettings[:instagram_url]}", target: '_blank'
-            li= link_to t('.links.github'), "#{CatarseSettings[:github_url]}", target: '_blank'
-            li= link_to t('.links.blog'), "#{CatarseSettings[:blog_url]}", target: '_blank'
             li.zendesk_widget= link_to t('.links.contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}"
       .footer-div
         .footer-list
           h3.footer-title= t('.titles.about')
           ul.footer-list
-            li= link_to t('.links.faq'), "#{CatarseSettings[:faq_url]}", target: '_blank'
             li= mail_to CatarseSettings[:email_press], t('layouts.footer.links.press')
             li= link_to t('.links.feedback'), "#{CatarseSettings[:feedback_url]}", target: '_blank'
             li= link_to t('.links.terms'), terms_of_use_path, target: '_blank'
@@ -43,4 +40,4 @@ footer.footer
           = render_facebook_like colorscheme: "dark", width: "171"
     hr
     .row
-        p.copyleft= "#{t('.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
+        p.copyleft= "#{t('.texts.copyleft')} Funddit, #{DateTime.now.year} 
