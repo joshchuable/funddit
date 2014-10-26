@@ -4,26 +4,10 @@
 = render 'shared/header_big'
 = render 'shared/feedback'
 
-.page-header
-  .w-container.no-responsive
-    h1.headingcenter-middle = t('.title')
-
-    - statistics = Statistics.first
-    .w-row.stats-send-project
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_contributors)
-        p.prg1.sub-description = t('.header.people')
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_projects_success)
-        p.prg1.sub-description = t('.header.success')
-      .w-col.w-col-4.column-stats-submit
-        p.big-number = number_to_human(statistics.total_contributed)
-        p.prg1.sub-description = t('.header.money')
-
     .w-row
       .w-col.w-col-8.w-col-push-2.bt-center-header
         = link_to t('.learn-more'), '#learn', class: 'button bt-medium bt-aprenda'
-        span = "ou"
+        span = "or"
         = link_to t('.submit'), new_project_path, class: 'button bt-medium bt-rascunhooff'
 
 #learn
