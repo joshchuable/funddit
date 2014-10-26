@@ -2,7 +2,12 @@
 
 en:
   projects:
+    project:
+      progress_html: "Progress"
+      time_remaining_html: "Time remaining"
+      pledged_html: "Pledged"
     new:
+      page-title: "Start a Funddit campaign"
       form:
         blocks:
           first:
@@ -13,7 +18,7 @@ en:
             description: "You may edit this information anytime, even after this form is submitted."
         submit: "Get funded"
         labels:
-          name: "Name our project"
+          name: "Name your project"
           permalink: "Project URL"
           category: "Choose a category"
           goal: "Funding goal"
@@ -31,7 +36,7 @@ en:
           video_url: "The most successful campaigns have eyecatching, high quality videos explaining your project. This video should be uploaded onto Vimeo or YouTube. If you don't already have a video, you might consider making one during your funding period."
           about: "Why should someone fund you? What are your goals? What makes you the right person for this project? How do you plan to deliver? What are your biggest challenges?"
           headline: "Insert something short and catchy below."
-        info: "days" 
+        info: "days"
   devise:
     feedback_tab:
       title: 'Feedback and support'
