@@ -1,4 +1,27 @@
 en:
+  sending: "Create"
+  not_filled: "Unavailable"
+  admin:
+    projects:
+      index:
+        menu: "Management"
+      push_to_draft: "push to draft"
+    statistics:
+      charts:
+        current_period: "Current period"
+        last_year: "Last year"
+    financials:
+      index:
+        menu: "Financials"
+    contributions:
+      index:
+        credits_html: "Credits"
+        between_values: "Between Values"
+        placeholders:
+          project: "Project title"
+          user: "Username"
+          payment_id: "Payment ID"
+          acquirer: "Acquirer"
   pages:
     start:
       start:
