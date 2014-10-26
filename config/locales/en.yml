@@ -2,11 +2,16 @@ en:
   sending: "Create"
   not_filled: "Unavailable"
   admin:
+    users:
+      index:
+        menu: "Users"
     projects:
       index:
         menu: "Management"
       push_to_draft: "push to draft"
     statistics:
+      index:
+        menu: "Statistics"
       charts:
         current_period: "Current period"
         last_year: "Last year"
@@ -15,6 +20,7 @@ en:
         menu: "Financials"
     contributions:
       index:
+        menu: "Manage"
         credits_html: "Credits"
         between_values: "Between Values"
         placeholders:
@@ -337,6 +343,33 @@ en:
   here: here
   i_contributed: "I contributed to %{name} on @Funddit"
   i_just_contributed: "I just contributed to %{name} on @Funddit"
+  footer:
+    titles:
+      about: "About us"
+      social: "Social networks"
+      sitemap: "Browse"
+      newsletter: "Subscribe to our newsletter"
+      contact: "Keep in touch"
+    links:
+      about: "Who we are"
+      faq: "Help"
+      feedback: "Feedback"
+      support: "Support"
+      terms: "Terms"
+      privacy: "Privacy"
+      press: "Press"
+      twitter: "Twitter"
+      facebook: "Facebook"
+      instagram: "Instagram"
+      github: "Github"
+      blog: "Blog"
+      contact: "Contact"
+      recommended: "Recommended"
+      near: "Near me"
+      expiring: "Expiring"
+      recents: "Recent"
+      submit: "Start a project"
+      discover: "Explore"
   layouts:
     login:
       login_with_facebook: "sign in with your facebook account"
@@ -354,33 +387,6 @@ en:
     user:
       logout: Logout
       my_credits: "My credit"
-    footer:
-      titles:
-        about: "About us"
-        social: "Social networks"
-        sitemap: "Browse"
-        newsletter: "Subscribe to our newsletter"
-        contact: "Keep in touch"
-      links:
-        about: "Who we are"
-        faq: "Help"
-        feedback: "Feedback"
-        support: "Support"
-        terms: "Terms"
-        privacy: "Privacy"
-        press: "Press"
-        twitter: "Twitter"
-        facebook: "Facebook"
-        instagram: "Instagram"
-        github: "Github"
-        blog: "Blog"
-        contact: "Contact"
-        recommended: "Recommended"
-        near: "Near me"
-        expiring: "Expiring"
-        recents: "Recent"
-        submit: "Start a project"
-        discover: "Explore"
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:
@@ -430,8 +436,25 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    project:
+      progress_html: "Progress"
+      time_remaining_html: "Time remaining"
+      pledged_html: "Pledged"
     index:
+      links:
+        expiring: "Ending Soon"
+        recommended: "Recommended"
+        recents: "Recently added"
+      sections:
+        recommended:
+          title: "Recommended"
+        expiring:
+          title: "Ending soon"
+        recents:
+          title: "Recently added"
       sidebar:
+        buttons:
+          newsletter: "Newsletter"
         placeholders:
           email: "Email"
     new:
@@ -533,6 +556,7 @@ en:
         no_reward: "Thanks. I just want to help the project."
         submit: "Review and proceed to checkout"
         title: "Contribution %{name}"
+        page-title: "Start a Funddit Campaign"
       edit:
         brazil_address_title: 'Fill when you contribution is in Brazil'
         live_in_brazil: "If you live in Brazil, please check this box"
@@ -710,6 +734,9 @@ en:
       contact: "Contact"
       what_is_channel: "What is a channel?"
     admin:
+      followers_menu: "Followers"
+      posts_menu: "Posts"
+      partners_menu: "Partners"
       statistics:
         title: "Followers"
         download: "Download list"
