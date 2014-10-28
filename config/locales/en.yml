@@ -441,6 +441,7 @@ en:
       time_remaining_html: "Time remaining"
       pledged_html: "Pledged"
     index:
+      banner: "Start now"
       links:
         expiring: "Ending Soon"
         recommended: "Recommended"
