@@ -15,12 +15,6 @@ header.header
             = text_field_tag :pg_search, nil, autocomplete: "off", value: params[:pg_search], class: "discover-form-input"
             = submit_tag
 
-        li.header-nav-li
-          = link_to t('.help'), CatarseSettings[:support_forum], target: :_blank, :class => 'header-nav-item',  id: 'guidelines_header_modal' if CatarseSettings[:support_forum].present?
-
-        li.header-nav-li
-          = link_to t('.blog'), CatarseSettings['blog_url'], target: :_blank, class: 'header-nav-item' if CatarseSettings['blog_url'].present?
-
         - if current_user
           li.header-nav-li.user
             = link_to '#', class: 'my_profile_link user-menu' do

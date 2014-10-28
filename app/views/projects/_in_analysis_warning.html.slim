@@ -2,27 +2,27 @@ br
 - if policy(@project).update?
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Seu projeto está em análise.
+      i Your project is being reviewed.
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize)', '#'
       #project_warning_text
         br/
         br/
-        | Estamos avaliando as informações do seu rascunho, entraremos em contato em até 4 dias úteis =) 
+        | We're currently evaluating your draft, to make sure there are no scary monsters! We'll get back to you in a few days.
         br/
-        | Lembre-se de preencher as informações do #{link_to 'seu perfil', user_path(@project.user)} no Catarse
+        | While you're waiting, fill out #{link_to 'your Funddit profile', user_path(@project.user)}.
         br/
         br/
-        strong Solução de problemas:
+        strong Troubleshooti:
         br/
-        = link_to 'Socorro! | Já passaram 4 dias úteis e não tive noticias da curadoria, o que fazer?', 'http://suporte.catarse.me/hc/pt-br/articles/202037423-Socorro-J%C3%A1-enviei-o-projeto-h%C3%A1-quatro-dias-%C3%BAteis-e-n%C3%A3o-me-respondem-', target: '__blank'
+        = link_to "Help! | What's going on? It's been a month!", 'http://suporte.catarse.me/hc/pt-br/articles/202037423-Socorro-J%C3%A1-enviei-o-projeto-h%C3%A1-quatro-dias-%C3%BAteis-e-n%C3%A3o-me-respondem-', target: '__blank'
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Atenção! Este projeto ainda não está no ar! O Realizador responsável está fazendo ajustes! 
+      i Heads up! This project is not yet live!
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize)', '#'
       #project_warning_text
         br/
         br/
-        | Aproveite para dar uma olhada na página e deixe seu feedback para o(a) realizador(a) ali na <strong>Aba Comentários</strong>. Ajude a melhorar o projeto com a sua opinião! 
+        | Aproveite para dar uma olhada na página e deixe seu feedback para o(a) realizador(a) ali na <strong>Aba Comentários</strong>. Ajude a melhorar o projeto com a sua opinião!

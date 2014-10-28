@@ -38,11 +38,11 @@ class Projects::ContributionsController < ApplicationController
 
   def new
     @contribution = Contribution.new(project: parent, user: current_user)
+    @contribution.value = 10
     authorize @contribution
 
     @title = t('projects.contributions.new.title', name: @project.name)
-    empty_reward = Reward.new(minimum_value: 0, description: t('projects.contributions.new.no_reward'))
-    @rewards = [empty_reward] + @project.rewards.remaining.order(:minimum_value)
+    load_rewards
 
     # Select
     if params[:reward_id] && (@selected_reward = @project.rewards.find params[:reward_id]) && !@selected_reward.sold_out?
@@ -56,13 +56,14 @@ class Projects::ContributionsController < ApplicationController
     @contribution = Contribution.new(params[:contribution].merge(user: current_user, project: parent))
     @contribution.reward_id = nil if params[:contribution][:reward_id].to_i == 0
     authorize @contribution
+    @contribution.update_current_billing_info
     create! do |success,failure|
       failure.html do
         flash[:alert] = resource.errors.full_messages.to_sentence
-        return redirect_to new_project_contribution_path(@project)
+        load_rewards
+        render :new
       end
       success.html do
-        resource.update_current_billing_info
         flash[:notice] = nil
         session[:thank_you_contribution_id] = @contribution.id
         return redirect_to edit_project_contribution_path(project_id: @project.id, id: @contribution.id)
@@ -72,6 +73,11 @@ class Projects::ContributionsController < ApplicationController
   end
 
   protected
+  def load_rewards
+    empty_reward = Reward.new(minimum_value: 0, description: t('projects.contributions.new.no_reward'))
+    @rewards = [empty_reward] + @project.rewards.remaining.order(:minimum_value)
+  end
+
   def permitted_params
     params.permit(policy(resource).permitted_attributes)
   end
@@ -102,5 +108,9 @@ class Projects::ContributionsController < ApplicationController
 
   def collection
     @contributions ||= apply_scopes(end_of_association_chain).available_to_display.order("confirmed_at DESC").per(10)
+  end
+
+  def use_catarse_boostrap
+    ["new", "create", "edit", "update"].include?(action_name) ? 'catarse_bootstrap' : 'application'
   end
 end

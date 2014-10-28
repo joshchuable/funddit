@@ -2,40 +2,38 @@ br
 - if policy(@project).update?
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Bem-vindo ao Rascunho!
+      i Welcome to your project draft!
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize)', '#'
       #project_warning_text
         br/
         br/
-        | Para editar a página do seu projeto procure abaixo pela <strong>aba de EDIÇÃO</strong>, realize todas as alterações no formulário e clique em <strong>ATUALIZAR INFORMAÇÕES</strong>.
+        | You can edit your project from the EDIT tab below this message. When you're done making your project more awesome, click "Update Information".
         br/
-        | As recompensas podem ser adicionadas diretamente na coluna onde ficam expostas, para isso basta clicar em <strong>ADICIONAR RECOMPENSA</strong>. 
-        br/
-        br/
-        strong Importante!
-        br/
-        | Seu projeto só será avaliado pela nossa equipe quando você clicar no botão <strong>ENVIAR PROJETO</strong>. Iremos analisar a consistência do seu projeto apenas com base nas informações presentes no seu rascunho, 
-        | por isso seja bastante claro e objetivo na construção desta página. O <strong>vídeo</strong> não é obrigatório para a avaliação, apenas para o projeto ir ao ar. 
-        | Caso você já o tenha pronto, disponibilize pra gente. Quanto mais informação para o nosso atendimento e avaliação, melhor. Não deixe de estudar os 
-        | artigos da nossa #{link_to 'Central de Suporte!', CatarseSettings[:support_forum], target: '__blank'} Lá você pode se informar sobre a maioria dos processos que ocorrem antes, durante e depois de uma campanha no Catarse!
+        | You'll find that you can also add rewards on this page; just click "Add Reward"! Adding rewards is highly recommended. Most successful campaigns offer tangible rewards for their backers.
         br/
         br/
-        strong Solução de problemas:
+        strong Whoa!
         br/
-        | Confira: #{link_to 'Realizadores - Primeiros Passos', 'http://suporte.catarse.me/hc/pt-br/sections/200406978-Realizadores-Primeiros-passos', target: '__blank'}
+        | When you click the button below, you'll be sending in a <strong>DRAFT</strong> for the Funddit team to review. Based on the information provided, we're looking for a clearly articulated message that complies with our terms and conditions.
+        | While we do not require a video, we <strong>HIGHLY RECOMMEND</strong> some form of multimedia outreach. This will dramatically increase your chances of getting funded. If you don't already have one, get started soon!
+        | If you have more questions about the evaluation process, you can visit our #{link_to 'Support Center', CatarseSettings[:support_forum], target: '__blank'}. We look forward to reading your project!
+        br/
+        br/
+        strong Getting started:
+        br/
+        | Check out: #{link_to 'How to produce a quality Funddit video', 'http://suporte.catarse.me/hc/pt-br/sections/200406978-Realizadores-Primeiros-passos', target: '__blank'}
       br/
       br/
       .bootstrap-twitter
-        = link_to 'Enviar projeto', send_to_analysis_project_path(@project), class: 'btn btn-large'
+        = link_to 'Send Draft', send_to_analysis_project_path(@project), class: 'btn btn-large'
 - else
   #project_warning.bootstrap-alert
     .alert.alert-warning
-      i Atenção! Este projeto ainda está em rascunho.
+      i Heads up! Your project is still a draft!.
       #toggle_warning
-        = link_to '(minimizar informações)', '#'
+        = link_to '(minimize)', '#'
       #project_warning_text
         br/
         br/
-        | Este projeto ainda não está apto a receber contribuições financeiras e as informações dessa página não são definitivas. 
-        | Se você quer dar uma força desde já, deixe seu feedback para o(a) realizador(a) na <strong>Aba de Comentários</strong>.
+        | This project still cannot receive financial contributions.
