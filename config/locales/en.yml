@@ -1,8 +1,35 @@
 en:
+  sending: "Create"
+  not_filled: "Unavailable"
+  admin:
+    users:
+      index:
+        menu: "Users"
+    projects:
+      index:
+        menu: "Management"
+      push_to_draft: "push to draft"
+    statistics:
+      index:
+        menu: "Statistics"
+      charts:
+        current_period: "Current period"
+        last_year: "Last year"
+    financials:
+      index:
+        menu: "Financials"
+    contributions:
+      index:
+        menu: "Manage"
+        credits_html: "Credits"
+        between_values: "Between Values"
+        placeholders:
+          project: "Project title"
+          user: "Username"
+          payment_id: "Payment ID"
+          acquirer: "Acquirer"
   pages:
     start:
-      submit: "Submit a project"
-      title: "Augment your events to the next level"
       start:
         content: "Start creating your project now! You may get started with uploading a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
         title: "Start your project"
@@ -226,7 +253,7 @@ en:
       current_credits_html: "Your current balance is <span id=\"current_credits\">%{credits}</span> in credits."
       important_html: "If you ask for a refund, the value of your payment will be deducted from your credits."
       project: Project
-      refund_expiration_date_html: "Deadline to request refund"
+      refund_expiration_date_html: "Deadline to request refund (<a target='__blank' href='http://suporte.catarse.me/knowledgebase/articles/164746-regras-e-funcionamento-dos-reembolsos-estornos'>?</a>)"
       refunded: "Refund request has been submitted successfully. Our team will contact you within two business days."
       insufficient_credits: "You don't have enough credits to request this refund."
       refunds_title: "Payments that can be refunded"
@@ -316,6 +343,33 @@ en:
   here: here
   i_contributed: "I contributed to %{name} on @Funddit"
   i_just_contributed: "I just contributed to %{name} on @Funddit"
+  footer:
+    titles:
+      about: "About us"
+      social: "Social networks"
+      sitemap: "Browse"
+      newsletter: "Subscribe to our newsletter"
+      contact: "Keep in touch"
+    links:
+      about: "Who we are"
+      faq: "Help"
+      feedback: "Feedback"
+      support: "Support"
+      terms: "Terms"
+      privacy: "Privacy"
+      press: "Press"
+      twitter: "Twitter"
+      facebook: "Facebook"
+      instagram: "Instagram"
+      github: "Github"
+      blog: "Blog"
+      contact: "Contact"
+      recommended: "Recommended"
+      near: "Near me"
+      expiring: "Expiring"
+      recents: "Recent"
+      submit: "Start a project"
+      discover: "Explore"
   layouts:
     login:
       login_with_facebook: "sign in with your facebook account"
@@ -333,33 +387,6 @@ en:
     user:
       logout: Logout
       my_credits: "My credit"
-    footer:
-      titles:
-        about: "About us"
-        social: "Social networks"
-        sitemap: "Browse"
-        newsletter: "Subscribe to our newsletter"
-        contact: "Keep in touch"
-      links:
-        about: "Who we are"
-        faq: "Help"
-        feedback: "Feedback"
-        support: "Support"
-        terms: "Terms"
-        privacy: "Privacy"
-        press: "Press"
-        twitter: "Twitter"
-        facebook: "Facebook"
-        instagram: ""
-        github: ""
-        blog: "Blog"
-        contact: "Contact"
-        recommended: "Recommended"
-        near: "Near me"
-        expiring: "Expiring"
-        recents: "Recent"
-        submit: "Start a project"
-        discover: "Explore"
   not_informed: "not informed"
   notify_locale: "We identified your language by your browser. If you prefer another one, click on one of the flags on the right."
   on_the_spot:
@@ -383,19 +410,19 @@ en:
   project:
     start:
       email_subject: "Your project has been received by Funddit"
-      email_text: "Thanks for submitting your project to Funddit <br><br>We know you're excited to start raising funds for your event, but hold tight! Because we have a small team, we will take up to three days to approve your project. We'll try our best to get back to you as soon as possible, though!<br><br>Meanwhile it is worth your time to familiarize yourself with other live campaigns; find out what's working for them! (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) You may even find yourself backing a few!<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a><br><br>If you have any doubt, send an email to: %{email}"
+      email_text: "Thanks for submitting your project to Funddit :)<br><br>We know that you expect a quick reply but, to be quite frank, we take up to 3 days to respond, ok? That is because we have a small team working on several projects. Note that the reply can come sooner, so keep an eye on your inbox.<br><br>Meanwhile it is worth to get to know the projects that are online (<a href='%{explore_link}' style='color: #E75297 !important;'>%{explore_link}</a>) and - if you like any of them- contribute it! This is the way to show support for the crowdfunding culture in Brazil and to feed the ecosystem that keeps growing around Catarse.<br><br>Besides that, you will get some inspiration for your own project...<br><br>Stay tuned for updates in <a href='%{facebook}' style='color: #E75297 !important;'>Facebook</a> and get some deeper knowledge about Catarse reading the posts in our <a href='%{blog}' style='color: #E75297 !important;'>blog</a>.<br><br>If you have any doubt, send an email to: %{email}"
       notification_text: "Your project has been received by Funddit"
     finish:
       successful:
         email_subject: "Hooray! The %{project_name} was successful on Funddit!"
-        email_text: "The project %{project_link}, that you have contributed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_contributions} wonderful contributions, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Funddit's team takes 3 days to send to the project creator the list with all information of the contributions. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br> If you have any questions or concerns, feel free to send us an email at <a href='mail_to:funddit@gmail.com' style='color: #008800;'>funddit@gmail.com</a><br>"
+        email_text: "The project %{project_link}, that you have contributed, was successfully funded! Let's celebrate o/<br><br>The project has, including you, %{project_total_contributions} wonderful contributions, raised %{project_pledged} and reached %{project_process}% of its goal =D<br><br>Something that is important to know: Catarse's team takes 3 days to send to the project creator the list with all information of the contributions. So, the project creator will only be in touch with you to thank you and talk about the rewards delivery in a few days, ok?<br><br>So why don't you, in this meantime, share with all your friends this success?<br><br><div style='text-align:center;'>%{facebook_button}%{twitter_button}</div><br><br>If you want to get in touch with %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any doubt about Catarse, access our FAQ: <a href='http://www.catarse.me/faq' style='color: #008800';>www.catarse.me/faq</a> or send an email to <a href='mail_to:contato@catarse.me' style='color: #008800;'>contato@catarse.me</a><br>"
         facebook_text: "Hooray! The project '%{name}', to which I contributed, was successful on Funddit!"
         notification_text: "Hooray! The project %{link} that you contributed to was successful! Spread the word!"
         reward_notification_text: "Soon, %{link} will contact you to deliver your reward. Enjoy!"
         twitter_text: "Hooray! The project '%{name}', to which I contributed, was successful on @Funddit! %{short_url}"
       unsuccessful:
         email_subject: "The project %{project_name} wasn't funded on Funddit."
-        email_text: 'Unfortunately the project %{project_link}, that you have to contributed, did not reached its goal and was not funded at Funddit.<br><br> You have received <strong>%{value}</strong> in credits to contribute other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Funddit using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to funddit@gmail.com with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:funddit@gmail.com" style="color: #008800;">funddit@gmail.com</a>.<br>'
+        email_text: 'Unfortunately the project %{project_link}, that you have to contributed, did not reached its goal and was not funded at Funddit.<br><br> You have received <strong>%{value}</strong> in credits to contribute other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:contato@catarse.me" style="color: #008800;">contato@catarse.me</a>.<br>'
         notification_text: "You received %{value} in credits to contribute other projects. If you prefer, you can request a refund %{link}."
         unsuccessful_text: "The project %{link} that you contributed to wasn't funded. Hopefully next time!"
     video_regex_validation: "only Vimeo URLs are allowed"
@@ -409,8 +436,25 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    project:
+      progress_html: "Progress"
+      time_remaining_html: "Time remaining"
+      pledged_html: "Pledged"
     index:
+      links:
+        expiring: "Ending Soon"
+        recommended: "Recommended"
+        recents: "Recently added"
+      sections:
+        recommended:
+          title: "Recommended"
+        expiring:
+          title: "Ending soon"
+        recents:
+          title: "Recently added"
       sidebar:
+        buttons:
+          newsletter: "Newsletter"
         placeholders:
           email: "Email"
     new:
@@ -449,7 +493,7 @@ en:
     title_current_user: "My projects"
     show:
       rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
-      waiting: "This project is waiting for approval and soon we'll know if it's ready to go live!"
+      waiting: "This project is waiting for approval and soon we'll know if it will go online on Catarse ;)"
       waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
       about_title: "About this project"
       no_rewards_warning_title: 'Create here your rewards'
@@ -512,9 +556,10 @@ en:
         no_reward: "Thanks. I just want to help the project."
         submit: "Review and proceed to checkout"
         title: "Contribution %{name}"
+        page-title: "Start a Funddit Campaign"
       edit:
-        brazil_address_title: ''
-        live_in_brazil: ""
+        brazil_address_title: 'Fill when you contribution is in Brazil'
+        live_in_brazil: "If you live in Brazil, please check this box"
         credits_notice_html: "This contribution will be payed with your credits. After the confirmation, you will have <strong>%{credits}</strong> in credits to contribute other projects."
         error: "Ooops. There was an error while registering your contribution. Please try again."
         international:
@@ -532,7 +577,7 @@ en:
         choose_payment: "How do you want to pay?"
         choose_payment_subtitle: "Select below a payment method"
         choose_credit_card: "PayPal"
-        choose_boleto: ""
+        choose_boleto: "Payments from Brazil"
         you_are_about_html: "You are about to become part of the group that does everything to make %{link} happen."
         pay_with: "Pay With"
     create:
@@ -623,13 +668,13 @@ en:
     send_mail:
       success: "Your project was successfully sent! We'll soon contact you. Thanks a lot!"
     new:
-      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your contributions. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it go live.<br><br><b>Very Important:</b> <i>You project will not be approved it if does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >Terms and conditions</a</i>"
+      legend_html: "After filling in the form below, you will receive a project page in Draft mode. In this draft you will add the rewards for your contributions. You may also share the page with your friends to collect feedback and sharpen your project even more.<br><br>The information filled in below is not definitive, but remember that the more consistent you are in your project submission, the faster it will go on air.<br><br><b>Very Important:</b> <i>Catharsis is cured platform, which means that our board will evaluate the focus, the feasibility and consistency of your project during the Draft. If we understand that your project does not comply with our <a href='https://docs.google.com/a/catarse.me/document/d/1wLDS2lphQ6monovg9rEaTIDcxBD3FRZV9dfGKmajyj8/edit' target='_blank' >selection criteria</a>, it may be refused by the team of curators.</i>"
       permalink_important: 'Try not to use underline, hyphen etc.'
       permalink_hint: 'Go simple. Your contributions should be able to remember the URL to your project ;)'
       name_important: "Do not exceed  50 characters"
       online_days_important: "60 days is the maximum"
       about_important: "Don't make it too long! Indicate links so people can know more about your work"
-      important_html: 'Remember that Funddit charges a fee of 6.5% on successful projects. Just divide your final budget by 0.935 to find the discounted amount.'
+      important_html: 'Keep in mind the 13% fee charged by Catarse in case you reach your financial goal. Just divide your final budget by 0.87 to find the discounted amount.'
       send_project: "I want to submit my project."
       video_important: "The video must be hosted by Vimeo or Youtube. Paste here the URL!"
       more_links_important: "It's very important to use social medias to spread the word about your project and engage your network into making it a success"
@@ -651,7 +696,7 @@ en:
       twitter: "Have twitter account?"
       facebook: "Have facebook account?"
       blog: "Have a blog about the project?"
-      know_us_via: "How did you find out about Funddit?"
+      know_us_via: "How did you meet Catarse?"
       how_works: "How to mobilize contributions to raise $ needed for enforcement?"
       project_warning:
         content_html: "Want to have your project selected? Don't forget to read %{link}."
@@ -662,7 +707,7 @@ en:
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
       title: "Submit your project"
     twitter:
-      take_a_look: "Check out the project %{name} on @funddit"
+      take_a_look: "Check out the project %{name} on @catarse"
     video_embed:
       a_project_by_html: "A project by %{link} on"
   projects_mailer:
@@ -689,6 +734,9 @@ en:
       contact: "Contact"
       what_is_channel: "What is a channel?"
     admin:
+      followers_menu: "Followers"
+      posts_menu: "Posts"
+      partners_menu: "Partners"
       statistics:
         title: "Followers"
         download: "Download list"
@@ -772,7 +820,7 @@ en:
       title_rewards: "If the project is funded, how do I get my rewards?"
       rewards: "It is the duty of the project creator to contact you and arrange the delivery of the chosen reward. If not, you need to send an email to him/her to claim it! If you don't receive an answer, contact us so we can give them an earful = D"
       title_credits: "If the project does not achieve the goal, how do I use my credits?"
-      credits: "You will receive credits  on Funddit. When you choose to contribute another project, you will have the option to use your credits."
+      credits: "You will receive credits  on Catarse. The moment you choose to contribute another project, on the screen to select the reward, there will have a field to use your credits."
       title_money: "What if I don't want to use my credits?"
       money: "No problem! You just need to log on to your profile (My credits) and request a chargeback. Based on your initial payment method, your contribution will be refunded."
       other_contributions: "I WANT MORE! CAN I HELP IN OTHER WAYS?"
@@ -857,9 +905,9 @@ en:
       title_money: "Where does the money to finance projects come from?"
       money: "At least 50% will come from your own network of contacts. In this manner, Funddit is a way for you to get closer to the people that enjoy your work and expand this network through sharing in social networks, newspapers, blogs and, of course, your favorite bar."
       title_work: "Does it take a lot of work?"
-      work: "You will have to work hard, but more importantly, you have to work smart. The experience will be worth it."
+      work: "A loooot! There is no 'easy money on the INTERNET'. You will have to work a lot during your project, but the experience will be worth it - we assure you :D And you will have a much stronger network behind your project after Catarse."
       title_costs: "How much does it cost to use Funddit?"
-      costs: "Submitting your project is free. If your project is approved and has reached its goal, Funddit will apply a 6.5% fee, this value includes both the Funddit fee. There may also be an additional 3% fee for the payment gateway."
+      costs: "Submitting your project is free. Now, when your project is approved and has reached its goal, Funddit will apply a 13% fee, this value includes both the Catarse fee and the payment gateway fee."
       why: "Why Funddit?"
       intro: "First of all, it's good that you know why we believe that this new way to finance projects is phenomenal:"
       why_one: "By creating a very strong bond with your network, this kind of campaign open doors to new projects, partnerships and other unexpected connections."
@@ -873,7 +921,7 @@ en:
       title_one: "What inspired you to make this project?"
       tip_one: "People only engage when they realize the importance of a cause for society or for the person who leads a campaign. So be very clear about what is your inspiration and let it overflow into your project."
       title_two: "What is the focus?"
-      tip_two: "Funddit is an excellent way to take the first steps. Therefore, define very well the purpose of your project, as well as who will benefit from it. Clearly defining your objectives is one of the best ways to engage people."
+      tip_two: "Catarse is an excellent way to take the first steps. Therefore, define very well the purpose of your project, as well as who will benefit from it. Clearly defining your objectives is one of the best ways to engage people."
       title_three: "What is your goal?"
       tip_three: "Calculate all costs for the project execution and rewards delivery. Also take into account your ability to engage people in order to define your financial goal."
       title_four: "What is your deadline for the fundraising?"
@@ -890,7 +938,7 @@ en:
       explore_projects: "I want to explore the projects."
       submit: "Next step!"
       send_project: "I want to submit my project."
-      guide: "Download a complete guide with all the tips to elaborate your project in Funddit."
+      guide: "Download here a complete guide with all the tips to elaborate your project in Catarse."
     privacy:
       title: "Privacy Policy"
     terms:
