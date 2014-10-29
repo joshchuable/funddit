@@ -30,6 +30,7 @@ en:
           acquirer: "Acquirer"
   pages:
     start:
+      title: Amazing events people love.
       start:
         content: "Start creating your project now! You may get started with uploading a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
         title: "Start your project"
@@ -343,37 +344,37 @@ en:
   here: here
   i_contributed: "I contributed to %{name} on @Funddit"
   i_just_contributed: "I just contributed to %{name} on @Funddit"
-  footer:
-    titles:
-      about: "About us"
-      social: "Social networks"
-      sitemap: "Browse"
-      newsletter: "Subscribe to our newsletter"
-      contact: "Keep in touch"
-    links:
-      about: "Who we are"
-      faq: "Help"
-      feedback: "Feedback"
-      support: "Support"
-      terms: "Terms"
-      privacy: "Privacy"
-      press: "Press"
-      twitter: "Twitter"
-      facebook: "Facebook"
-      instagram: "Instagram"
-      github: "Github"
-      blog: "Blog"
-      contact: "Contact"
-      recommended: "Recommended"
-      near: "Near me"
-      expiring: "Expiring"
-      recents: "Recent"
-      submit: "Start a project"
-      discover: "Explore"
   layouts:
     login:
       login_with_facebook: "sign in with your facebook account"
       remember_me: "Remember me and keep me connected."
+    footer:
+      titles:
+        about: "About us"
+        social: "Social networks"
+        sitemap: "Browse"
+        newsletter: "Subscribe to our newsletter"
+        contact: "Keep in touch"
+      links:
+        about: "Who we are"
+        faq: "Help"
+        feedback: "Feedback"
+        support: "Support"
+        terms: "Terms"
+        privacy: "Privacy"
+        press: "Press"
+        twitter: "Twitter"
+        facebook: "Facebook"
+        instagram: "Instagram"
+        github: "Github"
+        blog: "Blog"
+        contact: "Contact"
+        recommended: "Recommended"
+        near: "Near me"
+        expiring: "Expiring"
+        recents: "Recent"
+        submit: "Start a project"
+        discover: "Explore"
     header:
       blog: Blog
       help: Help
