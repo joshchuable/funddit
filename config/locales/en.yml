@@ -375,6 +375,8 @@ en:
         recents: "Recent"
         submit: "Start a project"
         discover: "Explore"
+      texts:
+        copyleft: "Made with love."
     header:
       blog: Blog
       help: Help
@@ -386,6 +388,8 @@ en:
       account: "My account"
       search: "Search"
     user:
+      my_contributions: "My contributions"
+      refund_link: "Refund link"
       logout: Logout
       my_credits: "My credit"
   not_informed: "not informed"
