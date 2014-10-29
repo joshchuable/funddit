@@ -63,7 +63,7 @@ en:
       confirmed_contributions: 'Confirmed contributions'
       created_projects: 'Created projects'
   site:
-    title: "The biggest crowdfunding community at Truman State University"
+    title: "Events that inspire"
     meta_title:  "%{title} · %{company_name}"
     description: "Funddit is a crowdfunding platform for colleges allowing organizations and individuals to fundraise projects."
     keywords: "fundraise, crowdfunding, project, community, event, college, funding, University"
