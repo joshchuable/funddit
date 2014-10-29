@@ -36,7 +36,8 @@ en:
           video_url: "The most successful campaigns have eyecatching, high quality videos explaining your project. This video should be uploaded onto Vimeo or YouTube. If you don't already have a video, you might consider making one during your funding period."
           about: "Why should someone fund you? What are your goals? What makes you the right person for this project? How do you plan to deliver? What are your biggest challenges?"
           headline: "Insert something short and catchy below."
-        info: "days"
+        info:
+          online_days: "days"
   devise:
     feedback_tab:
       title: 'Feedback and support'
