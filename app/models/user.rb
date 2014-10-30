@@ -9,8 +9,8 @@ class User < ActiveRecord::Base
     :recoverable, :rememberable, :trackable, :omniauthable
 
   delegate  :display_name, :display_image, :short_name, :display_image_html,
-    :medium_name, :display_credits, :display_total_of_contributions, :contributions_text, :twitter_link, :gravatar_url,
-    to: :decorator
+    :medium_name, :display_credits, :display_total_of_contributions, :contributions_text,
+    :twitter_link, :gravatar_url, :display_bank_account, :display_bank_account_owner, to: :decorator
 
   attr_accessible :email, :password, :password_confirmation, :remember_me, :name,
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
@@ -43,6 +43,8 @@ class User < ActiveRecord::Base
   has_many :unsubscribes
   has_many :project_posts
   has_many :contributed_projects, -> { where(contributions: { state: 'confirmed' } ).uniq } ,through: :contributions, source: :project
+  has_many :category_followers
+  has_many :categories, through: :category_followers
   has_and_belongs_to_many :recommended_projects, join_table: :recommendations, class_name: 'Project'
   has_and_belongs_to_many :subscriptions, join_table: :channels_subscribers, class_name: 'Channel'
 
@@ -82,13 +84,30 @@ class User < ActiveRecord::Base
   scope :by_id, ->(id){ where(id: id) }
   scope :by_key, ->(key){ where('EXISTS(SELECT true FROM contributions WHERE contributions.user_id = users.id AND contributions.key ~* ?)', key) }
   scope :has_credits, -> { joins(:user_total).where('user_totals.credits > 0') }
+  scope :already_used_credits, -> {
+    has_credits.
+    where("EXISTS (SELECT true FROM contributions b WHERE b.credits AND b.state = 'confirmed' AND b.user_id = users.id)")
+  }
   scope :has_not_used_credits_last_month, -> { has_credits.
     where("NOT EXISTS (SELECT true FROM contributions b WHERE current_timestamp - b.created_at < '1 month'::interval AND b.credits AND b.state = 'confirmed' AND b.user_id = users.id)")
+  }
+
+  scope :to_send_category_notification, -> (category_id) {
+    where("NOT EXISTS (
+          select true from category_notifications n
+          where n.template_name = 'categorized_projects_of_the_week' AND
+          n.category_id = ? AND
+          (n.created_at AT TIME ZONE '#{Time.zone.tzinfo.name}' + '7 days'::interval) >= current_timestamp AT TIME ZONE '#{Time.zone.tzinfo.name}' AND
+          n.user_id = users.id)", category_id)
   }
   scope :order_by, ->(sort_field){ order(sort_field) }
 
   def self.find_active!(id)
     self.active.where(id: id).first!
+  end
+
+  def following_this_category?(category_id)
+    category_followers.pluck(:category_id).include?(category_id)
   end
 
   def failed_contributed_projects
@@ -159,6 +178,7 @@ class User < ActiveRecord::Base
       id: self.id,
       email: self.email,
       total_contributed_projects: self.total_contributed_projects,
+      total_created_projects: self.projects.count,
       created_at: self.created_at,
       last_sign_in_at: self.last_sign_in_at,
       sign_in_count: self.sign_in_count,

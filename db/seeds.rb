@@ -37,7 +37,7 @@ puts 'Seeding the database...'
 
 {
   company_name: 'Funddit',
-  company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
+  company_logo: '',
   host: 'funddit.me',
   base_url: "http://funddit.me",
 

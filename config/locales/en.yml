@@ -989,7 +989,9 @@ en:
       title_current_user: "Projects I've contributed to"
       your_reward: "Your reward"
     unsubscribes:
-      title: "Choose projects about which you want to receive updates:"
+      current_user_fields.update_social_info: "Submit"
+      projects_in_reminder: "Reminder"
+      title: "Choose projects about which you want to receive updates"
       updates: "I want to receive project updates"
     current_user_fields:
       bio_limit: 'only 140 characters'
@@ -1013,7 +1015,11 @@ en:
     header:
       bio_tooltip: "Click here to write about yourself..."
       name_tooltip: "Click here to enter your name..."
-
+    credits:
+      index:
+        current_credits_html: "Remaining credits"
+        refunds_title: "Refunds"
+        important_html: "For rules on refunds, click here!"
   notifications:
     contributions:
       to_contribution:

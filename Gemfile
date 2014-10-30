@@ -8,6 +8,7 @@ gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remo
 gem 'rails-observers', '~> 0.1.2'
 
 gem 'sidekiq',  '~> 3.1.3'
+gem 'sinatra', require: false # required by sidekiq web interface mounted on /sidekiq
 
 # Turns every field on a editable one
 gem "best_in_place", :git => "git://github.com/bernat/best_in_place", ref: "ee95961e639022e6aa528704b8cb4789596ea61b"
@@ -36,7 +37,7 @@ gem 'catarse_moip', '~> 2.3.6'
 gem 'catarse_credits', '0.0.6'
 gem 'catarse_pagarme', '1.4.1'
 gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
-# gem 'catarse_wepay', '~> 0.0.1'
+gem 'catarse_wepay', '~> 0.0.1'
 
 # Decorators
 gem 'draper'
