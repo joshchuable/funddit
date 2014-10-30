@@ -30,15 +30,9 @@ Catarse::Application.routes.draw do
   mount CatarseMoip::Engine => "/", as: :catarse_moip
   mount CatarseCredits::Engine => "/", as: :catarse_credits
   mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
-  mount CatarseWepay::Engine => "/", as: :catarse_wepay
+#  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
-  resources :categories, only: [] do
-    member do
-      get :subscribe, to: 'categories/subscriptions#create'
-      get :unsubscribe, to: 'categories/subscriptions#destroy'
-    end
-  end
   resources :auto_complete_projects, only: [:index]
   resources :projects, only: [:index, :create, :update, :new, :show] do
     resources :posts, controller: 'projects/posts', only: [ :index, :create, :destroy ]
@@ -95,7 +89,6 @@ Catarse::Application.routes.draw do
 
 
   # Channels
-
   constraints SubdomainConstraint do
     namespace :channels, path: '' do
 
@@ -151,7 +144,6 @@ Catarse::Application.routes.draw do
         put 'refund'
         put 'hide'
         put 'cancel'
-        put 'request_refund'
         put 'push_to_trash'
       end
     end
