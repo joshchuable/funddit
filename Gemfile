@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
-
+ruby '2.1.3'
+gem 'execjs'
+gem 'therubyracer', :platforms => :ruby
+gem 'rack-cache'
 gem 'rails', '~> 4.1.6'
 
 gem 'protected_attributes', '~> 1.0.5' # When upgrade to strong_parameters, remove this gem.

@@ -1,4 +1,4 @@
-require 'sidekiq/web'
+#require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
   def ssl_options
