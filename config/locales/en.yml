@@ -48,6 +48,8 @@ en:
         content: "You can choose a time period between one and 60 days to reach your fundraising goal based on an All or Nothing system. When a project reaches the funding goal, Funddit receives 6.5% of that value. If the project does not achieve minimum funding, we do not charge anything and will refund the money to your supporters."
         link: "How to run a successful Funddit campaign"
       page-title: "Crowdsourced college events Funddit"
+    learn-more: "Learn more"
+    submit: "Submit"
   not_found:
     title: "Sorry, we couldn't find this address :("
     text: "You may have mistyped the address or the page may have moved."
@@ -161,6 +163,13 @@ en:
     channels:
       title: "Funddit Channel"
   shared:
+    feedback:
+      texts:
+        response:
+          title: "Title"
+          content: "Content"
+    header_big:
+      projects: "Projects"
     accept_terms_html: "I have read and accepted the %{link}."
     feedback:
       texts:
@@ -387,6 +396,7 @@ en:
       profile: "My profile"
       account: "My account"
       search: "Search"
+      projects: "Projects"
     user:
       my_contributions: "My contributions"
       refund_link: "Refund link"
@@ -441,10 +451,26 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    posts:
+      new:
+        notice: "Notice"
+    post:
+      new:
+        notice: "Notice"
+        title: "Title"
+        comment: "Comment"
+        exclusive: "Exclusive"
+        warning: "Warning"
+        submit: "Submit"
+    project_about:
+      embed_title: "Embed title"
+      embed: "Embed"
     project:
       progress_html: "Progress"
       time_remaining_html: "Time remaining"
       pledged_html: "Pledged"
+      display_status:
+        draft: "Project is in draft"
     index:
       banner: "Start now"
       links:
@@ -459,10 +485,15 @@ en:
         recents:
           title: "Recently added"
       sidebar:
+        titles:
+          newsletter: "Newsletter"
+          twitter: "Twitter"
         buttons:
           newsletter: "Newsletter"
         placeholders:
           email: "Email"
+      box:
+        by: "by"
     new:
       form:
         blocks:
@@ -498,6 +529,9 @@ en:
     title: "%{name}'s projects"
     title_current_user: "My projects"
     show:
+      project_by: "Project by"
+      project_header:
+        without_city: "No location"
       rejected: "This project does not fit our <a href='https://docs.google.com/document/d/1Heh9LlvoSoD0lUfbmV5WlISJ3nqmGpEQiw15TBuCn-0/edit' target='_blank'>selection criteria.</a>"
       waiting: "This project is waiting for approval and soon we'll know if it will go online on Catarse ;)"
       waiting_owner: "To edit the project info, click on 'Edit project' tab. The rewards you can edit on reward column."
@@ -518,6 +552,8 @@ en:
         edit: Edit
         reports: Reports
         add_reward: 'Add Rewards'
+        posts: "Posts"
+        metrics: "Metrics"
       share:
         embed: embed
         embed_title: "Embed this project on your site"
@@ -525,9 +561,13 @@ en:
         link_title: "Share the link"
         take_a_look: "Check out the project"
         title: "Be part of it and share this project"
+      contribution_states:
+        confirmed: "Confirmed"
+        pending: "Pending"
       contribute_project:
         submit: "Back this project"
         display_status:
+          in_analysis: "This project is being evaluated by our admins"
           reached_goal: "This project will be successful and funded on %{date}"
           not_reached_goal: "This project will only be funded if at least %{goal} is contributed until %{date}"
           failed: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
@@ -535,6 +575,11 @@ en:
           waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
           draft: "This project is in draft mode and is not open to contributions yet."
         reached_of: "Reached of"
+      sidebar:
+        contributions: "Contributions"
+        goal: "Goal"
+      count_contributed_projects: "Count Contributed Projects"
+      funding_period: "Funding Period"
     contributions:
       contribution:
         anonymous_contribution: "Anonymous contribution"
@@ -651,6 +696,10 @@ en:
       empty: "Nobody contributed this project so far. How about being the first one?"
       confirmed: "Confirmed"
       pending: "Pending"
+    project_reports:
+      link_reports_confirmed: "Link Reports Confirmed"
+      link_reports_waiting_confirmation: "Reports waiting Confirmation"
+      all_contributions_without_reward: "All contributions without reward"
     project_header:
       subtitle_html: "A project by %{link}"
       without_city: "A project in"
