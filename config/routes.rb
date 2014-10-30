@@ -1,4 +1,3 @@
-require 'sidekiq/web'
 
 Catarse::Application.routes.draw do
   def ssl_options
@@ -32,7 +31,7 @@ Catarse::Application.routes.draw do
   mount CatarseMoip::Engine => "/", as: :catarse_moip
   mount CatarseCredits::Engine => "/", as: :catarse_credits
   mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
-#  mount CatarseWepay::Engine => "/", as: :catarse_wepay
+  mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
   resources :categories, only: [] do
@@ -97,6 +96,7 @@ Catarse::Application.routes.draw do
 
 
   # Channels
+
   constraints SubdomainConstraint do
     namespace :channels, path: '' do
 
