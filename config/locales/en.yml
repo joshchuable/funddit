@@ -1,4 +1,31 @@
 en:
+  footer:
+    titles:
+      about: "About us"
+      social: "Social networks"
+      sitemap: "Browse"
+      newsletter: "Subscribe to our newsletter"
+      contact: "Keep in touch"
+    links:
+      about: "Who we are"
+      faq: "Help"
+      feedback: "Feedback"
+      support: "Support"
+      terms: "Terms"
+      privacy: "Privacy"
+      press: "Press"
+      twitter: "Twitter"
+      facebook: "Facebook"
+      instagram: "Instagram"
+      github: "Github"
+      blog: "Blog"
+      contact: "Contact"
+      recommended: "Recommended"
+      near: "Near me"
+      expiring: "Expiring"
+      recents: "Recent"
+      submit: "Start a project"
+      discover: "Explore"
   sending: "Create"
   not_filled: "Unavailable"
   admin:
@@ -50,6 +77,7 @@ en:
       page-title: "Crowdsourced college events Funddit"
     learn-more: "Learn more"
     submit: "Submit"
+    terms_of_use:
   not_found:
     title: "Sorry, we couldn't find this address :("
     text: "You may have mistyped the address or the page may have moved."
@@ -163,11 +191,8 @@ en:
     channels:
       title: "Funddit Channel"
   shared:
-    feedback:
-      texts:
-        response:
-          title: "Title"
-          content: "Content"
+    header_bootstrap_v1:
+      projects: "Projects"
     header_big:
       projects: "Projects"
     accept_terms_html: "I have read and accepted the %{link}."
@@ -175,6 +200,9 @@ en:
       texts:
         title: "Say hello!"
         content: "We love to hear from Funddit users about how we can improve. After all, this is for you!"
+        response:
+          title: "Title"
+          content: "Content"
       placeholders:
         text: What do you love about us?
         email: What is your email?
@@ -453,6 +481,8 @@ en:
       reached_goal: funded
       draft: "draft"
   projects:
+    reminder:
+      ok: "Yay!"
     posts:
       new:
         notice: "Notice"
@@ -1009,6 +1039,8 @@ en:
     no_name: Unnamed
     google_account: "Google Account"
   users:
+    unsubscribes:
+      posts: "Posts"
     project:
       confirmed: "Confirmed"
       refunded: "Refunded"
@@ -1019,6 +1051,8 @@ en:
       title: 'Enter your email address'
       submit: 'Save my email and proceed'
     show:
+      no_contributions_current_user_html: "No contributions yet"
+      no_projects_current_user_html: "No projects yet"
       attention: Attention
       tabs:
         contributed_projects: "Contributions"
@@ -1045,6 +1079,11 @@ en:
       title: "Choose projects about which you want to receive updates"
       updates: "I want to receive project updates"
     current_user_fields:
+      bank_account_title: "Bank Account Title"
+      bank_account_hint: "Bank Account Hint"
+      deactivate: "Deactivate"
+      deactivate_hint: "Deactivate Hint"
+      deactivate_confirm: "Deactivate Confirm"
       bio_limit: 'only 140 characters'
       updated: "Your information has been updated"
       update_social_info: "Update info"
@@ -1071,6 +1110,10 @@ en:
         current_credits_html: "Remaining credits"
         refunds_title: "Refunds"
         important_html: "For rules on refunds, click here!"
+        project: "Project"
+        contribution_date: "Contribution Date"
+        value: "Value"
+        status: "Status"
   notifications:
     contributions:
       to_contribution:
