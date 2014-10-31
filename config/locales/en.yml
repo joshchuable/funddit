@@ -78,6 +78,9 @@ en:
     learn-more: "Learn more"
     submit: "Submit"
     terms_of_use:
+      title: "Terms of Use"
+      content:
+        start_text:    
   not_found:
     title: "Sorry, we couldn't find this address :("
     text: "You may have mistyped the address or the page may have moved."
