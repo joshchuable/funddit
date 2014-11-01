@@ -29,7 +29,6 @@ puts 'Seeding the database...'
   company_logo: '',
   host: 'funddit.me',
   base_url: "http://funddit.me",
-
   email_contact: 'funddit@gmail.com',
   email_payments: 'funddit@gmail.com',
   email_projects: 'funddit@gmail.com',

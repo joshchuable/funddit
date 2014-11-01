@@ -104,7 +104,7 @@
               p= @project.total_contributions
               em= t('.sidebar.contributions')
             .item.goal
-              p= @project.display_pledged
+              p= @project.display_goal
               em= t('.sidebar.goal', total: @project.display_goal).html_safe
             .item.time
               - if @project.draft? || @project.rejected?
