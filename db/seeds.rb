@@ -4,29 +4,18 @@ puts 'Seeding the database...'
 
 [
   { en: 'Art' },
-  { en: 'Business' },
   { en: 'Community' },
-  { en: 'Comedy' },
   { en: 'Dance' },
   { en: 'Design' },
+  { en: 'Education' },
   { en: 'Events' },
   { en: 'Fundraiser' },
-  { en: 'Film & Video' },
   { en: 'Games' },
-  { en: 'Journalism' },
   { en: 'Music' },
-  { en: 'Photography' },
-  { en: 'Science & Technology' },
+  { en: 'Organizations' },
   { en: 'Theatre' },
-  { en: 'Travel' },
-  { en: 'Sport' },
   { en: 'Independent Research' },
-  { en: 'Web' },
-  { en: 'Literature' },
-  { en: 'Mobility & Transportation' },
-  { en: 'Environment' },
   { en: 'Social Business' },
-  { en: 'Education' },
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])

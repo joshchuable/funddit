@@ -251,6 +251,7 @@ en:
       near: "Discover projects near you"
   sidebar:
     titles:
+      twitter: "Twitter"
       blog: blog
       facebook: "have you liked our facebook page yet?"
       newsletter: "subscribe to our news"
