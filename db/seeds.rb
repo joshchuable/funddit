@@ -4,18 +4,19 @@ puts 'Seeding the database...'
 
 [
   { en: 'Art' },
+  { en: 'Business' },
   { en: 'Community' },
-  { en: 'Dance' },
-  { en: 'Design' },
   { en: 'Education' },
   { en: 'Events' },
   { en: 'Fundraiser' },
-  { en: 'Games' },
+  { en: 'Independent Research' },
   { en: 'Music' },
   { en: 'Organizations' },
-  { en: 'Theatre' },
-  { en: 'Independent Research' },
-  { en: 'Social Business' },
+  { en: 'Party' },
+  { en: 'Other' },
+
+
+
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])

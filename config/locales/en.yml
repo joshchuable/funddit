@@ -76,7 +76,7 @@ en:
         link: "How to run a successful Funddit campaign"
       page-title: "Crowdsourced college events Funddit"
     learn-more: "Learn more"
-    submit: "Submit"
+    submit: "Submit a project"
     privacy_policy:
       title: "Privacy Policy"
       content:
@@ -104,7 +104,7 @@ en:
       title: "Terms of Use"
       content:
         start: "TERMS OF USE HIGHLIGHTS"
-        start_text: "<ul class=>
+        start_text: "<ul>
           <li>The Minimum age to use Funddit is 18</li>
           <li>You may not use our service for any illegal or unauthorized purpose nor may you, in the use of the service, violate any laws in your jurisdiction</li>
           <li>There is material on this site that is supplied by Campaign Creators and Contributors.  Any reliance on this material is at your own risk. </li>
