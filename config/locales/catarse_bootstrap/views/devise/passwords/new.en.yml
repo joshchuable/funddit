@@ -2,7 +2,7 @@ en:
   devise:
     passwords:
       new:
-        no_account_html: "Need an account? <strong>%{link}</strong>"
+        no_account_html: "Need an account?"
         titles:
           site: 'Forgot your password?'
           header: 'Forgot your password?'
@@ -13,4 +13,3 @@ en:
             email: "We'll send password reset instructions to the email address associated with your account"
           inputs:
             submit: 'Reset password'
-
