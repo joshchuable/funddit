@@ -14,10 +14,10 @@ en:
           goal:
         blocks:
           first:
-            title: "Basic Information"
-            description: "You are creating a project draft. The information completed in this first block can not be changed after your project goes live."
+            title: "Section I: Basic Information"
+            description: "You are creating a project draft. The information completed in this first section cannot be changed after your project goes live."
           second:
-            title: "Project Story"
+            title: "Section II: Project Story"
             description: "You may edit this information anytime, even after this form is submitted."
         submit: "Get funded"
         labels:
