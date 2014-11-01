@@ -552,7 +552,7 @@ en:
         email_text: 'Unfortunately the project %{project_link}, that you have to contributed, did not reached its goal and was not funded at Funddit.<br><br> You have received <strong>%{value}</strong> in credits to contribute other projects. You can meet others %{project_category} projects in %{explore_category_link}.<br><br>You also can ask for your refund by clicking in %{credits_link}. Remember that you signed up in Catarse using %{user_provider}. If you have some difficulty in this process, do not be shame to send an email to financeiro@catarse.me with the subject "Refund - login issue".<br><br>If, for any reason, you want to contact %{project_owner_name}, send an email to %{project_owner_email}.<br><br>If you have any other doubt, access our FAQ or send an email to <a href="mail_to:contato@catarse.me" style="color: #008800;">contato@catarse.me</a>.<br>'
         notification_text: "You received %{value} in credits to contribute other projects. If you prefer, you can request a refund %{link}."
         unsuccessful_text: "The project %{link} that you contributed to wasn't funded. Hopefully next time!"
-    video_regex_validation: "only Vimeo URLs are allowed"
+    video_regex_validation: "only Vimeo and YouTube URLs are allowed"
     display_status:
       expired: expired
       failed: "not funded"
