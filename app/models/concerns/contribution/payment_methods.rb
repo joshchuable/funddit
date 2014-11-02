@@ -6,10 +6,6 @@ module Contribution::PaymentMethods
       payment_method.try(:downcase) == 'paypal'
     end
 
-    def is_wepay?
-      payment_method.try(:downcase) == 'wepay'
-    end
-
     def is_pagarme?
       payment_method.try(:downcase) == 'pagarme'
     end
