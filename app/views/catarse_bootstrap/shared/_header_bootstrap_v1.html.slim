@@ -2,7 +2,7 @@ header
   .row
     .large-3.columns
       h1
-        = link_to "#{CatarseSettings[:company_name]}", root_url(host: CatarseSettings[:base_domain] || request.domain), class: 'logo', :title => CatarseSettings[:company_name]
+        = link_to (image_tag "catarse_bootstrap/funddit-logo-dark.png"), root_url(host: CatarseSettings[:base_domain] || request.domain), class: 'logo', :title => CatarseSettings[:company_name]
     .large-3.columns.call-to-action
       = link_to t('layouts.header.submit'), page_path(:start), :class => 'project'
       = link_to t('layouts.header.discover'), explore_path, :class => 'project'
@@ -33,4 +33,3 @@ header
       - else
         = link_to t('channels.header.signup'), new_user_registration_url, class: 'header-nav-item'
         = link_to t('channels.header.signin'), new_user_session_url, class: 'header-nav-item'
-

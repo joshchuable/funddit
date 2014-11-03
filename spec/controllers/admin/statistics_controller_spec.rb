@@ -9,7 +9,7 @@ describe Admin::StatisticsController do
 
   describe "GET index" do
     before do
-      get :index, locale: 'pt'
+      get :index, locale: 'en'
     end
     it{ should render_template :index }
     its(:status){ should == 200 }

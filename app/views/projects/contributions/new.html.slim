@@ -6,7 +6,7 @@
         h2= t('.header.subtitle')
       #contribute_options.bootstrap-form
         / We use the URL in the helper bellow to redirect to a HTTPS page if it's configured
-        - if current_user.credits >= 10 && !@project.using_pagarme?
+        - if current_user.credits > 0 && !@project.using_pagarme?
           .bootstrap-alert
             .alert.credit_alert
               = t('projects.contributions.edit.credits_preview_html', credits: current_user.display_credits)
@@ -19,7 +19,7 @@
 
             = form.input :value, required: true, as: :string, label: false,  input_html: { pattern: '\\d+', autocomplete: 'off', data: { rewards: @rewards.map{|r| {id: r.id, minimum_value: r.minimum_value.to_i} }.to_json } }
             .simbol
-              p R$
+              p $
             = form.input :reward, as: :radio, collection: @rewards
             = form.input :anonymous
             li#anonymous_warning.important.hide
@@ -40,4 +40,3 @@
           = render 'contribute_text'
       .clearfix
     .clearfix
-

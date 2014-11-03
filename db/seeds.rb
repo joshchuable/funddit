@@ -6,27 +6,17 @@ puts 'Seeding the database...'
   { en: 'Art' },
   { en: 'Business' },
   { en: 'Community' },
-  { en: 'Comedy' },
-  { en: 'Dance' },
-  { en: 'Design' },
+  { en: 'Education' },
   { en: 'Events' },
   { en: 'Fundraiser' },
-  { en: 'Film & Video' },
-  { en: 'Games' },
-  { en: 'Journalism' },
-  { en: 'Music' },
-  { en: 'Photography' },
-  { en: 'Science & Technology' },
-  { en: 'Theatre' },
-  { en: 'Travel' },
-  { en: 'Sport' },
   { en: 'Independent Research' },
-  { en: 'Web' },
-  { en: 'Literature' },
-  { en: 'Mobility & Transportation' },
-  { en: 'Environment' },
-  { en: 'Social Business' },
-  { en: 'Education' },
+  { en: 'Music' },
+  { en: 'Organizations' },
+  { en: 'Party' },
+  { en: 'Other' },
+
+
+
 
 ].each do |name|
    category = Category.find_or_initialize_by(name_pt: name[:pt])
@@ -37,10 +27,9 @@ puts 'Seeding the database...'
 
 {
   company_name: 'Funddit',
-  company_logo: 'http://catarse.me/assets/catarse_bootstrap/logo_icon_catarse.png',
+  company_logo: '',
   host: 'funddit.me',
   base_url: "http://funddit.me",
-
   email_contact: 'funddit@gmail.com',
   email_payments: 'funddit@gmail.com',
   email_projects: 'funddit@gmail.com',

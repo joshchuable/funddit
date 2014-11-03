@@ -19,6 +19,4 @@
         - else
           span = t(".display_status.#{project.display_status}").capitalize
           = project.display_expires_at
-      = link_to t('.pledged_html', value: number_to_currency(project.pledged, precision: 0)), project_by_slug_path(project.permalink), title: project.name, class: 'money-raised', target: target
-
-
+      = link_to t('.pledged_html', value: number_to_currency(project.goal, precision: 0)), project_by_slug_path(project.permalink), title: project.name, class: 'money-raised', target: target
