@@ -1,3 +1,0 @@
-#define REDIS_GIT_SHA1 "9857179f"
-#define REDIS_GIT_DIRTY "433"
-#define REDIS_BUILD_ID "ginger-1414631731"
