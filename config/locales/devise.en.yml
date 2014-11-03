@@ -67,6 +67,10 @@ en:
       updated: "You updated your account successfully."
     sessions:
       new:
+        form:
+          inputs:
+            password: "Password"
+        email: "Email"
         site_title: "Login"
         submit: "Login"
         title: "Enter using your email address"
