@@ -21,6 +21,7 @@ class Project < ActiveRecord::Base
             :status_flag, :state_warning_template, :display_traffic_sources, to: :decorator
 
   belongs_to :user
+  belongs_to :school
   belongs_to :category
   has_and_belongs_to_many :channels
   has_one :project_total
@@ -107,7 +108,7 @@ class Project < ActiveRecord::Base
 
   validates_acceptance_of :accepted_terms, on: :create
 
-  validates :video_url, presence: true, if: ->(p) { p.state == 'online' && p.goal >= (CatarseSettings[:minimum_goal_for_video].to_i) }
+    validates :video_url, presence: true, if: ->(p) { p.state == 'online' && p.goal >= (CatarseSettings[:minimum_goal_for_video].to_i) }
   validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink
   validates_length_of :headline, maximum: 140
   validates_numericality_of :online_days, less_than_or_equal_to: 60, greater_than: 0

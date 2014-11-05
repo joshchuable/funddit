@@ -5,10 +5,6 @@ footer
       ul.footer-list
         li= link_to t('footer.links.twitter'), "#{CatarseSettings[:twitter_url]}", target: '_blank'
         li= link_to t('footer.links.facebook'), "#{CatarseSettings[:facebook_url]}", target: '_blank'
-        li= link_to t('footer.links.instagram'), "#{CatarseSettings[:instagram_url]}", target: '_blank'
-        li= link_to t('footer.links.github'), "#{CatarseSettings[:github_url]}", target: '_blank'
-        li= link_to t('footer.links.blog'), "#{CatarseSettings[:blog_url]}", target: '_blank'
-        li.zendesk_widget= link_to t('footer.links.contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}"
     .large-3.columns
       h3.footer-title= t('footer.titles.about')
       ul.footer-list

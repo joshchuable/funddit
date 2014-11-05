@@ -5,15 +5,11 @@ footer
       ul.footer-list
         li= link_to t('footer.links.twitter'), "#{CatarseSettings[:twitter_url]}", target: '_blank'
         li= link_to t('footer.links.facebook'), "#{CatarseSettings[:facebook_url]}", target: '_blank'
-        li= link_to t('footer.links.instagram'), "#{CatarseSettings[:instagram_url]}", target: '_blank'
-        li= link_to t('footer.links.github'), "#{CatarseSettings[:github_url]}", target: '_blank'
-        li= link_to t('footer.links.blog'), "#{CatarseSettings[:blog_url]}", target: '_blank'
-        li.zendesk_widget= link_to t('footer.links.contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}"
+        li= link_to t('footer.links.contact'), "mailto:funddit@gmail.com", target: '_blank'
     .large-3.columns
       h3.footer-title= t('footer.titles.about')
       ul.footer-list
-        li= link_to t('footer.links.faq'), "#{CatarseSettings[:faq_url]}", target: '_blank'
-        li= link_to t('footer.links.feedback'), "#{CatarseSettings[:feedback_url]}", target: '_blank'
+        li= link_to t('footer.links.feedback'), "mailto:funddit@gmail.com", target: '_blank'
         li= link_to t('footer.links.terms'), terms_of_use_path, target: '_blank'
         li= link_to t('footer.links.privacy'), privacy_policy_path, target: '_blank'
     .large-3.columns
@@ -39,4 +35,3 @@ footer
     hr/
   .row
     p.copyleft= "#{t('footer.texts.copyleft')} Catarse, #{DateTime.now.year} | Open source #{link_to 'Catarse @ Github', "#{CatarseSettings[:github_url]}", :class => 'github', target: '_blank'}".html_safe
-

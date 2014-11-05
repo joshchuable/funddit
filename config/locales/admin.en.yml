@@ -10,7 +10,6 @@ en:
       page-title: "Start a Funddit campaign"
       form:
         info:
-          permalink: "Permalink"
           goal:
         blocks:
           first:
