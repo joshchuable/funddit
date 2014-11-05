@@ -491,7 +491,7 @@ en:
         recommended: "Recommended"
         near: "Near me"
         expiring: "Expiring"
-        recents: "Recent"
+        recents: "New projects"
         submit: "Start a project"
         discover: "Explore"
       texts:
@@ -586,7 +586,7 @@ en:
       display_status:
         draft: "Project is in draft"
     index:
-      banner: "Start now"
+      banner: "Discover awesome projects"
       links:
         expiring: "Ending Soon"
         recommended: "Recommended"
