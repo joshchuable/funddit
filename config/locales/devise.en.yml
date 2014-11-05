@@ -4,7 +4,7 @@ en:
   devise:
     feedback_tab:
       title: 'Feedback and support'
-      header_html: "Welcome to <br/> Catarse's new login"
+      header_html: "Welcome to <br/> Funddit's new login"
       blog_button: 'Read more'
       form_feedback_link: 'Give feedback'
       contact_link: 'Contact support'
@@ -58,6 +58,10 @@ en:
           labels:
             password: "New password"
     registrations:
+      new:
+        form:
+          labels:
+            accept: "Accept"
       destroyed: "Bye! Your account was eaten by our hippopotacat. Hope to see you again soon."
       signed_up: "Welcome! You have signed up successfully."
       signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
@@ -67,6 +71,10 @@ en:
       updated: "You updated your account successfully."
     sessions:
       new:
+        form:
+          inputs:
+            password: "Password"
+        email: "Email"
         site_title: "Login"
         submit: "Login"
         title: "Enter using your email address"
