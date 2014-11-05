@@ -1,9 +1,12 @@
 en:
+  contribution_report_to_project_owner:
+    reward_deliver_at: Delivery Estimates
   activerecord:
     errors:
       models:
         project:
           attributes:
+            deliver_at: Estimated delivery
             permalink:
               invalid: Invalid project URL
         user:
