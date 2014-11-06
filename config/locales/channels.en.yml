@@ -17,6 +17,7 @@ en:
         title: 'Channel statistics'
         total_subscribers: 'Total subscribers'
     projects:
+      not_reached_goal: "Goal not reached"
       send: "Submit your project"
       see_how_it_works: "See how it works and submit your project."
       how_it_works: "How it works"
