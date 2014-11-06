@@ -6,7 +6,7 @@ begin
       authentication: :plain,
       user_name: CatarseSettings.get_without_cache(:sendgrid_user_name),
       password: CatarseSettings.get_without_cache(:sendgrid),
-      domain: 'heroku.com'
+      domain: 'funddit.me'
     }
     ActionMailer::Base.delivery_method = :smtp
   end
