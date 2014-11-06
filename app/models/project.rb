@@ -50,7 +50,7 @@ class Project < ActiveRecord::Base
   # Used to simplify a has_scope
   scope :successful, ->{ with_state('successful') }
   scope :with_project_totals, -> { joins('LEFT OUTER JOIN project_totals ON project_totals.project_id = projects.id') }
-
+  scope :by_school, ->(term) { joins(:user).where("users.school ~* ?", school) }
   scope :by_progress, ->(progress) { joins(:project_total).where("project_totals.pledged >= projects.goal*?", progress.to_i/100.to_f) }
   scope :by_channel, ->(channel_id) { joins(:channels).where("channels.id = ?", channel_id) }
   scope :by_user_email, ->(email) { joins(:user).where("users.email = ?", email) }
