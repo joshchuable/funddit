@@ -13,7 +13,7 @@ en:
       support: "Support"
       terms: "Terms"
       privacy: "Privacy"
-      press: "Press"
+      press: "How it works"
       twitter: "Twitter"
       facebook: "Facebook"
       instagram: "Instagram"
@@ -481,7 +481,7 @@ en:
         support: "Support"
         terms: "Terms"
         privacy: "Privacy"
-        press: "Press"
+        press: "How it works"
         twitter: "Twitter"
         facebook: "Facebook"
         instagram: "Instagram"
@@ -491,7 +491,7 @@ en:
         recommended: "Recommended"
         near: "Near me"
         expiring: "Expiring"
-        recents: "Recent"
+        recents: "New projects"
         submit: "Start a project"
         discover: "Explore"
       texts:
@@ -584,9 +584,12 @@ en:
       time_remaining_html: "Time remaining"
       pledged_html: "Pledged"
       display_status:
+        not_reached_goal: "Goal not reached"
         draft: "Project is in draft"
+        in_analysis: "Project is being evaluated"
+        not_reached_goal: "Unsuccessful"
     index:
-      banner: "Start now"
+      banner: "Discover awesome projects"
       links:
         expiring: "Ending Soon"
         recommended: "Recommended"
@@ -637,7 +640,9 @@ en:
           video_url: "The most successful campaigns have eyecatching, high quality videos explaining your project. This video should be uploaded onto Vimeo or YouTube. If you don't already have a video, you might consider making one during your funding period."
           about: "Why should someone fund you? What are your goals? What makes you the right person for this project? How do you plan to deliver? What are your biggest challenges?"
           headline: "Insert something short and catchy below."
-        info: "days"
+        info:
+          goal: "Goal"
+          permalink: "Permalink"
     no_projects: "%{name} hasn't started any project on Funddit yet. We hope inspiration will come one of these days!"
     no_projects_current_user_html: "You haven't submitted any project to Funddit yet. Let the inspiration flow and %{link} to start!"
     title: "%{name}'s projects"
@@ -903,6 +908,8 @@ en:
       contact: "Contact"
       what_is_channel: "What is a channel?"
     admin:
+      table:
+        confirmation: "Confirmation"
       followers_menu: "Followers"
       posts_menu: "Posts"
       partners_menu: "Partners"

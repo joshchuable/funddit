@@ -12,26 +12,26 @@
             li.menu-list-head
               h2.caption.bold = t('.faq.titles.support')
             li
-              = link_to t('.faq.links.criteria'), "http://suporte.catarse.me/hc/pt-br/articles/202387638-Diretrizes-para-a-cria%C3%A7%C3%A3o-de-projetos", target: '_blank', class: "alt-link"
+              = link_to t('.faq.links.criteria'), "http://funddit.me", target: '_blank', class: "alt-link"
 
             li
-              =link_to t('.faq.links.suport_central'), "#{CatarseSettings[:faq_url]}", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.suport_central'), "http://funddit.me", target: '_blank', class: "alt-link"
 
             li.zendesk_widget
-              =link_to t('.faq.links.support_contact'), "#{CatarseSettings[:zendesk_url]}/account/dropboxes/#{CatarseSettings[:zendesk_dropbox_id]}", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.support_contact'), "MAILTO:funddit@gmail.com", target: '_blank', class: "alt-link"
 
           ul.w-list-unstyled
             li.menu-list-head
               h2.caption.bold = t('.faq.titles.know_more')
             li
-              =link_to t('.faq.links.how_it_works'), "http://suporte.catarse.me/hc/pt-br/articles/201982466-O-que-%C3%A9-e-como-funciona-o-Catarse-", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.how_it_works'), "http://funddit.me", target: '_blank', class: "alt-link"
 
             li
-              =link_to t('.faq.links.money'), "http://suporte.catarse.me/hc/pt-br/articles/202037493-Como-ser%C3%A1-feito-o-repasse-do-dinheiro-", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.money'), "http://funddit.me", target: '_blank', class: "alt-link"
             li
-              =link_to t('.faq.links.selection'), "http://suporte.catarse.me/hc/pt-br/articles/202446018-Como-funciona-a-sele%C3%A7%C3%A3o-de-projetos-no-Catarse-", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.selection'), "http://funddit.me", target: '_blank', class: "alt-link"
             li
-              =link_to t('.faq.links.all_or_nothing'), "http://suporte.catarse.me/hc/pt-br/articles/202265256-Por-que-o-Tudo-ou-Nada-", target: '_blank', class: "alt-link"
+              =link_to t('.faq.links.all_or_nothing'), "http://funddit.me", target: '_blank', class: "alt-link"
 
       .w-col.w-col-8.send-project-form
         = simple_form_for @project, html: { id: 'project_form', class: 'w-form' } do |form|

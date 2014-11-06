@@ -35,4 +35,3 @@ class RewardPolicy < ApplicationPolicy
     record.project.user == user || user.try(:admin?)
   end
 end
-
