@@ -3,6 +3,8 @@
 en:
   projects:
     project:
+      dispay_status:
+        not_reached_goal: "Goal not reached"
       progress_html: "Progress"
       time_remaining_html: "Time remaining"
       pledged_html: "Pledged"
