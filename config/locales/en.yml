@@ -168,7 +168,7 @@ en:
     updates:
       create:
         notice: 'Update was successful'
-  failure_title: 'Please, fix the errors bellow:'
+  failure_title: 'Please, fix the errors below:'
   uservoice_gadget:
     user:
       name: 'User'
@@ -567,9 +567,14 @@ en:
       ok: "Yay!"
     posts:
       new:
-        notice: "Notice"
+        notice: "Yippee!"
     post:
+      project_post:
+        destroy: "Destroy"
+        destroy_confirmation: "You sure?"
       new:
+        warning: "When you create a post, you will automatically notify all your backers. Make sure what you're writing is important; no one wants to receive spam!"
+        submit: "Update"
         notice: "Notice"
         title: "Title"
         comment: "Comment"
@@ -687,7 +692,7 @@ en:
         display_status:
           in_analysis: "This project is being evaluated by our admins"
           reached_goal: "This project will be successful and funded on %{date}"
-          not_reached_goal: "This project will only be funded if at least %{goal} is contributed until %{date}"
+          not_reached_goal: "This project did not meet it's funding goal."
           failed: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
           successful: "This project was successful and was funded on %{date}"
           waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
