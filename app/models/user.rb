@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes
+    :bank_account_attributes, :school
 
   mount_uploader :uploaded_image, UserUploader
 
@@ -72,6 +72,7 @@ class User < ActiveRecord::Base
     where("id NOT IN (SELECT user_id FROM unsubscribes WHERE project_id = ?)", project_id)
   }
 
+  scope :by_school, ->(school){where('school ~* ?', school)}
   scope :by_email, ->(email){ where('email ~* ?', email) }
   scope :by_payer_email, ->(email) {
     where('EXISTS(
