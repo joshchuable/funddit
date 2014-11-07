@@ -5,8 +5,8 @@ en:
     project:
       dispay_status:
         not_reached_goal: "Goal not reached"
-      progress_html: "Progress"
-      time_remaining_html: "Time remaining"
+      progress_html: "%"
+      time_remaining_html: "Days"
       pledged_html: "Pledged"
     new:
       page-title: "Start a Funddit campaign"
