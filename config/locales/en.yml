@@ -586,9 +586,9 @@ en:
       embed_title: "Embed title"
       embed: "Embed"
     project:
-      progress_html: %
-      time_remaining_html: Days
-      pledged_html: Pledged
+      progress_html: "%"
+      time_remaining_html: "Days"
+      pledged_html: "Pledged"
       display_status:
         not_reached_goal: "Goal not reached"
         draft: "Project is in draft"
