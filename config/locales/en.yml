@@ -586,7 +586,7 @@ en:
       embed_title: "Embed title"
       embed: "Embed"
     project:
-      progress_html: "%"
+      progress_html: "<span>%{percent}%</span>%"
       time_remaining_html: "Days"
       pledged_html: "Pledged"
       display_status:
