@@ -586,9 +586,9 @@ en:
       embed_title: "Embed title"
       embed: "Embed"
     project:
-      progress_html:
-      time_remaining_html:
-      pledged_html:
+      progress_html: %
+      time_remaining_html: Days
+      pledged_html: Pledged
       display_status:
         not_reached_goal: "Goal not reached"
         draft: "Project is in draft"
@@ -889,7 +889,7 @@ en:
       subtitle: "The time to make it happen is now! We really want to know what you're up to..."
       title: "Submit your project"
     twitter:
-      take_a_look: "Check out the project %{name} on @catarse"
+      take_a_look: "So pumped for %{name}!"
     video_embed:
       a_project_by_html: "A project by %{link} on"
   projects_mailer:
