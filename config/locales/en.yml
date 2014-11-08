@@ -589,7 +589,7 @@ en:
       time_remaining_html: "Time remaining"
       pledged_html: "Pledged"
       display_status:
-        not_reached_goal: Goal not reached
+        not_reached_goal: "Goal not reached"
         draft: "Project is in draft"
         in_analysis: "Project is being evaluated"
     index:
@@ -599,6 +599,8 @@ en:
         recommended: "Recommended"
         recents: "Recently added"
       sections:
+        near:
+          title: "Near me"
         recommended:
           title: "Recommended"
         expiring:
