@@ -587,7 +587,7 @@ en:
       embed: "Embed"
     project:
       progress_html: "<span>%{percent}%</span>%"
-      time_remaining_html: "Days"
+      time_remaining_html: "<span>%{count} %{unit}</span> remaining"
       pledged_html: "Pledged"
       display_status:
         not_reached_goal: "Goal not reached"
