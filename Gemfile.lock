@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/catarse/catarse_contribution_validator.git
-  revision: 10e244d93563085e784107f764960f541473304e
+  revision: a5ce1407c402b3b3aba640aab54af6a8474e910a
   specs:
     catarse_contribution_validator (0.0.1)
       rails (>= 4.0.0)
@@ -40,17 +40,6 @@ GEM
       activesupport (= 4.1.7)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_utils (2.2.3)
-      activesupport (>= 2.3.11)
-      i18n
-    activemerchant (1.44.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (>= 0.6.9)
-      json (~> 1.7)
-      nokogiri (~> 1.4)
-      offsite_payments (~> 2.0.0)
     activemodel (4.1.7)
       activesupport (= 4.1.7)
       builder (~> 3.1)
@@ -78,7 +67,7 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    browser (0.7.1)
+    browser (0.7.2)
     builder (3.2.2)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -104,12 +93,12 @@ GEM
     catarse_pagarme (1.4.1)
       pagarme (~> 1.9.5)
       rails (~> 4.0)
-    catarse_paypal_express (2.2.3)
-      activemerchant (>= 1.34.0)
-      rails (~> 4.0)
-      slim-rails
     catarse_settings_db (0.1.0)
       rails (~> 4.1.1)
+    catarse_wepay (0.0.5)
+      rails (~> 4.0)
+      slim-rails
+      wepay (= 0.0.1)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chartkick (1.3.2)
@@ -174,7 +163,7 @@ GEM
       activesupport (>= 3.0.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    excon (0.40.0)
+    excon (0.41.0)
     execjs (2.2.2)
     ezcrypto (0.7.2)
     factory_girl (4.5.0)
@@ -219,10 +208,10 @@ GEM
     fog-sakuracloud (0.1.1)
       fog-core
       fog-json
-    fog-softlayer (0.3.23)
+    fog-softlayer (0.3.24)
       fog-core
       fog-json
-    fog-xml (0.1.0)
+    fog-xml (0.1.1)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
     foreman (0.75.0)
@@ -245,14 +234,14 @@ GEM
     httparty (0.6.1)
       crack (= 0.1.8)
     httpauth (0.2.1)
-    httpclient (2.5.3.1)
+    httpclient (2.5.3.3)
     i18n (0.6.11)
     inflecto (0.0.2)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
     ipaddress (0.8.0)
-    jasmine-core (2.0.2)
+    jasmine-core (2.1.1)
     jasmine-rails (0.10.2)
       jasmine-core (>= 1.3, < 3.0)
       phantomjs
@@ -286,11 +275,9 @@ GEM
       json (>= 1.7.7)
     method_source (0.8.2)
     mime-types (2.4.3)
-    mini_portile (0.6.0)
-    minitest (5.4.2)
+    mini_portile (0.6.1)
+    minitest (5.4.3)
     mixpanel-ruby (1.6.0)
-    money (6.4.0)
-      i18n (>= 0.6.4, <= 0.7.0.beta1)
     multi_json (1.10.1)
     multipart-post (2.0.0)
     net-scp (1.2.1)
@@ -298,8 +285,8 @@ GEM
     net-ssh (2.9.1)
     netrc (0.8.0)
     newrelic_rpm (3.6.5.130)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
+    nokogiri (1.6.4.1)
+      mini_portile (~> 0.6.0)
     oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
@@ -307,14 +294,6 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
-    offsite_payments (2.0.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (~> 0.5)
-      json (~> 1.7)
-      money (< 7.0.0)
-      nokogiri (~> 1.4)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -330,7 +309,7 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
-    pagarme (1.9.7)
+    pagarme (1.9.8)
       multi_json
       rest-client
     pg (0.17.1)
@@ -406,7 +385,7 @@ GEM
     rmagick (2.13.3)
     routing-filter (0.4.0.pre)
       actionpack
-    rspec-collection_matchers (1.0.0)
+    rspec-collection_matchers (1.1.2)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.1.7)
       rspec-support (~> 3.1.0)
@@ -429,16 +408,16 @@ GEM
     rspec-support (3.1.2)
     ruby-ole (1.2.11.7)
     rubyzip (1.1.6)
-    sass (3.4.7)
+    sass (3.4.8)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    sax-machine (1.0.2)
+    sax-machine (1.0.3)
     schema_plus (1.6.0)
       activerecord (>= 3.2)
       valuable
-    selenium-webdriver (2.43.0)
+    selenium-webdriver (2.44.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
@@ -518,15 +497,16 @@ GEM
       rails (>= 4.0.0)
       sidekiq
     valuable (0.9.8)
-    video_info (2.3.2)
+    video_info (2.3.3)
       addressable
       htmlentities
       multi_json
     warden (1.2.3)
       rack (>= 1.0)
     websocket (1.2.1)
-    websocket-driver (0.3.5)
+    websocket-driver (0.4.0)
     weekdays (1.0.2)
+    wepay (0.0.1)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -547,8 +527,8 @@ DEPENDENCIES
   catarse_moip (~> 2.3.6)
   catarse_monkeymail (>= 0.1.6)
   catarse_pagarme (= 1.4.1)
-  catarse_paypal_express (= 2.2.3)
   catarse_settings_db (>= 0.1.0)
+  catarse_wepay (= 0.0.5)
   chartkick
   coffee-rails (~> 4.0.0)
   compass-960-plugin

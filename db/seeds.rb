@@ -67,6 +67,17 @@ Channel.find_or_create_by!(name: "Channel name") do |c|
   c.description = "Lorem Ipsum"
 end
 
+Project.find_or_create_by!(name: "Test") do |p|
+    p.name = 'Test'
+    p.user_id = 1
+    p.category_id = 1
+    p.about = 'test'  
+    p.headline = 'test'
+    p.goal = 100
+    p.online_days = 14
+    p.permalink = 'test'
+end
+
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
   o.key = '302938209911869'
