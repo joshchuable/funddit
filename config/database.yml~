@@ -14,8 +14,8 @@ development:
   host: localhost
   database: catarse_development
   pool: 5
-  username: postgres
-  password: password
+  username: josh
+  password: ginger5542
 
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -43,8 +43,5 @@ test:
   host: localhost
   database: catarse_test
   pool: 5
-  username: postgres
-  password: password
-
-
-
+  username: josh
+  password: ginger5542

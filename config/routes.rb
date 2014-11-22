@@ -7,6 +7,8 @@ Catarse::Application.routes.draw do
     end
   end
 
+  get '/users/:action(/:user_id)', :controller => 'users'
+
   mount JasmineRails::Engine => '/specs' if defined?(JasmineRails)
   devise_for(
     :users,
