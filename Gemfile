@@ -33,10 +33,10 @@ gem 'user_notifier', '~> 0.0.5'
 gem 'mixpanel-ruby'
 
 # Payment engines
-gem 'catarse_paypal_express', '2.2.3'
-gem 'catarse_moip', '~> 2.3.6'
-gem 'catarse_credits', '0.0.6'
-gem 'catarse_pagarme', '1.4.1'
+#gem 'catarse_paypal_express', '2.2.3'
+#gem 'catarse_moip', '~> 2.3.6'
+#gem 'catarse_credits', '0.0.6'
+#gem 'catarse_pagarme', '1.4.1'
 gem 'catarse_contribution_validator', github: 'catarse/catarse_contribution_validator'
 #gem 'catarse_wepay'
 

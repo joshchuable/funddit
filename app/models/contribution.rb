@@ -97,4 +97,68 @@ class Contribution < ActiveRecord::Base
   def define_key
     self.update_attributes({ key: Digest::MD5.new.update("#{self.id}###{self.created_at}###{Kernel.rand}").to_s })
   end
-end
+
+  #Method additions from WePay Rails
+
+  def init_preapproval_and_send_user_to_wepay(params, access_token=nil)
+        record = init_preapproval(params, access_token)
+        redirect_to record.preapproval_uri and return record
+  end
+
+  def perform_preapproval(params)
+        security_token = Digest::SHA2.hexdigest("#{Rails.env.production? ? rand(4) : 1}#{Time.now.to_i}") # Make less random during tests
+
+        # add the security token to any urls that were passed in from the app
+        if params[:callback_uri]
+          params[:callback_uri] = apply_security_token( params[:callback_uri], security_token )
+        end
+
+        if params[:redirect_uri]
+          params[:redirect_uri] = apply_security_token( params[:redirect_uri], security_token )
+        end
+
+        defaults = {
+            :callback_uri     => ipn_callback_uri(security_token),
+            :redirect_uri     => preapproval_redirect_uri(security_token),
+            :fee_payer        => 'payee',
+            :app_fee          => '4',
+            :account_id       => @user.wepay_account_id
+        }.merge(params)
+
+        begin
+        resp = self.call_api("/preapproval/create", defaults)
+        rescue => e
+          puts e.message
+        end
+        resp.merge({:security_token => security_token})
+      end
+
+      def lookup_preapproval(preapproval_id)
+        co = self.call_api("/preapproval", {:preapproval_id => preapproval_id})
+        co.delete("type")
+        co
+      end
+
+      def ipn_callback_uri(security_token)
+        uri = if @wepay_config[:ipn_callback_uri].present?
+                @wepay_config[:ipn_callback_uri]
+              else
+                "#{@wepay_config[:root_callback_uri]}/wepay/ipn"
+              end
+        apply_security_token(uri, security_token)
+      end
+
+
+      def preapproval_redirect_uri(security_token)
+        uri = if @wepay_config[:ipn_callback_uri].present?
+                @wepay_config[:preapproval_redirect_uri]
+              else
+                "#{@wepay_config[:root_callback_uri]}/preapproval/success" #redirect to success action with text - ALT: "#{@wepay_config[:root_callback_uri]}/wepay/preapproval"
+              end
+        apply_security_token(uri, security_token)
+      end
+
+      def apply_security_token(uri, security_token)
+        uri += (uri =~ /\?/ ? '&' : '?') + "security_token=#{security_token}"
+      end
+    end
