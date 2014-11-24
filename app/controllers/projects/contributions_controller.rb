@@ -49,6 +49,19 @@ class Projects::ContributionsController < ApplicationController
       @contribution.reward = @selected_reward
       @contribution.value = "%0.0f" % @selected_reward.minimum_value
     end
+
+      preapproval_params = {
+            :period               => 'once',
+            :end_time             => @project.by_expires_at
+            :amount               => (contribution.price_in_cents/100).round(2).to_s,
+            :mode                 => 'regular',
+            :short_description    => t('wepay_description', scope: SCOPE, :project_name => contribution.project.name, :value => contribution.display_value),
+            :app_fee              => "4",
+            :fee_payer            => 'payee',
+            :payer_email_message  => "You just approved Funddit to charge your preffered payment method if this project is successful. You have NOT been charged at this time!"
+    }
+    # Finally, send the user off to wepay for the preapproval
+    init_preapproval_and_send_user_to_wepay(preapproval_params)
   end
 
   def create
@@ -69,6 +82,11 @@ class Projects::ContributionsController < ApplicationController
       end
     end
     @thank_you_id = @project.id
+  end
+
+  def gateway
+    raise "[WePay] An API Client ID and Client Secret are required to make requests to WePay" unless PaymentEngines.configuration[:wepay_client_id] and PaymentEngines.configuration[:wepay_client_secret]
+    @gateway ||= WePay.new(PaymentEngines.configuration[:wepay_client_id], PaymentEngines.configuration[:wepay_client_secret])
   end
 
   protected
