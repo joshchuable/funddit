@@ -162,6 +162,3 @@ class Contribution < ActiveRecord::Base
         uri += (uri =~ /\?/ ? '&' : '?') + "security_token=#{security_token}"
       end
     end
-  end
-
-end
