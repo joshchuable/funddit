@@ -34,7 +34,7 @@ en:
         menu: "Users"
     projects:
       index:
-        menu: "Management"
+        menu: "Manage Projects"
       push_to_draft: "push to draft"
     statistics:
       index:
@@ -925,7 +925,7 @@ en:
         title: "Followers"
         download: "Download list"
       management:
-        title: "Management"
+        title: "Manage projects"
         total: "projects"
       filter:
         title: "Filter"
