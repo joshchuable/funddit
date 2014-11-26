@@ -78,10 +78,10 @@ class UsersController < ApplicationController
     if !params[:code]
       return redirect_to('/')
     end
-    redirect_uri = url_for(:controller => 'users', :action => 'oauth', :farmer_id => params[:farmer_id], :host => request.host_with_port)
-    @farmer = Farmer.find(params[:farmer_id])
+    redirect_uri = url_for(:controller => 'users', :action => 'oauth', :user_id => params[:user_id], :host => request.host_with_port)
+    @user = User.find(params[:user_id])
     begin
-      @farmer.request_wepay_access_token(params[:code], redirect_uri)
+      @user.request_wepay_access_token(params[:code], redirect_uri)
     rescue Exception => e
       error = e.message
     end
