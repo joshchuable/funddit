@@ -73,6 +73,25 @@ class UsersController < ApplicationController
     return redirect_to user_path(@user, anchor: 'settings')
   end
 
+  #Added from Wefarm example
+  def oauth
+    if !params[:code]
+      return redirect_to('/')
+    end
+    redirect_uri = url_for(:controller => 'users', :action => 'oauth', :farmer_id => params[:farmer_id], :host => request.host_with_port)
+    @farmer = Farmer.find(params[:farmer_id])
+    begin
+      @farmer.request_wepay_access_token(params[:code], redirect_uri)
+    rescue Exception => e
+      error = e.message
+    end
+    if error
+      redirect_to @user, alert: error
+    else
+      redirect_to @user, notice: 'We successfully connected you to WePay!'
+    end
+  end
+
   private
   def build_bank_account
     @user.build_bank_account unless @user.bank_account
@@ -81,4 +100,5 @@ class UsersController < ApplicationController
   def permitted_params
     params.permit(policy(resource).permitted_attributes)
   end
+
 end
