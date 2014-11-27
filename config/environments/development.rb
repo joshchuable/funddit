@@ -8,6 +8,11 @@ Catarse::Application.configure do
   config.cache_classes = false
   config.reload_classes_only_on_change = true
 
+  #wepay app configuration
+  CLIENT_ID = CatarseSettings[:wepay_client_id]
+  CLIENT_SECRET = CatarseSettings[:wepay_client_secret]
+  USE_STAGE = true
+  WEPAY = WePay.new(CLIENT_ID, CLIENT_SECRET, USE_STAGE)
   # Do not eager load code on boot.
   config.eager_load = false
 
@@ -34,4 +39,3 @@ Catarse::Application.configure do
 
   config.action_mailer.asset_host = "http://localhost:80"
 end
-

@@ -23,6 +23,8 @@ Catarse::Application.routes.draw do
   end
 
   get '/thank_you' => "static#thank_you"
+  get '/user/:action(/:user_id)' => "user#oauth"
+
 
   filter :locale, exclude: /\/auth\//
 

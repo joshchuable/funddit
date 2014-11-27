@@ -240,9 +240,9 @@ class User < ActiveRecord::Base
   # register or login to WePay to approve our app.
 
   # returns a url
-  #def wepay_authorization_url(redirect_uri)
-  #  Wefarm::Application::WEPAY.oauth2_authorize_url(redirect_uri, self.email, self.name)
-  #end
+  def wepay_authorization_url(redirect_uri)
+    Catarse::Application::WEPAY.oauth2_authorize_url(redirect_uri, self.email, self.name)
+  end
 
   # takes a code returned by wepay oauth2 authorization and makes an api call to generate oauth2 token for this farmer.
   def request_wepay_access_token(code, redirect_uri)
@@ -259,6 +259,20 @@ class User < ActiveRecord::Base
 
   def has_wepay_access_token?
     !self.wepay_access_token.nil?
+  end
+
+  def create_wepay_account
+    if self.has_wepay_access_token? && !self.has_wepay_account?
+      params = { :name => "Insert Name", :description => "Funddit account" }
+      response = Catarse::Application::WEPAY.call("/account/create", self.wepay_access_token, params)
+      if response["account_id"]
+        self.wepay_account_id = response["account_id"]
+        return self.save
+      else
+        raise "Error - " + response["error_description"]
+      end
+    end
+    raise "Error - cannot create WePay account"
   end
 
   # makes an api call to WePay to check if current access token for farmer is still valid
