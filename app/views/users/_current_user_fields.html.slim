@@ -1,4 +1,6 @@
 #my_avatar.user_data
+  = redirect_uri = url_for controller: 'users', action: 'oauth', farmer_id: @user.id, host: request.host_with_port
+  = link_to 'create a wepay account', @user.wepay_authorization_url(redirect_uri), target: :_blank
   h1 = t('.local_avatar')
   ul
     li
