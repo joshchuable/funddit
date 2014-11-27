@@ -30,8 +30,8 @@ Catarse::Application.routes.draw do
 
   #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   #mount CatarseMoip::Engine => "/", as: :catarse_moip
-  #mount CatarseCredits::Engine => "/", as: :catarse_credits
-  #mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
+  mount CatarseCredits::Engine => "/", as: :catarse_credits
+  mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
