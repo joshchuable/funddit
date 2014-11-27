@@ -254,6 +254,10 @@ class User < ActiveRecord::Base
     else
       self.wepay_access_token = response['access_token']
       self.save
+
+      self.create_wepay_account
+      self.wepay_account_id = response['account_id']
+      self.save
     end
   end
 
