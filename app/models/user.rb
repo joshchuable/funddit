@@ -256,7 +256,7 @@ class User < ActiveRecord::Base
       self.save
 
       self.create_wepay_account
-      self.wepay_account_id = response['account_id']
+      self.wepay_account_id_string = response['account_id']
       self.save
     end
   end
@@ -270,7 +270,7 @@ class User < ActiveRecord::Base
       params = { :name => "Insert Name", :description => "Funddit account" }
       response = Catarse::Application::WEPAY.call("/account/create", self.wepay_access_token, params)
       if response["account_id"]
-        self.wepay_account_id = response["account_id"]
+        self.wepay_account_id_string = response["account_id"]
         return self.save
       else
         raise "Error - " + response["error_description"]

@@ -1,6 +1,6 @@
 #my_avatar.user_data
-  = redirect_uri = "http://funddit.me" + url_for(@user)
-  = link_to 'Create your WePay account!', @user.wepay_authorization_url(redirect_uri), class: 'btn'
+  -redirect_uri = CatarseSettings[:base_url] + url_for(@user)
+  = button_to 'Create your WePay account!', @user.wepay_authorization_url(redirect_uri), class: 'btn'
   h1 = t('.local_avatar')
   ul
     li
