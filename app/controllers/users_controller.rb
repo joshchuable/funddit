@@ -75,12 +75,10 @@ class UsersController < ApplicationController
 
   #Added from Wefarm example
   def oauth
-    flash[:notice] = 'error'
     if !params[:code]
       return redirect_to('/')
     end
-    flash[:notice] = 'error2'
-    redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
+    redirect_uri = url_for(@user) + '/oauth'
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)
