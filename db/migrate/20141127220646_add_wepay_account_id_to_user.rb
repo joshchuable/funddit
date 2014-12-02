@@ -1,5 +1,5 @@
 class AddWepayAccountIdToUser < ActiveRecord::Migration
   def change
-    add_column :users, :wepay_account_id_string, :string
+    #add_column :users, :account_id, :string
   end
 end

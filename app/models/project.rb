@@ -107,7 +107,11 @@ class Project < ActiveRecord::Base
   attr_accessor :accepted_terms
 
   validates_acceptance_of :accepted_terms, on: :create
+<<<<<<< Updated upstream
   validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink#, self.user.account_id
+=======
+  validates_presence_of :name, :user, :category, :about, :headline, :goal, :permalink
+>>>>>>> Stashed changes
   validates_length_of :headline, maximum: 140
   validates_numericality_of :online_days, less_than_or_equal_to: 60, greater_than: 0
   validates_numericality_of :goal, greater_than: 9

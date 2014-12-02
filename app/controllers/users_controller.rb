@@ -78,7 +78,7 @@ class UsersController < ApplicationController
     if !params[:code]
       return redirect_to('/')
     end
-    redirect_uri = url_for(:controller => 'users', :action => 'oauth', :user_id => params[:user_id], :host => request.host_with_port)
+    redirect_uri = url_for controller: 'user', action: 'oauth', user_id: @user.id, host: 'http://funddit.me'
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)
