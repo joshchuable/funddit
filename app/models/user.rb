@@ -256,8 +256,6 @@ class User < ActiveRecord::Base
       self.save
 
       self.create_wepay_account
-      self.wepay_account_id_string = response['account_id']
-      self.save
     end
   end
 
