@@ -80,7 +80,7 @@ class UsersController < ApplicationController
       return redirect_to('/')
     end
     flash[:notice] = 'error2'
-    redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
+    redirect_uri = url_for(@user) + '/oauth'
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)
