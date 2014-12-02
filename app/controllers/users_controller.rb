@@ -1,6 +1,6 @@
 # coding: utf-8
 class UsersController < ApplicationController
-  after_filter :verify_authorized, except: %i[reactivate]
+  after_filter :verify_authorized, except: %i[reactivate, oauth]
   skip_before_filter :force_http, only: [:update_password]
   inherit_resources
   defaults finder: :find_active!
@@ -75,10 +75,12 @@ class UsersController < ApplicationController
 
   #Added from Wefarm example
   def oauth
+    flash[:notice] = 'error'
     if !params[:code]
       return redirect_to('/')
     end
-    redirect_uri = url_for controller: 'user', action: 'oauth', user_id: @user.id, host: 'http://funddit.me'
+    flash[:notice] = 'error2'
+    redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)
