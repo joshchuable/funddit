@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes, :school
+    :bank_account_attributes, :school, :wepay_account_id
 
   mount_uploader :uploaded_image, UserUploader
 
@@ -263,6 +263,10 @@ class User < ActiveRecord::Base
 
   def has_wepay_access_token?
     !self.wepay_access_token.nil?
+  end
+
+  def has_wepay_account?
+    self.wepay_account_id != 0 && !self.wepay_account_id.nil?
   end
 
   def create_wepay_account
