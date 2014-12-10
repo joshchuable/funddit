@@ -269,7 +269,7 @@ class User < ActiveRecord::Base
 
   def create_wepay_account
     if self.has_wepay_access_token? && !self.has_wepay_account?
-      params = { :name => "Insert Name", :description => "Funddit account" }
+      params = { :name => self.name, :description => "A funddit account for" self.name }
       response = Catarse::Application::WEPAY.call("/account/create", self.wepay_access_token, params)
       if response["account_id"]
         self.wepay_account_id_string = response["account_id"]
