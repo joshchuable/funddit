@@ -1,6 +1,6 @@
 # coding: utf-8
 class UsersController < ApplicationController
-  after_filter :verify_authorized, except: %i[reactivate]
+  after_filter :verify_authorized, except: %i[reactivate, oauth]
   skip_before_filter :force_http, only: [:update_password]
   inherit_resources
   defaults finder: :find_active!
@@ -78,7 +78,7 @@ class UsersController < ApplicationController
     if !params[:code]
       return redirect_to('/')
     end
-    redirect_uri = url_for(:controller => 'users', :action => 'oauth', :user_id => params[:user_id], :host => request.host_with_port)
+    redirect_uri = url_for(@user) + '/oauth'
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)

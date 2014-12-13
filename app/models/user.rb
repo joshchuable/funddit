@@ -16,7 +16,7 @@ class User < ActiveRecord::Base
     :image_url, :uploaded_image, :bio, :newsletter, :full_name, :address_street, :address_number,
     :address_complement, :address_neighbourhood, :address_city, :address_state, :address_zip_code, :phone_number,
     :cpf, :state_inscription, :locale, :twitter, :facebook_link, :other_link, :moip_login, :deactivated_at, :reactivate_token,
-    :bank_account_attributes, :school
+    :bank_account_attributes, :school, :wepay_account_id_string
 
   mount_uploader :uploaded_image, UserUploader
 
@@ -254,6 +254,8 @@ class User < ActiveRecord::Base
     else
       self.wepay_access_token = response['access_token']
       self.save
+
+      self.create_wepay_account
     end
   end
 
@@ -261,12 +263,16 @@ class User < ActiveRecord::Base
     !self.wepay_access_token.nil?
   end
 
+  def has_wepay_account?
+    self.wepay_account_id_string != 0 && !self.wepay_account_id_string.nil?
+  end
+
   def create_wepay_account
     if self.has_wepay_access_token? && !self.has_wepay_account?
-      params = { :name => "Insert Name", :description => "Funddit account" }
+      params = { :name => "Insert", :description => "A Wepay account for your Funddit project" }
       response = Catarse::Application::WEPAY.call("/account/create", self.wepay_access_token, params)
       if response["account_id"]
-        self.wepay_account_id = response["account_id"]
+        self.wepay_account_id_string = response["account_id"]
         return self.save
       else
         raise "Error - " + response["error_description"]

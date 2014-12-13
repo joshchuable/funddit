@@ -23,15 +23,15 @@ Catarse::Application.routes.draw do
   end
 
   get '/thank_you' => "static#thank_you"
-  get '/user/:action(/:user_id)' => "user#oauth"
+  match 'users/:user_id/oauth', to: 'users#oauth', via: :all
 
 
   filter :locale, exclude: /\/auth\//
 
   #mount CatarsePaypalExpress::Engine => "/", as: :catarse_paypal_express
   #mount CatarseMoip::Engine => "/", as: :catarse_moip
-  #mount CatarseCredits::Engine => "/", as: :catarse_credits
-  #mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
+  mount CatarseCredits::Engine => "/", as: :catarse_credits
+  mount CatarsePagarme::Engine => "/", as: :catarse_pagarme
   mount CatarseWepay::Engine => "/", as: :catarse_wepay
 
   get '/post_preview' => 'post_preview#show', as: :post_preview
