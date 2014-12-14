@@ -18,8 +18,9 @@ br
         | When you click the button below, you'll be sending in a <strong>DRAFT</strong> for the Funddit team to review. Based on the information provided, we're looking for a clearly articulated message that complies with our terms and conditions.
         | While we do not require a video, we <strong>HIGHLY RECOMMEND</strong> some form of multimedia outreach. This will dramatically increase your chances of getting funded. If you don't already have one, get started soon!
         | In the meantime please create a WePay account to collect funds!
-      - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
-      = button_to 'Create your WePay account!', @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
+        - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
+        = button_to @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
+          | Create your WePay account!
         br/
         br/
         strong Getting started:
@@ -31,7 +32,7 @@ br
         = link_to 'Send Draft', send_to_analysis_project_path(@project), class: 'btn btn-large'
 - else
   #project_warning.bootstrap-alert
-    .alert.alert-warning
+    .ale rt.alert-warning
       i Heads up! Your project is still a draft!.
       #toggle_warning
         = link_to '(minimize)', '#'

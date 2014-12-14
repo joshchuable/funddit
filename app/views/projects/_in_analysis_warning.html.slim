@@ -12,8 +12,9 @@ br
         br/
         | While you're waiting, fill out #{link_to 'your Funddit profile', user_path(@project.user)} and feel free to tweak the project description!
         | Also, don't forget to create your WePay Account!
-      - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
-      = button_to 'Create your WePay account!', @user.wepay_authorization_url(redirect_uri), class: 'btn'
+        - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
+        = button_to @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
+          | Create your WePay account!
         br/
         br/
         strong Troubleshooting:
