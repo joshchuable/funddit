@@ -63,7 +63,7 @@ module Project::StateMachineHandler
         project.notify_observers :sync_with_mailchimp
       end
 
-      after trasition :on => :successful, do :process
+      after_transition :on => :successful, :do => :process
 
       after_transition [:draft, :rejected] => :deleted do |project, transition|
         project.update_attributes({ permalink: "deleted_project_#{project.id}"})
@@ -73,7 +73,7 @@ module Project::StateMachineHandler
     def process
       project.contributions.each do |contribution|
         wepay = WePay.new(client_id, client_secret, use_stage)
-        response = wepay.call('/checkout/new', access_token, {:
+        response = wepay.call('/checkout/new', access_token, {
           :account_id         => project.user.wepay_account_id_string,
           :amount             => (contribution.price_in_cents/100).round(2).to_s,
           :short_description  => t('wepay_description', scope: SCOPE, :project_name => contribution.project.name, :value => contribution.display_value),

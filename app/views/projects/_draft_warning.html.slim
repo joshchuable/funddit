@@ -19,7 +19,7 @@ br
         | While we do not require a video, we <strong>HIGHLY RECOMMEND</strong> some form of multimedia outreach. This will dramatically increase your chances of getting funded. If you don't already have one, get started soon!
         | In the meantime please create a WePay account to collect funds!
       - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
-      = button_to 'Create your WePay account!', @user.wepay_authorization_url(redirect_uri), class: 'btn'
+      = button_to 'Create your WePay account!', @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
         br/
         br/
         strong Getting started:
