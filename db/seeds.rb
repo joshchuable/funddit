@@ -30,11 +30,11 @@ puts 'Seeding the database...'
   company_logo: '',
   host: 'funddit.me',
   base_url: "http://funddit.me",
-  email_contact: 'funddit@gmail.com',
-  email_payments: 'funddit@gmail.com',
-  email_projects: 'funddit@gmail.com',
-  email_system: 'funddit@gmail.com',
-  email_no_reply: 'funddit@gmail.com',
+  email_contact: 'info@funddit.me',
+  email_payments: 'info@funddit.me',
+  email_projects: 'info@funddit.me',
+  email_system: 'info@funddit.me',
+  email_no_reply: 'info@funddit.me',
   facebook_url: "http://facebook.com/funddit.me",
   facebook_app_id: '302938209911869',
   twitter_url: 'http://twitter.com/funddit',
@@ -71,7 +71,7 @@ Project.find_or_create_by!(name: "Test") do |p|
     p.name = 'Test'
     p.user_id = 1
     p.category_id = 1
-    p.about = 'test'  
+    p.about = 'test'
     p.headline = 'test'
     p.goal = 100
     p.online_days = 14
@@ -80,8 +80,8 @@ end
 
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = '302938209911869'
-  o.secret = 'ca01ab4e160f9e3f38f822dc1ed33f91'
+  o.key = 302938209911869
+  o.secret = ca01ab4e160f9e3f38f822dc1ed33f91
   o.path = 'facebook'
 end
 
