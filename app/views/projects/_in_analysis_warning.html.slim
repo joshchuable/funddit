@@ -16,8 +16,9 @@ br
         - unless @project.user.wepay_account_id_string?
           | Also, don't forget to create your WePay Account!
           - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
-          = button_to @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
-            | Create your WePay account!
+          .bootstrap-twitter
+            = button_to @project.user.wepay_authorization_url(redirect_uri), class: 'btn'
+               Create your WePay account!
         br/
         br/
         strong Troubleshooting:
