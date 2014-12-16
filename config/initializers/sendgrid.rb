@@ -8,7 +8,6 @@ begin
       domain: 'funddit.me'
     }
     ActionMailer::Base.delivery_method = :smtp
-  end
 rescue
   nil
 end
