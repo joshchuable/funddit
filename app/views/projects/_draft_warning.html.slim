@@ -33,7 +33,11 @@ br
       br/
       br/
       .bootstrap-twitter
-        = link_to 'Send Draft', send_to_analysis_project_path(@project), class: 'btn btn-large'
+        - if @project.user.wepay_account_id_string?
+          = link_to 'Send Draft', send_to_analysis_project_path(@project), class: 'btn btn-large'
+        - else
+          = button_to 'Send Draft', send_to_analysis_project_path(@project), class: 'btn btn-large disabled', disabled: "disabled"
+          | You can't submit your draft until you create a wepay account!
 - else
   #project_warning.bootstrap-alert
     .ale rt.alert-warning
