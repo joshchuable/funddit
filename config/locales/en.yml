@@ -162,7 +162,7 @@ en:
         section18: "SECTION 18: CONTACT INFORMATION"
         section18_text: "Questions about the Terms of Service should be sent to us at <a href=MAILTO:funddit@gmail.com>funddit@gmail.com</a>."
   not_found:
-    title: "Sorry, we couldn't find this address :("
+    title: "Sorry, we couldn't find this address :( "
     text: "You may have mistyped the address or the page may have moved."
   controllers:
     updates:
