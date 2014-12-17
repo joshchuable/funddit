@@ -589,7 +589,7 @@ en:
     project:
       progress_html: "<span>%{percent} Funded</span>"
       time_remaining_html: "<span>%{count} %{unit}</span> remaining"
-      pledged_html: "Pledged"
+      pledged_html: "Goal"
       display_status:
         not_reached_goal: Waiting
         draft: "Project is in draft"
