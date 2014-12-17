@@ -32,7 +32,10 @@
     .section_header
       h1= @project.name
       h4
-        = t('.project_header.without_city')
+        - if @project.user.school?
+          = @project.user.school
+        - else
+          = t('.project_header.without_city')
         |&nbsp;
         = link_to(@project.category, explore_path(anchor: "by_category_id/#{@project.category_id}"))
         |&nbsp;
