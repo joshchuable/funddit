@@ -554,6 +554,7 @@ en:
         unsuccessful_text: "The project %{link} that you contributed to wasn't funded. Hopefully next time!"
     video_regex_validation: "only Vimeo and YouTube URLs are allowed"
     display_status:
+      not_reached_goal: "Goal not reached"
       expired: expired
       failed: "not funded"
       successful: funded
