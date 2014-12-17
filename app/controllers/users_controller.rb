@@ -78,7 +78,7 @@ class UsersController < ApplicationController
     if !params[:code]
       return redirect_to('/')
     end
-    redirect_uri = url_for(@user) + '/oauth'
+    redirect_uri = url_for(@user)
     @user = User.find(params[:user_id])
     begin
       @user.request_wepay_access_token(params[:code], redirect_uri)
