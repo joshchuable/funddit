@@ -17,6 +17,8 @@ class School < ActiveRecord::Base
               "University of Kansas",
               "University of Michigan",
               "University of Missouri",
+              "UMKC",
+              "UMSTL",
               "Washington University St. Louis",
               "William Jewel College"
               ]
