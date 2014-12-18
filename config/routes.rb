@@ -1,4 +1,12 @@
 Catarse::Application.routes.draw do
+  get 'invitations/new'
+
+  get 'invitations/create'
+
+  get 'invitations/edit'
+
+  get 'invitations/update'
+
   def ssl_options
     if Rails.env.production? && CatarseSettings.get_without_cache(:secure_host)
       {protocol: 'https', host: CatarseSettings.get_without_cache(:secure_host)}
@@ -17,6 +25,7 @@ Catarse::Application.routes.draw do
       defaults: ssl_options
     }
   )
+
 
   devise_scope :user do
     post '/sign_up', {to: 'devise/registrations#create', as: :sign_up}.merge(ssl_options)
