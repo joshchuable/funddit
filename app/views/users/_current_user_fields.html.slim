@@ -1,5 +1,5 @@
 #my_avatar.user_data
-  = redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
+  - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
     .boostrap-twitter
       = button_to 'Create your WePay account!', @user.wepay_authorization_url(redirect_uri), class: 'btn'
   h1 = t('.local_avatar')
