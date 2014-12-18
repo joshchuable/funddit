@@ -243,7 +243,7 @@ class User < ActiveRecord::Base
   def wepay_authorization_url(redirect_uri)
     Catarse::Application::WEPAY.oauth2_authorize_url(redirect_uri, self.email, self.name)
   end
-
+  
   # takes a code returned by wepay oauth2 authorization and makes an api call to generate oauth2 token for this farmer.
   def request_wepay_access_token(code, redirect_uri)
     response = Catarse::Application::WEPAY.oauth2_token(code, redirect_uri)
