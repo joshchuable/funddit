@@ -4,38 +4,33 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = CatarseSettings[:company_name]
 
-|Olá, #{user.name}!
+| Grettings, #{user.name}!
 br
 br
-| Nossa equipe acabou de receber o projeto  #{link_to project.name, project_link, target: '__blank'}
+| Our team has received your project,  #{link_to project.name, project_link, target: '__blank'}
 br/
 br/
-| Durante os próximos 4 dias úteis, iremos analisar o rascunho de projeto que você nos enviou e te daremos uma resposta.
+| We're checking that you meet all our requirements, and will get back to you within 2-3 three business days.
 br
 br
-strong Você pode receber 3 tipos de resposta: 
+strong There are three possible responses:
 br/
 br/
-strong Opção 1: 
-| Seu rascunho passou na análise, foi aceito e poderá ir ao ar! 
-br/
-| Agora é só marcarmos o dia e hora para estreiar seu projeto no site do Catarse!
+strong 1:
+| Your draft is wonderful, and you can begin immediately!
 br/
 br/
-strong Opção 2: 
-| Nos parece que o seu projeto tem muito ver com o #{company_name}, mas ainda precisa de alguns ajustes para ir para o ar. Vamos entrar em contato para entender possibilidades , sugerir coisas e tirar algumas dúvidas. 
+br/
+strong 2:
+| Your project seems underdeveloped. Keep working on it, and try again! If you want more detailed feedback, feel free to send us an email at #{mail_to CatarseSettings[:email_projects]}!
 br/
 br/
-strong Opção 3: 
-| Infelizmente, o rascunho de projeto que você enviou não se encaixa no perfil do site do #{company_name}. 
-| Enviaremos um email notificando a recusa. Sim, sabemos que recusas são sempre desagradáveis. Mas o lema aqui é 
-| "levanta, sacode a poeira e dá a volta por cima". Mas antes de sacudir qualquer poeira, 
-| estude nossa #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'}  para que você saiba tudo sobre nossos pré-requisitos para a construção do seu próximo projeto.
+strong 3:
+| We're afraid the project you submitted isn't the right fit for Funddit. Again, if you would like a more detailed explanation,feel free to contact us at #{mail_to CatarseSettings[:email_projects]}!
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]}
 br/
 br/
-|Um abraço,
+|Cheers,
 br/
 = company_name

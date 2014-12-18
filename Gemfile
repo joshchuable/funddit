@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.1.3'
+ruby '2.1.2'
 gem 'execjs'
 gem 'therubyracer', :platforms => :ruby
 gem 'rack-cache'
@@ -31,6 +31,9 @@ gem 'user_notifier', '~> 0.0.5'
 
 # Mixpanel for backend tracking
 gem 'mixpanel-ruby'
+
+# Devise Invitable for referral system
+gem 'devise_invitable'
 
 # Payment engines
 #gem 'catarse_paypal_express', '2.2.3'

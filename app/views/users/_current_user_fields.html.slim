@@ -1,4 +1,5 @@
 #my_avatar.user_data
+  = button_to 'Invite your Friends!', new_user_invitation_path
   - redirect_uri = CatarseSettings[:base_url] + url_for(@user) + '/oauth'
   - unless @user.wepay_account_id_string?
     .boostrap-twitter
