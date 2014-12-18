@@ -238,7 +238,7 @@ en:
   count_contributed_projects: "contributed to %{total} projects"
   rewards:
     index:
-      reward_title: "%{minimum} or more"
+      reward_title: "%{minimum} +"
       reward_deliver_time: "Estimated delivery: %{estimate}"
       contributions_to_confirm:
         one:  "1 contribution in time to confirm."
