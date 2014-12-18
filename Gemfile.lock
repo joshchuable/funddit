@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git://github.com/catarse/catarse_contribution_validator.git
-  revision: 10e244d93563085e784107f764960f541473304e
+  revision: a5ce1407c402b3b3aba640aab54af6a8474e910a
   specs:
     catarse_contribution_validator (0.0.1)
       rails (>= 4.0.0)
@@ -26,39 +26,29 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    CFPropertyList (2.2.8)
     RedCloth (4.2.9)
-    actionmailer (4.1.7)
-      actionpack (= 4.1.7)
-      actionview (= 4.1.7)
+    actionmailer (4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
       mail (~> 2.5, >= 2.5.4)
-    actionpack (4.1.7)
-      actionview (= 4.1.7)
-      activesupport (= 4.1.7)
+    actionpack (4.1.8)
+      actionview (= 4.1.8)
+      activesupport (= 4.1.8)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    actionview (4.1.7)
-      activesupport (= 4.1.7)
+    actionview (4.1.8)
+      activesupport (= 4.1.8)
       builder (~> 3.1)
       erubis (~> 2.7.0)
-    active_utils (2.2.3)
-      activesupport (>= 2.3.11)
-      i18n
-    activemerchant (1.44.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (>= 0.6.9)
-      json (~> 1.7)
-      nokogiri (~> 1.4)
-      offsite_payments (~> 2.0.0)
-    activemodel (4.1.7)
-      activesupport (= 4.1.7)
+    activemodel (4.1.8)
+      activesupport (= 4.1.8)
       builder (~> 3.1)
-    activerecord (4.1.7)
-      activemodel (= 4.1.7)
-      activesupport (= 4.1.7)
+    activerecord (4.1.8)
+      activemodel (= 4.1.8)
+      activesupport (= 4.1.8)
       arel (~> 5.0.0)
-    activesupport (4.1.7)
+    activesupport (4.1.8)
       i18n (~> 0.6, >= 0.6.9)
       json (~> 1.7, >= 1.7.7)
       minitest (~> 5.1)
@@ -78,7 +68,7 @@ GEM
       rack (>= 0.9.0)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
-    browser (0.7.1)
+    browser (0.8.0)
     builder (3.2.2)
     capybara (2.2.1)
       mime-types (>= 1.16)
@@ -104,12 +94,12 @@ GEM
     catarse_pagarme (1.4.1)
       pagarme (~> 1.9.5)
       rails (~> 4.0)
-    catarse_paypal_express (2.2.3)
-      activemerchant (>= 1.34.0)
-      rails (~> 4.0)
-      slim-rails
     catarse_settings_db (0.1.0)
       rails (~> 4.1.1)
+    catarse_wepay (0.0.6)
+      rails (~> 4.0)
+      slim-rails
+      wepay (= 0.0.1)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chartkick (1.3.2)
@@ -141,7 +131,7 @@ GEM
       sass (>= 3.2, < 3.5)
     compass-rails (2.0.1)
       compass (~> 1.0.0)
-    connection_pool (2.0.0)
+    connection_pool (2.1.0)
     coveralls (0.7.1)
       multi_json (~> 1.3)
       rest-client
@@ -160,11 +150,12 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    devise_invitable (1.4.0)
+      actionmailer (>= 3.2.6, < 5)
+      devise (>= 3.2.0)
     diff-lcs (1.2.5)
     docile (1.1.5)
-    dotenv (0.11.1)
-      dotenv-deployment (~> 0.0.2)
-    dotenv-deployment (0.0.2)
+    dotenv (1.0.2)
     draper (1.4.0)
       actionpack (>= 3.0)
       activemodel (>= 3.0)
@@ -174,7 +165,7 @@ GEM
       activesupport (>= 3.0.0)
     erubis (2.7.0)
     eventmachine (1.0.3)
-    excon (0.40.0)
+    excon (0.42.1)
     execjs (2.2.2)
     ezcrypto (0.7.2)
     factory_girl (4.5.0)
@@ -190,28 +181,48 @@ GEM
       loofah (~> 2.0)
       sax-machine (~> 1.0)
     ffi (1.9.6)
-    fog (1.24.0)
-      fog-brightbox
-      fog-core (~> 1.23)
+    fission (0.5.0)
+      CFPropertyList (~> 2.2)
+    fog (1.26.0)
+      fog-atmos
+      fog-brightbox (~> 0.4)
+      fog-core (~> 1.27, >= 1.27.1)
+      fog-ecloud
       fog-json
+      fog-profitbricks
       fog-radosgw (>= 0.0.2)
       fog-sakuracloud (>= 0.0.4)
       fog-softlayer
+      fog-storm_on_demand
+      fog-terremark
+      fog-vmfusion
+      fog-voxel
+      fog-xml (~> 0.1.1)
       ipaddress (~> 0.5)
       nokogiri (~> 1.5, >= 1.5.11)
-    fog-brightbox (0.6.1)
+    fog-atmos (0.1.0)
+      fog-core
+      fog-xml
+    fog-brightbox (0.7.1)
       fog-core (~> 1.22)
       fog-json
-      inflecto
-    fog-core (1.24.0)
+      inflecto (~> 0.0.2)
+    fog-core (1.27.1)
       builder
       excon (~> 0.38)
       formatador (~> 0.2)
       mime-types
       net-scp (~> 1.1)
       net-ssh (>= 2.1.3)
+    fog-ecloud (0.0.2)
+      fog-core
+      fog-xml
     fog-json (1.0.0)
       multi_json (~> 1.0)
+    fog-profitbricks (0.0.1)
+      fog-core
+      fog-xml
+      nokogiri
     fog-radosgw (0.0.3)
       fog-core (>= 1.21.0)
       fog-json
@@ -219,14 +230,26 @@ GEM
     fog-sakuracloud (0.1.1)
       fog-core
       fog-json
-    fog-softlayer (0.3.23)
+    fog-softlayer (0.3.25)
       fog-core
       fog-json
-    fog-xml (0.1.0)
+    fog-storm_on_demand (0.1.0)
+      fog-core
+      fog-json
+    fog-terremark (0.0.3)
+      fog-core
+      fog-xml
+    fog-vmfusion (0.0.1)
+      fission
+      fog-core
+    fog-voxel (0.0.2)
+      fog-core
+      fog-xml
+    fog-xml (0.1.1)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    foreman (0.75.0)
-      dotenv (~> 0.11.1)
+    foreman (0.76.0)
+      dotenv (~> 1.0.2)
       thor (~> 0.19.1)
     formatador (0.2.5)
     formtastic (2.2.1)
@@ -234,7 +257,7 @@ GEM
     has_scope (0.6.0.rc)
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
-    hashie (3.3.1)
+    hashie (3.3.2)
     heroku-deflater (0.5.3)
       rack (>= 1.4.5)
     high_voltage (2.2.1)
@@ -245,15 +268,15 @@ GEM
     httparty (0.6.1)
       crack (= 0.1.8)
     httpauth (0.2.1)
-    httpclient (2.5.3.1)
+    httpclient (2.5.3.3)
     i18n (0.6.11)
     inflecto (0.0.2)
     inherited_resources (1.4.1)
       has_scope (~> 0.6.0.rc)
       responders (~> 1.0.0.rc)
     ipaddress (0.8.0)
-    jasmine-core (2.0.2)
-    jasmine-rails (0.10.2)
+    jasmine-core (2.1.3)
+    jasmine-rails (0.10.4)
       jasmine-core (>= 1.3, < 3.0)
       phantomjs
       railties (>= 3.1.0)
@@ -270,7 +293,7 @@ GEM
     kgio (2.9.2)
     launchy (2.4.3)
       addressable (~> 2.3)
-    letter_opener (1.2.0)
+    letter_opener (1.3.0)
       launchy (~> 2.2)
     libv8 (3.16.14.7)
     libxml-ruby (2.6.0)
@@ -286,20 +309,18 @@ GEM
       json (>= 1.7.7)
     method_source (0.8.2)
     mime-types (2.4.3)
-    mini_portile (0.6.0)
-    minitest (5.4.2)
+    mini_portile (0.6.1)
+    minitest (5.5.0)
     mixpanel-ruby (1.6.0)
-    money (6.4.0)
-      i18n (>= 0.6.4, <= 0.7.0.beta1)
     multi_json (1.10.1)
     multipart-post (2.0.0)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.1)
-    netrc (0.8.0)
+    netrc (0.10.1)
     newrelic_rpm (3.6.5.130)
-    nokogiri (1.6.3.1)
-      mini_portile (= 0.6.0)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
     oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
@@ -307,14 +328,6 @@ GEM
       jwt (~> 0.1.4)
       multi_json (~> 1.0)
       rack (~> 1.2)
-    offsite_payments (2.0.1)
-      active_utils (~> 2.2.0)
-      activesupport (>= 3.2.14, < 5.0.0)
-      builder (>= 2.1.2, < 4.0.0)
-      i18n (~> 0.5)
-      json (~> 1.7)
-      money (< 7.0.0)
-      nokogiri (~> 1.4)
     omniauth (1.2.2)
       hashie (>= 1.2, < 4)
       rack (~> 1.0)
@@ -330,7 +343,7 @@ GEM
       multi_json (~> 1.3)
       omniauth-oauth (~> 1.0)
     orm_adapter (0.5.0)
-    pagarme (1.9.7)
+    pagarme (1.9.8)
       multi_json
       rest-client
     pg (0.17.1)
@@ -362,15 +375,15 @@ GEM
       rack (>= 0.4)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rails (4.1.7)
-      actionmailer (= 4.1.7)
-      actionpack (= 4.1.7)
-      actionview (= 4.1.7)
-      activemodel (= 4.1.7)
-      activerecord (= 4.1.7)
-      activesupport (= 4.1.7)
+    rails (4.1.8)
+      actionmailer (= 4.1.8)
+      actionpack (= 4.1.8)
+      actionview (= 4.1.8)
+      activemodel (= 4.1.8)
+      activerecord (= 4.1.8)
+      activesupport (= 4.1.8)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.1.7)
+      railties (= 4.1.8)
       sprockets-rails (~> 2.0)
     rails-observers (0.1.2)
       activemodel (~> 4.0)
@@ -379,20 +392,20 @@ GEM
       rails_stdout_logging
     rails_serve_static_assets (0.0.2)
     rails_stdout_logging (0.0.3)
-    railties (4.1.7)
-      actionpack (= 4.1.7)
-      activesupport (= 4.1.7)
+    railties (4.1.8)
+      actionpack (= 4.1.8)
+      activesupport (= 4.1.8)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     raindrops (0.13.0)
-    rake (10.3.2)
+    rake (10.4.2)
     ranked-model (0.4.0)
       activerecord (>= 3.1.12)
     rb-fsevent (0.9.4)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
-    redcarpet (3.2.0)
-    redis (3.1.0)
+    redcarpet (3.2.2)
+    redis (3.2.0)
     redis-namespace (1.5.1)
       redis (~> 3.0, >= 3.0.4)
     ref (1.0.5)
@@ -403,10 +416,10 @@ GEM
       mime-types (>= 1.16, < 3.0)
       netrc (~> 0.7)
     rinku (1.7.3)
-    rmagick (2.13.3)
+    rmagick (2.13.4)
     routing-filter (0.4.0.pre)
       actionpack
-    rspec-collection_matchers (1.0.0)
+    rspec-collection_matchers (1.1.2)
       rspec-expectations (>= 2.99.0.beta1)
     rspec-core (3.1.7)
       rspec-support (~> 3.1.0)
@@ -429,16 +442,16 @@ GEM
     rspec-support (3.1.2)
     ruby-ole (1.2.11.7)
     rubyzip (1.1.6)
-    sass (3.4.7)
+    sass (3.4.9)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
       sprockets-rails (~> 2.0.0)
-    sax-machine (1.0.2)
-    schema_plus (1.6.0)
+    sax-machine (1.1.1)
+    schema_plus (1.7.1)
       activerecord (>= 3.2)
       valuable
-    selenium-webdriver (2.43.0)
+    selenium-webdriver (2.44.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
@@ -455,7 +468,7 @@ GEM
       json
       redis (>= 3.0.6)
       redis-namespace (>= 1.3.1)
-    simple_form (3.0.2)
+    simple_form (3.1.0)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     simplecov (0.9.1)
@@ -507,7 +520,7 @@ GEM
       spreadsheet
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    uglifier (2.5.3)
+    uglifier (2.6.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     unicorn (4.8.3)
@@ -517,16 +530,19 @@ GEM
     user_notifier (0.0.5)
       rails (>= 4.0.0)
       sidekiq
-    valuable (0.9.8)
-    video_info (2.3.2)
+    valuable (0.9.9)
+    video_info (2.4.0)
       addressable
       htmlentities
       multi_json
     warden (1.2.3)
       rack (>= 1.0)
     websocket (1.2.1)
-    websocket-driver (0.3.5)
+    websocket-driver (0.5.0)
+      websocket-extensions (>= 0.1.0)
+    websocket-extensions (0.1.1)
     weekdays (1.0.2)
+    wepay (0.0.1)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -547,8 +563,8 @@ DEPENDENCIES
   catarse_moip (~> 2.3.6)
   catarse_monkeymail (>= 0.1.6)
   catarse_pagarme (= 1.4.1)
-  catarse_paypal_express (= 2.2.3)
   catarse_settings_db (>= 0.1.0)
+  catarse_wepay (= 0.0.6)
   chartkick
   coffee-rails (~> 4.0.0)
   compass-960-plugin
@@ -556,6 +572,7 @@ DEPENDENCIES
   coveralls
   database_cleaner
   devise
+  devise_invitable
   draper
   execjs
   ezcrypto
@@ -619,3 +636,4 @@ DEPENDENCIES
   user_notifier (~> 0.0.5)
   video_info (>= 1.1.1)
   weekdays
+  wepay

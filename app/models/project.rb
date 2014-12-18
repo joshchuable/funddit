@@ -50,7 +50,7 @@ class Project < ActiveRecord::Base
   # Used to simplify a has_scope
   scope :successful, ->{ with_state('successful') }
   scope :with_project_totals, -> { joins('LEFT OUTER JOIN project_totals ON project_totals.project_id = projects.id') }
-  scope :by_school, ->(term) { joins(:user).where("users.school ~* ?", school) }
+  scope :by_school, ->(school) { joins(:user).where("users.school ~* ?", school) }
   scope :by_progress, ->(progress) { joins(:project_total).where("project_totals.pledged >= projects.goal*?", progress.to_i/100.to_f) }
   scope :by_channel, ->(channel_id) { joins(:channels).where("channels.id = ?", channel_id) }
   scope :by_user_email, ->(email) { joins(:user).where("users.email = ?", email) }
@@ -65,7 +65,7 @@ class Project < ActiveRecord::Base
   scope :in_funding, -> { not_expired.with_states(['online']) }
   scope :name_contains, ->(term) { where("unaccent(upper(name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }
   scope :user_name_contains, ->(term) { joins(:user).where("unaccent(upper(users.name)) LIKE ('%'||unaccent(upper(?))||'%')", term) }
-  scope :near_of, ->(address_state) { where("EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower(?))", address_state) }
+  scope :near_of, ->(school) { joins(:user).where("users.school ~* ?", school) }#->(address_state) { where("EXISTS(SELECT true FROM users u WHERE u.id = projects.user_id AND lower(u.address_state) = lower(?))", address_state) }
   scope :to_finish, ->{ expired.with_states(['online', 'waiting_funds']) }
   scope :visible, -> { without_states(['draft', 'rejected', 'deleted', 'in_analysis']) }
   scope :financial, -> { with_states(['online', 'successful', 'waiting_funds']).where("projects.expires_at > (current_timestamp - '15 days'::interval)") }

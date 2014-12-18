@@ -5,7 +5,7 @@ en:
     project:
       dispay_status:
         not_reached_goal: "Goal not reached"
-      progress_html: "<span>%{percent}%</span>%"
+      progress_html: "<span>%{percent}%</span> Funded"
       time_remaining_html: "<span>%{count} %{unit}</span> remaining"
       pledged_html: "<span>%{value}</span> pledged"
     new:
