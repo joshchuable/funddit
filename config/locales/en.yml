@@ -238,6 +238,12 @@ en:
   count_contributed_projects: "contributed to %{total} projects"
   rewards:
     index:
+      reward_title: "%{minimum} or more"
+      reward_deliver_time: "Estimated delivery: %{estimate}"
+      contributions_to_confirm:
+        one:  "1 contribution in time to confirm."
+        other: "%{count} contributions in time to confirm."
+      title: "Contribute and receive..."
       display_remaining: "%{remaining} of %{maximum} available"
       dont_want: "I don't want any reward"
     texts:
