@@ -4,54 +4,23 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = CatarseSettings[:company_name]
 
-|Olá, #{user.display_name}.
+|Hey, #{user.display_name}.
 br/
 br/
-| O projeto #{link_to project.name, project_link, target: '__blank'} está no ar e já pode receber apoios! Boa sorte nessa maratona! 
-| Uma campanha de financiamento coletivo dá trabalho, mas é recompensador! Se não planejou suas ações anteriormente, não perca tempo. 
-| A hora é essa! Agora é #{ link_to 'TUDO-OU-NADA!', 'http://suporte.catarse.me/hc/pt-br/articles/202265256', target: '__blank'} 
+| Congratulations! Your project #{link_to project.name, project_link, target: '__blank'} is now live! Go forth and make some money!!
 br/
 br/
-| Para conversar sobre estratégias de comunicação com nossa equipe e receber sugestões sobre como agir na sua campanha, 
-| responda esse email ou envie uma mensagem para #{mail_to CatarseSettings[:email_projects]} . 
-| Mas, lembre-se que <strong>você é o responsável por promover a campanha e cuidar da divulgação do projeto</strong>. É da sua rede que virão grande parte dos apoios, esta conversa deve ser encarada como um auxílio.
+| If you have any questions or concerns, feel free to send us an email at #{mail_to CatarseSettings[:email_projects]} .
+| Remember that you're responsible for the success or failure of your project. To ensure that you're successful, check out our #{link_to 'Viral Guide for Organizations','https://s3-us-west-2.amazonaws.com/funddit/Viral+Guide+for+Organizations+-+Google+Docs.pdf?X-Amz-Date=20141218T183935Z&X-Amz-Expires=300&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Signature=31f1de344cdc25d82f8db5c72ce9e30b154c23b57cf54d245a571e763174c92f&X-Amz-Credential=ASIAJHCFKFG7CWD4ALPQ/20141218/us-west-2/s3/aws4_request&X-Amz-SignedHeaders=Host&x-amz-security-token=AQoDYXdzEBwakAKq0E3Lch1swlBhznCeJrWxsP4WMPl1rIkUKV6CuBKuCOQTErVWX0CPiSuh0E5YxSUMxr%2Baf69HAXRj5clS1MmEPr01ACdX4rUsEFA1ZudXUAmsjBqLnBk7hboZLFraGtATCcAQFY%2BrvqGUr2718Biv53s9PxvzPfUzBtr7xzMndoLc3i0jDckbirxACtCbVb04qQXmbDmlpCMu7/ThIrDVwmKrsFdm0lB79G6DjgblICUhXbTINubDkg1VjDLIJNPTKLk6X4DMjdjxv%2BYd6sH7pBvsEWd9Fv0jUYdVrkmsYviWZXW%2BEe9D72i7BBVCIB%2BhAfMBQiPi%2BXsINxZ3vSS3Pj0CHkqR05cBxyYXBZi7vSDcvMykBQ%3D%3D'}. This will <strong>maximize your changes of success</strong>
 br/
 br/
-strong Informações Importantes:
+| Keep in mind that just because we have approved your projects, does not mean that your project is perfect. We encourge you to keep tweaking your project to suit the needs of your potential benefactors. The more information and transparency, the better.
+| Excellent projects will be recommended on our front page.
 br/
 br/
-| Você <strong>NÃO</strong> pode mais <strong>alterar</strong> nem a <strong>Meta de Arrecadação</strong> nem o <strong>Prazo escolhido</strong> para a campanha. 
 br/
 br/
-| No entanto você ainda pode:
 br/
-| - Trocar o vídeo principal da sua campanha
+| Cheers,
 br/
-| - Editar a descrição do seu projeto
-br/
-| - Criar novas recompensas
-br/
-| - Alterar conteúdo e valor de recompensas que ninguém escolheu
-br/
-| - Alterar o limite de apoiadores de uma determinada recompensa
-br/
-| - Esgotar recompensas (limitando-as para um numero X de apoiadores)
-br/
-| - Trocar o Thumbnail e a Frase de Efeito do seu projeto
-br/
-| - Estudar regras, dicas e outras informações através da #{link_to 'Central de Suporte', CatarseSettings[:support_forum]}.
-br/
-br/
-| <strong>Se você não conferiu a #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'}, 
-| confira! Quanto mais você souber sobre os detalhes de uma campanha no #{company_name}, melhor preparado você estará.</strong> 
-| E fique tranquilo, estamos por aqui! Você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]}
-br/
-br/
-| E por falar nisso, por favor </strong>não esqueça de incluir na sua lista de contatos os e-mails:</strong> 
-| #{mail_to CatarseSettings[:email_projects]} e #{mail_to CatarseSettings[:email_contact]} para evitar que nossas mensagens 
-| caiam na sua caixa de spam devido a filtros do seu email. 
-br/
-br/
-| Um abraço,
-br/
-| A equipe do #{company_name} te deseja uma boa campanha!!!!
+| #{company_name} Team
