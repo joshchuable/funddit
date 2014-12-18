@@ -14,13 +14,14 @@ class School < ActiveRecord::Base
               "Missouri S&T",
               "St. Louis University",
               "Truman State University",
+              "University of Central Missouri"
               "University of Kansas",
               "University of Michigan",
               "University of Missouri",
               "UMKC",
               "UMSTL",
               "Washington University St. Louis",
-              "William Jewel College"
+              "William Jewell College"
               ]
     #self.order(:name).each do |school|
     #  @array << [school.name]
