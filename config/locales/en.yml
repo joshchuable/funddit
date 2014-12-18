@@ -238,7 +238,7 @@ en:
   count_contributed_projects: "contributed to %{total} projects"
   rewards:
     index:
-      display_remaining: "Remaining"
+      display_remaining: "%{remaining} of %{maximum} available"
       dont_want: "I don't want any reward"
     texts:
       copyleft: "Made with love."
