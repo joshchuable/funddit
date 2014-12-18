@@ -9,7 +9,7 @@ en:
       no_invitations_remaining: "No invitations remaining"
       invitation_removed: 'Your invitation was removed.'
       new:
-        header: "Send invitation"
+        header: "Invite friends to check out your project!"
         submit_button: "Send an invitation"
       edit:
         header: "Set your password"
