@@ -99,7 +99,7 @@ GEM
     catarse_wepay (0.0.6)
       rails (~> 4.0)
       slim-rails
-      wepay (= 0.0.1)
+      wepay (= 0.0.3)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chartkick (1.3.2)
