@@ -7,7 +7,7 @@ en:
         not_reached_goal: "Goal not reached"
       progress_html: "<span>%{percent}%</span> Funded"
       time_remaining_html: "<span>%{count} %{unit}</span> remaining"
-      pledged_html: "<span>%{value}</span> pledged"
+      pledged_html: "<span>%{value}</span> goal"
     new:
       page-title: "Start a Funddit campaign"
       form:
@@ -52,7 +52,7 @@ en:
         between_updated_at: "Between Updated At"
         goal_between: "Goal between"
         goal: "Goal"
-        pledged: "Pledged"
+        pledged: "Goal"
         total_contributions: "Total contributions"
         expires_at: "Expires"
         by_state: 'By state'
@@ -76,7 +76,7 @@ en:
         search_report: "Search Report"
         name: "Name"
         goal: "Goal"
-        pledged: "Pledged"
+        pledged: "Goal"
         total_payment_service_fee: "Total Payment Service Fee"
         total_catarse_fee: "Total Funddit Fee"
         repass_value: "Repass Value"
