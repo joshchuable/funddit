@@ -22,9 +22,6 @@ return function ouibounce(el, config) {
     _delayTimer  = null,
     _html        = document.documentElement;
 
-  console.log("el:")
-  console.log(el);
-
   function setDefault(_property, _default) {
     return typeof _property === 'undefined' ? _default : _property;
   }
@@ -90,10 +87,6 @@ return function ouibounce(el, config) {
   }
 
   function fire() {
-    console.log(el)
-    console.log($("#ouibounce-modal"))
-    el = $("#ouibounce-modal")[0]
-    console.log(el.style)
     // You can use ouibounce without passing an element
     // https://github.com/carlsednaoui/ouibounce/issues/30
     if (el) el.style.display = 'block';
