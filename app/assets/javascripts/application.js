@@ -20,6 +20,8 @@
 //= require ./lib/skull.js
 //= require ./app/app.js
 //= require ./lib/jquery.sticky.js
+//= require ./app/ouibounce.js
+//= require ./app/ouibounce_exit.js
 //= require_tree ./lib
 //= require_tree ./app
 
