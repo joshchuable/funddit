@@ -20,9 +20,9 @@
 //= require ./lib/skull.js
 //= require ./app/app.js
 //= require ./lib/jquery.sticky.js
-//= require ./app/ouibounce.js
-//= require ./app/ouibounce_exit.js
-//= require_tree ./lib
-//= require_tree ./app
-
-
+//= require_directory ./lib
+//= require_directory ./app
+//= require_directory ./app/contribution
+//= require_directory ./app/devise
+//= require_directory ./app/project
+//= require_directory ./app/user

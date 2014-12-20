@@ -1,4 +1,7 @@
-var _ouibounce = ouibounce($('#ouibounce-modal'), {
+console.log("trying")
+console.log($("#ouibounce-modal")[0])
+
+var _ouibounce = ouibounce($("#ouibounce-modal"), {
   aggressive: true,
   timer: 0,
   callback: function() { console.log('ouibounce fired!'); }
