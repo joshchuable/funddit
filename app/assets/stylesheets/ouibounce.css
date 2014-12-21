@@ -93,6 +93,7 @@
   bottom: 20px;
   text-align: center;
   width: 100%;
+  box-sizing: border-box;
 }
 #ouibounce-modal .modal-footer p {
   text-transform: capitalize;
