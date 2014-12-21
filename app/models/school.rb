@@ -12,14 +12,17 @@ class School < ActiveRecord::Base
               "Kansas State",
               "Missouri State",
               "Missouri S&T",
+              "Notre Dame",
+              "Pittsburg State University",
               "St. Louis University",
               "Truman State University",
-              "University of Central Missouri",
-              "University of Kansas",
-              "University of Michigan",
-              "University of Missouri",
               "UMKC",
               "UMSTL",
+              "University of Central Missouri",
+              "University of Kansas",
+              "University of Nebraska Lincoln"
+              "University of Michigan",
+              "University of Missouri",
               "Washington University St. Louis",
               "William Jewell College"
               ]
