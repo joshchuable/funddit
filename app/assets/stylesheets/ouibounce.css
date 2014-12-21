@@ -1,5 +1,5 @@
 #ouibounce-modal {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   display: none;
   position: fixed;
   top: 0;
@@ -34,8 +34,9 @@
   animation: popin 0.3s;
 }
 #ouibounce-modal .modal-title {
-  font-size: 18px;
-  background-color: #252525;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: #3f4752;
   color: #fff;
   padding: 10px;
   margin: 0;
@@ -46,12 +47,12 @@
   color: #fff;
   font-size: 1em;
   margin: 0.2em;
-  text-transform: uppercase;
   font-weight: 500;
 }
 #ouibounce-modal .modal-body {
   padding: 20px 35px;
-  font-size: 0.9em;
+  font-size: 1.2em;
+  color: #333;
 }
 #ouibounce-modal p {
   color: #344a5f;
@@ -62,17 +63,16 @@
 }
 #ouibounce-modal form input[type=text] {
   padding: 12px;
-  font-size: 1.2em;
+  font-size: 1.0em;
   width: 300px;
   border-radius: 4px;
   border: 1px solid #ccc;
   -webkit-font-smoothing: antialiased;
 }
 #ouibounce-modal form input[type=submit] {
-  text-transform: uppercase;
   font-weight: bold;
   padding: 12px;
-  font-size: 1.1em;
+  font-size: 1.0em;
   border-radius: 4px;
   color: #fff;
   background-color: #4ab471;
@@ -86,7 +86,7 @@
   opacity: 0.8;
   margin-top: 1px;
   padding-top: 1px;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 #ouibounce-modal .modal-footer {
   position: absolute;
@@ -98,8 +98,9 @@
 #ouibounce-modal .modal-footer p {
   text-transform: capitalize;
   cursor: pointer;
+  color: #d9534f;
   display: inline;
-  border-bottom: 1px solid #344a5f;
+  border-bottom: 1px solid #d9534f;
 }
 @-webkit-keyframes fadein {
   0% {
