@@ -2,8 +2,8 @@ module Contribution::PaymentMethods
   extend ActiveSupport::Concern
 
   included do
-    def is_paypal?
-      payment_method.try(:downcase) == 'paypal'
+    def is_wepay?
+      payment_method.try(:downcase) == 'wepay'
     end
 
     def is_pagarme?

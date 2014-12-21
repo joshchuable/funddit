@@ -11,6 +11,13 @@ Catarse::Application.configure do
   # Do not eager load code on boot.
   config.eager_load = false
 
+  #wepay app configuration
+    CLIENT_ID = 10311
+    CLIENT_SECRET = "6956136700"
+    USE_STAGE = false
+    WEPAY = WePay.new(CLIENT_ID, CLIENT_SECRET, USE_STAGE)
+
+
   # Show full error reports and disable caching.
   config.consider_all_requests_local       = true
   config.action_controller.perform_caching = false
@@ -34,4 +41,3 @@ Catarse::Application.configure do
 
   config.action_mailer.asset_host = "http://localhost:80"
 end
-
