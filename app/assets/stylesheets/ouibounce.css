@@ -53,7 +53,14 @@
   padding: 20px 35px;
   font-size: 1.2em;
   color: #333;
+  text-align: right;
 }
+
+#ouibounce-modal .modal-body .right{
+  float: right;
+  margin-left: 10px;
+}
+
 #ouibounce-modal p {
   color: #344a5f;
 }
