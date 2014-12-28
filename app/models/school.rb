@@ -9,6 +9,7 @@ class School < ActiveRecord::Base
     @array = ["Arizona State",
               "Baylor",
               "Denison University",
+              "Grinnell College",
               "Kansas State",
               "Missouri State",
               "Missouri S&T",
