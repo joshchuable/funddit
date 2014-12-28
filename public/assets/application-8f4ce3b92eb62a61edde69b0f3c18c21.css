@@ -9630,7 +9630,7 @@ body #logos .power a {
 
 /* line 2, /home/josh/catarse/app/assets/stylesheets/resources/projects/_index.sass */
 [data-namespace="null"][data-controller="projects"][data-action="index"] .banner {
-  background: url(/assets/catarse_bootstrap/banner-3years2.png) center center;
+  background: url(/assets/catarse_bootstrap/banner-3years3.png) center center;
   height: 360px;
   margin: 0 auto 2em;
   overflow: hidden;
@@ -9638,7 +9638,7 @@ body #logos .power a {
 }
 /* line 8, /home/josh/catarse/app/assets/stylesheets/resources/projects/_index.sass */
 [data-namespace="null"][data-controller="projects"][data-action="index"] .banner .content {
-  background: url(/assets/catarse_bootstrap/banner-content2.png) center center;
+  background: url(/assets/catarse_bootstrap/banner-content3.png) center center;
   position: absolute;
   top: 0;
   left: 50%;
