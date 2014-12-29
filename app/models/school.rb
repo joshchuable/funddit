@@ -21,7 +21,7 @@ class School < ActiveRecord::Base
               "UMSTL",
               "University of Central Missouri",
               "University of Kansas",
-              "University of Nebraska Lincoln"
+              "University of Nebraska Lincoln",
               "University of Michigan",
               "University of Missouri",
               "Washington University St. Louis",
