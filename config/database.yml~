@@ -14,7 +14,7 @@ development:
   host: localhost
   database: catarse_development
   pool: 5
-  username: postgres
+  username: username
   password: password
 
 
@@ -43,8 +43,5 @@ test:
   host: localhost
   database: catarse_test
   pool: 5
-  username: postgres
+  username: username
   password: password
-
-
-
