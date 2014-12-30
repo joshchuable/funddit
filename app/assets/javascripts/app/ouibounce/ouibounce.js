@@ -44,7 +44,7 @@ return function ouibounce(el, config) {
   }
 
   function handleMouseleave(e) {
-    if (e.clientY > sensitivity || (checkCookieValue(cookieName, 'true') && !aggressive)) return;
+    if (e.clientY > sensitivity || (checkCookieValue(cookieName, 'true') && !aggressive) || !$.isEmptyObject($("body").data("user"))) return;
 
     _delayTimer = setTimeout(_fireAndCallback, delay);
   }
