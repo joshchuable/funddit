@@ -40,6 +40,7 @@ puts 'Seeding the database...'
   twitter_url: 'http://twitter.com/funddit',
   twitter_username: "funddit",
   mailchimp_url: "http://eepurl.com/54tWP",
+  mailchimp_url_popup: "http://eepurl.com/bakOYb",
   catarse_fee: '0.04',
   support_forum: 'http://support.funddit.me/',
   base_domain: 'http://funddit.me',

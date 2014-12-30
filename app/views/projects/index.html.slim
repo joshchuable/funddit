@@ -56,15 +56,20 @@
   .underlay
   .modal
     .modal-title
-      h3 Not sure how to use crowdfunding for your organization?
+      h3 Ready to up your fundraising game?
     .modal-body
       .right
         img src= "https://s3-us-west-2.amazonaws.com/funddit/asdf.png" height='200px' align='middle'
       | Let us send you our secret sauce. Don't miss out on these simple techniques to up your fundraising game.
+      br
+      br
+      | Also, leave your email, and receive <strong>20% off custom merchandise</strong> when you create a Funddit project!
       .clearfix
       form
-        input type="text" placeholder="you@email.com"
-        input type="submit" value="learn more"
+        = form_tag CatarseSettings['mailchimp_url_popup'], id: 'mailee-form', method: 'post', class: "newsletter" do
+          = email_field_tag 'EMAIL', nil, placeholder: t('projects.index.sidebar.placeholders.email'), label: 'email', class: 'input'
+          = submit_tag t('projects.index.sidebar.buttons.newsletter'), class: 'newsletter-submit'
+
     .modal-footer
       p No, I don't care about fundraising.
 

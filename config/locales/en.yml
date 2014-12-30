@@ -267,7 +267,7 @@ en:
     placeholders:
       email: "Enter your email"
     buttons:
-      newsletter: Submit
+      newsletter: "Submit"
   sections:
     near:
       title: Near me
