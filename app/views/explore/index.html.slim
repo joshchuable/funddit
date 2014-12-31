@@ -33,9 +33,9 @@
             li
               a.explore-link[href='#successful']
                 = t('.successful')
-            - if current_user
+            - if current_user && current_user.school
               li
-                a.explore-link[href="#near_of/#{current_user.address_state}"]
+                a.explore-link[href="#near_of/#{current_user.school}"]
                   = t('.near')
 
         - unless @categories.empty?

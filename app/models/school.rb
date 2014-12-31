@@ -6,7 +6,27 @@ class School < ActiveRecord::Base
   belongs_to :state
   def self.array
     return @array if @array
-    @array = ["Truman State University", "Missouri State University", "Missouri S&T", "Kansas State", "Kansas University", "Washington University", "William Jewel", "St. Louis University", "Denison University"]
+    @array = ["Arizona State",
+              "Baylor",
+              "Denison University",
+              "Grinnell College",
+              "Kansas State",
+              "Missouri State",
+              "Missouri S&T",
+              "Notre Dame",
+              "Pittsburg State University",
+              "St. Louis University",
+              "Truman State University",
+              "UMKC",
+              "UMSTL",
+              "University of Central Missouri",
+              "University of Kansas",
+              "University of Nebraska Lincoln",
+              "University of Michigan",
+              "University of Missouri",
+              "Washington University St. Louis",
+              "William Jewell College"
+              ]
     #self.order(:name).each do |school|
     #  @array << [school.name]
     #end

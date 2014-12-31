@@ -10,28 +10,40 @@ App.addChild('MixPanel', {
     if(window.mixpanel){
       this.detectLogin();
       this.startTracking();
-      this.trackTwitterShare();
-      this.trackFacebookShare();
-      try {
-        this.trackOnFacebookLike();
-      } catch(e) {
-        console.log(e);
-      }
     }
   },
 
   startTracking: function(){
     var self = this;
     this.trackPageVisit('projects', 'show', 'Visited project page');
+    this.trackPageVisit('projects', 'index', 'Visited home');
     this.trackPageVisit('explore', 'index', 'Explored projects');
     this.trackPageLoad('contributions', 'edit', 'Selected reward');
-    this.trackOnPage('contributions', 'show', function(){
-      var contribution_data = self.$('.contribution_data')
+    this.trackTwitterShare();
+    this.trackFacebookShare();
+    this.trackReminderClick();
+    this.trackFollowCategory();
+    try {
+      this.trackOnFacebookLike();
+      this.trackOnFacebookComment();
+    } catch(e) {
+      console.log(e);
+    }
+  },
 
-      self.track('Finished contribution', {
-        payment_method: contribution_data.data('payment_method'),
-        payment_choice: contribution_data.data('payment_choice')
-      });
+  trackFollowCategory: function(){
+    var self = this;
+    this.$('.category-follow .follow-btn').on('click', function(event){
+      self.track('Engaged with Catarse', { ref: $(event.currentTarget).data('title'), action: 'click follow category' });
+      return true;
+    });
+  },
+
+  trackReminderClick: function(){
+    var self = this;
+    this.$('.reminder a:not([data-method])').on('click', function(event){
+      self.track('Engaged with Catarse', { ref: $(event.currentTarget).data('title'), action: 'click reminder' });
+      return true;
     });
   },
 
@@ -59,14 +71,22 @@ App.addChild('MixPanel', {
     var self = this;
 
     this.$('#twitter_share_button').on('click', function(event){
-      self.track('Share a project', { ref: $(event.currentTarget).data('title'), social_network: 'Twitter' });
+      self.track('Engaged with Catarse', { ref: $(event.currentTarget).data('title'), action: 'share twitter' });
     });
   },
 
   trackFacebookShare: function() {
     var self = this;
     this.$('a#facebook_share').on('click', function(event){
-      self.track('Share a project', { ref: $(event.currentTarget).data('title'), social_network: 'Facebook' });
+      self.track('Engaged with Catarse', { ref: $(event.currentTarget).data('title'), action: 'share facebook' });
+    });
+  },
+
+  trackOnFacebookComment: function() {
+    var self = this;
+
+    FB.Event.subscribe('comment.create', function(url, html_element){
+      self.track('Engaged with Catarse', { ref: $(html_element).data('title'), action: 'comment facebook' });
     });
   },
 
@@ -74,7 +94,7 @@ App.addChild('MixPanel', {
     var self = this;
 
     FB.Event.subscribe('edge.create', function(url, html_element){
-      self.track('Liked a project', { ref: $(html_element).data('title') });
+      self.track('Engaged with Catarse', { ref: $(html_element).data('title'), action: 'like facebook' });
     });
   },
 
@@ -125,8 +145,11 @@ App.addChild('MixPanel', {
       'last_login':         null,
       'contributions':      null,
       'has_contributions':  null,
+      'projects':           null,
+      'has_projects':       null,
       'project':            ref,
-      'url':                window.location
+      'url':                window.location,
+      'host':               window.location.host
     };
     if(this.user){
       default_options.user_id = this.user.id;
@@ -134,6 +157,8 @@ App.addChild('MixPanel', {
       default_options.last_login = this.user.last_sign_in_at;
       default_options.contributions = this.user.total_contributed_projects;
       default_options.has_contributions = (this.user.total_contributed_projects > 0);
+      default_options.projects = this.user.total_created_projects;
+      default_options.has_projects = (this.user.total_created_projects > 0);
     }
     var opt     = $.fn.extend(default_options, opt);
 

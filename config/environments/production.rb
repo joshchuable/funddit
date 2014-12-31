@@ -16,6 +16,10 @@ Catarse::Application.configure do
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
 
+  CLIENT_ID = 10311
+  CLIENT_SECRET = "6956136700"
+  USE_STAGE = false
+  WEPAY = WePay.new(CLIENT_ID, CLIENT_SECRET, USE_STAGE)
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
   # For large-scale production use, consider using a caching reverse proxy like nginx, varnish or squid.

@@ -4,36 +4,32 @@
 - project_link = project_by_slug_url(permalink: project.permalink)
 - company_name = CatarseSettings[:company_name]
 
-|Olá, #{user.name}!
+|Hello, #{user.name}!
 br
 br
-| Nossa equipe acabou de receber o projeto  #{link_to project.name, project_link, target: '__blank'}
+| Our team has received your project,  #{link_to project.name, project_link, target: '__blank'}
 br/
 br/
-| Durante os próximos 4 dias úteis, iremos analisar o rascunho de projeto que você nos enviou e te daremos uma resposta.
+| We're currently making sure that your project is in compliance with our Terms and Conditios, and will get back to you soon!
 br
 br
-strong Você pode receber 3 tipos de resposta: 
+strong You will receive one of three responses: 
 br/
 br/
-strong Opção 1: 
-| Seu rascunho passou na análise, foi aceito e poderá ir ao ar! 
-br/
-| Agora é só marcarmos o dia e hora para estreiar seu projeto no site do Catarse!
+strong Response 1:
+| Perfecto! You passed our requirements with flying colors, go forth and make your project happen, and welcome to Funddit!
 br/
 br/
-strong Opção 2: 
-| Nos parece que o seu projeto tem muito ver com o #{company_name}, mas ainda precisa de alguns ajustes para ir para o ar. Vamos entrar em contato para entender possibilidades , sugerir coisas e tirar algumas dúvidas. 
+strong Response 2:
+| At times, we may feel it is appropriate to make several suggestions. This will typically happen if we find that your project is underdeveloped.
 br/
 br/
-strong Opção 3: 
-| Infelizmente, o rascunho de projeto que você enviou não se encaixa no perfil do site do #{company_name}. 
-| Enviaremos um email notificando a recusa. Sim, sabemos que recusas são sempre desagradáveis. Mas o lema aqui é 
-| "levanta, sacode a poeira e dá a volta por cima". Mas antes de sacudir qualquer poeira, 
-| estude nossa #{link_to 'Central de Suporte', CatarseSettings[:support_forum], target: '__blank'}  para que você saiba tudo sobre nossos pré-requisitos para a construção do seu próximo projeto.
+strong Response 3:
+| On occasion, we will reject some projects on the grounds that they in violation of our Terms and Conditions. We encourage you to submit another application that is compliant with our rules.
+|
 br/
 br/
-| Lembrando que você pode tirar dúvidas conosco respondendo diretamente a esta mensagem ou através do e-mail #{mail_to CatarseSettings[:email_projects]}
+| If you have any questions or concerns, feel free to contact us at #{mail_to CatarseSettings[:email_projects]}
 br/
 br/
 |Um abraço,

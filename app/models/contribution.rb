@@ -18,7 +18,7 @@ class Contribution < ActiveRecord::Base
 
   validates_presence_of :project, :user, :value
   validates_numericality_of :value,
-    greater_than_or_equal_to: 10.0,
+    greater_than_or_equal_to: 1,
     unless: -> (contribution) {
       contribution.user.try(:credits).to_f > 0
     }
