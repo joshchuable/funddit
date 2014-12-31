@@ -17,6 +17,7 @@ class School < ActiveRecord::Base
               "Pittsburg State University",
               "St. Louis University",
               "Truman State University",
+              "UCLA",
               "UMKC",
               "UMSTL",
               "University of Central Missouri",

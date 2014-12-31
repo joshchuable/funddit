@@ -64,7 +64,7 @@ en:
         link: "Learn about how to get started"
       people:
         title: "Mobilize your community"
-        content: "The best way to fund your project is by mobilizing your own network. Successful projects usually have at least 50% of the supporters come from your network of contacts. At the same time, Funddit allows you to expand your network by promoting your project to people with similar interests and aspirations. History has shown that people support projects for many reasons, including their relationship to the organizer or offered rewards. However, the main reason why people fun projects is because they can identify themselves with your proposal."
+        content: "The best way to fund your project is by mobilizing your own network. Successful projects usually have at least 50% of the supporters come from your network of contacts. At the same time, Funddit allows you to expand your network by promoting your project to people with similar interests and aspirations. History has shown that people support projects for many reasons, including their relationship to the organizer or offered rewards. However, the main reason why people fund projects is because they can identify themselves with your proposal."
         link: "See successful projects"
       work:
         title: "Be committed before, during, and after funding"
@@ -607,7 +607,7 @@ en:
         draft: "Project is in draft"
         in_analysis: "Project is being evaluated"
     index:
-      banner: "Discover awesome projects"
+      banner: "Raise money for your project"
       links:
         near: "Near me"
         expiring: "Ending Soon"
@@ -709,7 +709,7 @@ en:
         display_status:
           in_analysis: "This project is being evaluated by our admins"
           reached_goal: "This project will be successful and funded on %{date}"
-          not_reached_goal: "This project has not met it's funding goal. Fund it now!"
+          not_reached_goal: "This project hasn't met its funding goal yet. Fund it now!"
           failed: "This project didn't reach the goal of %{goal} until %{date} and wasn't funded"
           successful: "This project was successful and was funded on %{date}"
           waiting_funds: "Waiting confirmation from payments to know if this project will be funded."
