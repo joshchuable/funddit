@@ -57,14 +57,14 @@ en:
           acquirer: "Acquirer"
   pages:
     start:
-      title: Amazing events people love.
+      title: Crowdfunding amazing college projects.
       start:
         content: "Start creating your project now! You may get started with uploading a video for your fundraising campaign, offering attractive rewards, estimating the budget, and strategizing communication and public engagement. Once your project is well formatted, you are ready to launch your campus-wide Funddit campaign."
-        title: "Start your project"
+        title: "Start your project on campus"
         link: "Learn about how to get started"
       people:
-        title: "Mobilize stakeholders"
-        content: "The best way to fund your project is by mobilizing your own network. Successful projects usually have at least 50% of the supporters come from your network of contacts. At the same time, Funddit allows you to expand your network by promoting your project to people with similar interests and aspirations. History has shown that many people support projects for many reasons, including the relationship to the organizer or offered rewards. However, the main reason why people fun projects is because they can identify themselves with your proposal."
+        title: "Mobilize your community"
+        content: "The best way to fund your project is by mobilizing your own network. Successful projects usually have at least 50% of the supporters come from your network of contacts. At the same time, Funddit allows you to expand your network by promoting your project to people with similar interests and aspirations. History has shown that people support projects for many reasons, including their relationship to the organizer or offered rewards. However, the main reason why people fun projects is because they can identify themselves with your proposal."
         link: "See successful projects"
       work:
         title: "Be committed before, during, and after funding"
@@ -429,7 +429,7 @@ en:
         category: "Before you format your project explore other (successful) projects!"
         expires_at: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: If you run it for a long time, people might lose interest along the way; If you don't run it long enough, you may not reach the minimum in time."
         online_days: "Finally, choose how long you want your campaign to last. Again, this is a strategic choice: If you run it for a long time, people might lose interest along the way; If you don't run it long enough, you may not reach the minimum in time."
-        goal: "Values in Dollards ($)"
+        goal: "Values in Dollars ($)"
         first_contributions: "To reach your financial goal it is indispensable to engage people who are close to you and the project. It would would be great if you can already come up with a list of potential contributors."
         headline: "Summarize your project in 140 characters. This sentence will be the first impressiong people will have with your project, before even seeing the video or description. Be creative, clear and concise :)"
         name: "Be as objective as you can. Leave explanations for the About section."
@@ -954,7 +954,7 @@ en:
         category: "Category"
         user_id: "User"
         goal: "Goal"
-        pledged: "Pledged"
+        pledged: "Goal"
         total_contributions: "Contributions"
         recommended: "Recommend"
         online_date: "Published"

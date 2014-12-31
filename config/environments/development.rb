@@ -12,9 +12,9 @@ Catarse::Application.configure do
   config.eager_load = false
 
   #wepay app configuration
-    CLIENT_ID = 88720
-    CLIENT_SECRET = "6e82870efe"
-    USE_STAGE = true
+    CLIENT_ID = 10311
+    CLIENT_SECRET = "6956136700"
+    USE_STAGE = false
     WEPAY = WePay.new(CLIENT_ID, CLIENT_SECRET, USE_STAGE)
 
 

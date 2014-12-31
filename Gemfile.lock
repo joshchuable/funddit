@@ -99,7 +99,7 @@ GEM
     catarse_wepay (0.0.6)
       rails (~> 4.0)
       slim-rails
-      wepay (= 0.0.1)
+      wepay (= 0.0.3)
     celluloid (0.16.0)
       timers (~> 4.0.0)
     chartkick (1.3.2)
@@ -539,7 +539,7 @@ GEM
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.1)
     weekdays (1.0.2)
-    wepay (0.0.1)
+    wepay (0.0.3)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
