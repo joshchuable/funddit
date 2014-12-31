@@ -86,11 +86,14 @@ class Projects::ContributionsController < ApplicationController
         engines.push PaymentEngines.find_engine('Pagarme')
       else
         engines = PaymentEngines.engines.inject([]) do |total, item|
-          if item.name == 'Credits' && current_user.credits > 0
-            total << item
-          elsif !item.name.match(/(Credits|Pagarme)/)
+          if item.name != 'Credits' && item.name != 'Pagarme'
             total << item
           end
+#          if item.name == 'Credits' && current_user.credits > 0
+#            total << item
+#          elsif !item.name.match(/(Credits|Pagarme)/)
+#            total << item
+#          end
 
           total
         end

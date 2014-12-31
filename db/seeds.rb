@@ -30,7 +30,7 @@ puts 'Seeding the database...'
   company_logo: '',
   host: 'funddit.me',
   base_url: "http://funddit.me",
-  email_contact: 'support@funddit.me',
+  email_contact: 'info@funddit.me',
   email_payments: 'info@funddit.me',
   email_projects: 'info@funddit.me',
   email_system: 'info@funddit.me',
@@ -40,13 +40,16 @@ puts 'Seeding the database...'
   twitter_url: 'http://twitter.com/funddit',
   twitter_username: "funddit",
   mailchimp_url: "http://eepurl.com/54tWP",
-  catarse_fee: '0.05',
+  mailchimp_url_popup: "http://eepurl.com/bakOYb",
+  catarse_fee: '0.04',
   support_forum: 'http://support.funddit.me/',
   base_domain: 'http://funddit.me',
   uservoice_secret_gadget: 'change_this',
   uservoice_key: 'uservoice_key',
+  sendgrid_user_name: 'funddit',
+  sendgrid: 'Entre2014',
   faq_url: 'http://support.funddit.me/',
-  feedback_url: 'MAILTO:funddit@gmail.com',
+  feedback_url: 'MAILTO:info@funddit.me',
   terms_url: '',
   privacy_url: '',
   about_channel_url: '',
@@ -67,10 +70,21 @@ Channel.find_or_create_by!(name: "Channel name") do |c|
   c.description = "Lorem Ipsum"
 end
 
+Project.find_or_create_by!(name: "Test") do |p|
+    p.name = 'Test'
+    p.user_id = 1
+    p.category_id = 1
+    p.about = 'test'
+    p.headline = 'test'
+    p.goal = 100
+    p.online_days = 14
+    p.permalink = 'test'
+end
+
 
 OauthProvider.find_or_create_by!(name: 'facebook') do |o|
-  o.key = '302938209911869'
-  o.secret = 'ca01ab4e160f9e3f38f822dc1ed33f91'
+  o.key = 302938209911869
+  o.secret = ca01ab4e160f9e3f38f822dc1ed33f91
   o.path = 'facebook'
 end
 
