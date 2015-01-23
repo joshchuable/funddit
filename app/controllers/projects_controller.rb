@@ -7,8 +7,14 @@ class ProjectsController < ApplicationController
 
   respond_to :html
   respond_to :json, only: [:index, :show, :update]
-
   def index
+    @location = ""
+    if current_user
+      @location = current_user.school
+    else
+      @location =  params[:location] if params[:location] != ""
+    end
+
     index! do |format|
       format.html do
         if request.xhr?
@@ -19,15 +25,20 @@ class ProjectsController < ApplicationController
           return render partial: 'project', collection: @projects, layout: false
         else
           @title = t("site.title")
-
-          @recommends = ProjectsForHome.recommends.includes(:project_total)
-          @projects_near = Project.with_state('online').near_of(current_user.address_state).order("random()").limit(3).includes(:project_total) if current_user
+          @recommends = ProjectsForHome.recommends.includes(:project_total)  
+          if @location != ""#params[:location] != "" || current_user
+            @projects_near = Project.with_state('online').near_of(@location).order("random()").limit(3).includes(:project_total)
+          end
           @expiring = ProjectsForHome.expiring.includes(:project_total)
           @recent   = ProjectsForHome.recents.includes(:project_total)
         end
       end
     end
   end
+
+  #def location
+  #  @projects_near = Project.with_state('online').near_of(@location).order("random()").limit(3).includes(:project_total)
+  #end
 
   def new
     @project = Project.new user: current_user
