@@ -1,5 +1,5 @@
 - if current_user
-  #nearOfData data-state="#{current_user.address_state}"
+  #nearOfData data-state="#{current_user.school}"
 
 #page_content
   .container
@@ -33,9 +33,13 @@
             li
               a.explore-link[href='#successful']
                 = t('.successful')
-            - if current_user && current_user.school
-              li
+            
+            li
+              - if current_user && current_user.school
                 a.explore-link[href="#near_of/#{current_user.school}"]
+                  = t('.near')
+              - else
+                a.explore-link[href="#near_of/"]
                   = t('.near')
 
         - unless @categories.empty?
@@ -47,7 +51,6 @@
                   a.explore-link[href="#by_category_id/#{category.id}"]
                     .bootstrap-twitter
                       = category
-                      ' 
                       span.label= category.total_online_projects
 
     .clearfix

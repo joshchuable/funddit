@@ -4,26 +4,48 @@
 #page_content
   .container
     .main
-      - if @projects_near.present?
-        section.near_projects.list
-          header
-            h2.list-title
-              = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + @location
-            = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + @location, class: "more-projects"
-          .projects
+      section.near_projects.list
+        header
+          h2.list-title
+            = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + @location
+          = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + @location, class: "more-projects"
+        .projects
+          .bootstrap-form
+            = form_tag({:action => 'index'}, :id => 'school_form', :method => "get",  :remote => true) do
+              = select_tag("location", options_for_select(School.array, @location), :include_blank => true, :onchange => ("$('#school_form').submit();"))
+
+          - if @projects_near.present?
             == render @projects_near
-      - else
-        section.near_projects.list
-          header
-            h2.list-title
-              a 
-                =t('.sections.near.title')
-          .projects
-            p To see nearby projects, sign in or select a campus to view.
-            br
-            .bootstrap-form
-              = form_tag({:action => 'index'}, :id => 'school_form', :method => "get",  :remote => true) do
-                = select_tag("location", options_for_select(School.array), :include_blank => true, :onchange => ("$('#school_form').submit();"))
+          - else
+            - if @location.blank?
+              p To see nearby projects, sign in or select a campus to view.
+            - else
+              p There are no current projects at this school.
+            br          
+
+      / - if @projects_near.present?
+      /   section.near_projects.list
+      /     header
+      /       h2.list-title
+      /         = link_to t('.sections.near.title'), explore_path(anchor: "near_of/" ) + @location
+      /       = link_to t('.links.near'), explore_path(anchor: "near_of/" ) + @location, class: "more-projects"
+      /     .projects
+      /       == render @projects_near
+      / - else
+      /   section.near_projects.list
+      /     header
+      /       h2.list-title
+      /         a 
+      /           =t('.sections.near.title')
+      /     .projects
+      /       - if @location.blank?
+      /         p To see nearby projects, sign in or select a campus to view.
+      /       - else
+      /         p There are no current projects at this school.
+      /       br
+      /       .bootstrap-form
+      /         = form_tag({:action => 'index'}, :id => 'school_form', :method => "get",  :remote => true) do
+      /           = select_tag("location", options_for_select(School.array, @location), :include_blank => true, :onchange => ("$('#school_form').submit();"))
 
       section.selected_projects.list
         header

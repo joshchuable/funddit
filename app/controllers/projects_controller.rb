@@ -9,10 +9,11 @@ class ProjectsController < ApplicationController
   respond_to :json, only: [:index, :show, :update]
   def index
     @location = ""
-    if current_user
-      @location = current_user.school
+
+    unless params[:location].blank?
+      @location = params[:location]
     else
-      @location =  params[:location] if params[:location] != ""
+      @location = current_user.school if current_user
     end
 
     index! do |format|
@@ -26,7 +27,7 @@ class ProjectsController < ApplicationController
         else
           @title = t("site.title")
           @recommends = ProjectsForHome.recommends.includes(:project_total)  
-          if @location != ""#params[:location] != "" || current_user
+          unless @location.blank? #params[:location] != "" || current_user
             @projects_near = Project.with_state('online').near_of(@location).order("random()").limit(3).includes(:project_total)
           end
           @expiring = ProjectsForHome.expiring.includes(:project_total)
@@ -35,10 +36,6 @@ class ProjectsController < ApplicationController
       end
     end
   end
-
-  #def location
-  #  @projects_near = Project.with_state('online').near_of(@location).order("random()").limit(3).includes(:project_total)
-  #end
 
   def new
     @project = Project.new user: current_user
